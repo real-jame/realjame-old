@@ -1,0 +1,7 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+./blog/media/Screenshot_2023-07-10_111802.png filter=lfs diff=lfs merge=lfs -text
+./blog/media/SpookingOutModernGuiAfter.png filter=lfs diff=lfs merge=lfs -text
+./_site/blog/media/Screenshot_2023-07-10_111802.png filter=lfs diff=lfs merge=lfs -text
+./_site/blog/media/SpookingOutModernGuiAfter.png filter=lfs diff=lfs merge=lfs -text
+./src/_site/blog/media/Screenshot_2023-07-10_111802.png filter=lfs diff=lfs merge=lfs -text
+./src/_site/blog/media/SpookingOutModernGuiAfter.png filter=lfs diff=lfs merge=lfs -text
