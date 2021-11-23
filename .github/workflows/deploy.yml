@@ -1,0 +1,19 @@
+
+name: CI
+
+on: [push]
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Push to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: "realja.me"
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
+          script: cd ${{ secrets.PROJECT_PATH }} && git pull
