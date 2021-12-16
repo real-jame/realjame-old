@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    image: nginx
+    container_name: realja.me
+    ports:
+      - 8000:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+    restart: unless-stopped

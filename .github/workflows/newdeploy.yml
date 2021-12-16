@@ -1,0 +1,9 @@
+- name: Deploy with docker-compose
+  uses: wshihadeh/docker-deployment-action@v2
+  with:
+    remote_docker_host: root@realja.me
+    ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+    ssh_public_key: ${{ secrets.SSH_KNOWN_HOSTS }}
+    deployment_mode: docker-compose
+    deploy_path: /usr/share/nginx/html
+    stack_file_name: docker-compose.yml
