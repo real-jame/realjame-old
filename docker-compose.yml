@@ -6,5 +6,5 @@ services:
     volumes:
       - ./src:/usr/share/nginx/html
     ports:
-      - 80:1000
-      - 443:1001
+      - 1000:80
+      - 1001:443
