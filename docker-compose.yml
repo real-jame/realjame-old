@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: realja.me
+    volumes:
+      - ./src:/usr/share/nginx/html
+    ports:
+      - 80:80
+      - 443:443
