@@ -8,3 +8,4 @@ services:
     ports:
       - 1000:80
       - 1001:443
+    restart: unless-stopped
