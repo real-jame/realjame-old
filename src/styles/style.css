@@ -65,6 +65,13 @@ p {
 	text-align: center;
 }
 
+.picture {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .icon {
 	vertical-align: middle;
 	width: 1em;
