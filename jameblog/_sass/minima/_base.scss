@@ -35,9 +35,12 @@ body {
 	-o-font-feature-settings: "kern" 1;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
-	width: 50%;
+	width: 60%;
 	margin: auto;
 	min-height: 100vh;
+	@media (max-width: 768px) {
+		width: 90%;
+	}
 }
 
 /**
