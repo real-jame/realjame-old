@@ -218,6 +218,7 @@
 
 		@include light-mode() {
 			border-color: $border-color-light;
+			background-color: $nav-background-color-light;
 		}
 
 		img {
