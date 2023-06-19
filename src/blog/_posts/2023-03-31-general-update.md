@@ -8,23 +8,7 @@ description: "Where have I been these past few months? What have I been (not) do
 date: 2023-03-31
 ---
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Website revamps](#website-revamps)
-  - [Appearance](#appearance)
-  - [Text](#text)
-  - [SEO](#seo)
-  - [Home page](#home-page)
-    - [Quick Links](#quick-links)
-    - [88x31 buttons](#88x31-buttons)
-  - [Blog](#blog)
-- [Future blog posts?](#future-blog-posts)
-- [Welcome back...](#welcome-back)
-- [My "To-Develop" List](#my-to-develop-list)
-- [The next old Roblox game](#the-next-old-roblox-game)
-- [One more thing](#one-more-thing)
-- [Conclusion](#conclusion)
+### [♫ Rings Around Saturn - Photek ♫](https://youtu.be/Eaqxo1R7raA)
 
 Hey there. It's been months since my last article, but I'm finally back. First, let's dive into what's changed around here.
 
@@ -181,5 +165,3 @@ My apologies for the inactivity. Though, should I be more apologizing to myself,
 Either way, I'm ready to get going... for myself, and for any future readers.
 
 That's all I have for now. Thank you so much for reading!
-
-[A DnB song for you - Rings Around Saturn by Photek](https://youtu.be/Eaqxo1R7raA)

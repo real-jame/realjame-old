@@ -5,6 +5,7 @@ tags: [Review]
 image: /blog/media/mario64-gangnamstyle.gif
 description: "My thoughts on the Mario movie (spoilers!)"
 date: 2023-04-08
+published: false
 ---
 
 ![An animation of Mario's character model from Super Mario 64 doing the Gangnam Style dance](/blog/media/mario64-gangnamstyle.gif)
