@@ -38,9 +38,7 @@ Speaking of which, secondary items! You can choose a 2nd item to equip alongside
 
 ## Screenshots
 
-*Sorry for the black bar on the bottom, I didn't record it correctly. In that area would be a status bar telling you the amount of ghosts left and when the next round will start.*
-
-<video height="320" width="480" controls>
+<video width="400" height="240" controls>
   <source src="/blog/media/SpookingOutGameplay.mp4" type="video/mp4">
 </video>
 
@@ -79,7 +77,7 @@ Tobu.fi first created the original prototype of the game, he created the ghosts.
 
 Unlike the base game, where we wish to only include 2 or 3 maps and have the community build more maps, this game was on a lot shorter deadline, so I made just 1 map and the lobby, and the other maps are reused from classic Roblox games.
 
-We submitted it to the Novetus contest on October 22, and we got a couple players on the server. You can see them in the player list of the screenshots I provided, and it was a joy to finally share our work with the public!
+We submitted it to the Novetus contest on October 22, and we got nearly a dozen players on the server. You can see them in the player list of the screenshots I provided, and it was a joy to finally share our work with the public!
 
 In fact, one of the players, [Lachrymogenic](https://lachrymogenic.gitlab.io), created a thumbnail for our game, which we've adopted as the logo and branding. Thank you so much!!!
 

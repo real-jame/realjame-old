@@ -105,8 +105,12 @@ img {
  * Videos
  */
 video {
+	display: block;
+
 	max-width: 60%;
-	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
 }
 
 /**
