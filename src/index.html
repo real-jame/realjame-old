@@ -9,25 +9,24 @@ title: "realja.me"
   </p>
 
   <h2>Recent Posts</h2>
-  <!--
-  This code will return the latest 3 posts with/without the devlogs tag.
-  We can't just use the limit property on a for loop for this, because if a post is filtered
-  we need to search beyond the first 3.
-  --><ul class="post-list" style="margin: 0;">
+  <ul class="post-list post-list-outline" style="margin: 0;">
     {%- assign count = 0 -%}
     {%- for post in site.posts -%}
       {%- unless post.tags contains "Devlogs" -%}
         {%- if count < 3 -%}
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <li>
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | default: "-Untitled-" }}
-            </a>
-            {%- if post.description -%}
-              {{ post.description }}
-            {%- endif -%}
-          </li>
+          <li class="small-entry">
+            <div class="stack">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | default: "-Untitled-" }}
+              </a>
+              {%- if post.description -%}
+                {{ post.description }}
+              {%- endif -%}
+            </div>
+            <img src={{ post.image }} width="500" height="300" style="max-width: 45%;"></img>
+          </li><br>
           {%- assign count = count | plus: 1 -%}
         {%- else -%}
           {%- break -%}
@@ -38,21 +37,21 @@ title: "realja.me"
   <br>
   <h2>Recent Devlogs</h2>
 
-  <ul class="post-list" style="margin: 0;">
+  <ul class="post-list post-list-outline" style="margin: 0;">
     {%- assign count = 0 -%}
     {%- for post in site.posts -%}
       {%- if post.tags contains "Devlogs" -%}
         {%- if count < 3 -%}
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <li>
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | default: "-Untitled-" }}
-            </a>
-            {%- if post.description -%}
-              {{ post.description }}
-            {%- endif -%}
-          </li>
+          <li class="small-entry">
+            <div class="stack">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | default: "-Untitled-" }}
+              </a>
+            </div>
+            <img src={{ post.image }} width="300" height="200"></img>
+          </li><br>
           {%- assign count = count | plus: 1 -%}
         {%- else -%}
           {%- break -%}
