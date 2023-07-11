@@ -8,21 +8,21 @@ description: "Spooking Out has been ported to modern Roblox!"
 date: 2022-11-02
 ---
 
-Hey everyone, I am proud to announce the modern Roblox port of _Spooking Out!_ has been published to the Roblox website under our group!
+Hey everyone, I am proud to announce the modern Roblox port of *Spooking Out!* has been published to the Roblox website!
 
-_Don't know about Spooking Out or Tobic Bay? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %})._
+*Don't know about Spooking Out? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %}).*
 
 This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!
 
-# [Play it here!](https://www.roblox.com/games/11373614692/Spooking-Out)
+### [Play it here!](https://www.roblox.com/games/11373614692/Spooking-Out)
 
-_[Or check out the Novetus 2010L version!]({% post_url /blog/2022-10-24-introducing-spooking-out %})_
+*[Or check out the Novetus 2010L version!]({% post_url /blog/2022-10-24-introducing-spooking-out %})*
 
 There are also 5 badges -- essentially, achievements. Here's one of them:
 
-| ![A brown bag with a yellow and brown rectangle with the word "Tix" printed on it, overlayed on top of a Spooking Out map with a orange-yellow filter.](/blog/media/SpookingOutModernBadge.png) |
+| ![Brown bag with the word "Tix" printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filter.](/blog/media/SpookingOutModernBadge.png) |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                     _Can you get them all?_                                                                                     |
+|                                                                                     *Can you get them all?*                                                                                     |
 
 ## TL;DR
 
@@ -58,11 +58,11 @@ So, who would've thought that 12 years of engine updates would break our game? A
 #### Filtering Enabled
 
 That's what it's called. It was added in 2014, and it became mandatory some time after, a few years or so. I'll be brief about it to not get too boring, if you want to read more about it, [check the Roblox ~~Wiki~~ ~~Developer Hub~~ Documentation.](https://create.roblox.com/docs/scripting/networking/client-server-model)
-<sub><i>Also, don't take this as the complete truth, this is all from memory.</i></sub>
+~~*Also, don't take this as the complete truth, this is all from memory.*~~
 
 You have your clients and your server. The server handles most of the data, and the clients are each player connecting to it. This is how hackers can perform exploits; they manipulate what their client tells the server to do or change. For example, they could instantly have 1 million gold by telling the server that they have 1 million gold, if there are no proper checks in place.
 
-This is why exploiting is so rampant on old Roblox servers (besides the fact new anticheats can't be very easily modded on): there is much less security in place for what clients can manipulate. There is _some_, but in general, you can do basically whatever you want in a tool, such as placing a bomb, or killing a player, all done from a clientsided Script.
+This is why exploiting is so rampant on old Roblox servers (besides the fact new anticheats can't be very easily modded on): there is much less security in place for what clients can manipulate. There is *some*, but in general, you can do basically whatever you want in a tool, such as placing a bomb, or killing a player, all done from a clientsided Script.
 
 This is fun and easy for developers to work with! But, exploiters are annoying too, of course. Roblox added this "Filtering Enabled" thing some years afterwards, where the server pretty much does not trust the client at all. If the client wants to place a bomb or kill a player, they have to **ask the server** to do it by activating a "RemoteEvent" or "RemoteFunction", which signals a function in a server-sided script to run.
 
@@ -142,8 +142,6 @@ Here's how everything came together, allowing me to play our game on modern Robl
 
 I've tried making modern Roblox projects before, but like with old Roblox, this is my first time releasing a finished product. All in all, it was fun. We hope you continue enjoying it just as much as we did porting it!
 
-After almost a month of active work on this project from the both of us, it's finally 100% complete. We'll be taking a break for a few weeks to figure out where to go from here. Stay tuned for more blog posts (unrelated to Tobic Bay, but sometimes related to old Roblox) and other tech projects from me in that time!
+After almost a month of active work on this project from the both of us, it's finally 100% complete. We'll be taking a break for a few weeks to figure out where to go from here. Stay tuned for more blog posts and other tech projects from me in that time!
 
 Hope you had a great Halloween!
-
-_- Tobic Bay_

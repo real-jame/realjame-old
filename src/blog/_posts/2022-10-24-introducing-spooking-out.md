@@ -12,7 +12,7 @@ Hello! I'm proud to announce a brand new game made for the classic Roblox engine
 ![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game; a bay filled with ghosts.](/blog/media/SpookingOutThumbnail.png)
 Come play the game with us on a 24/7 server I'm hosting for the game, or [download a copy of the game for yourself](https://cdn.discordapp.com/attachments/1033943226727542887/1033943288463511692/Spooking_Out.rbxl).
 
-```
+```text
 Client: 2010L
 IP: court-michelle.at.playit.gg
 
@@ -26,11 +26,9 @@ Not sure how long I will keep this server running... at least until Halloween.
 
 **12/4/22 edit: the server went down after Halloween. It was a ton of fun playing with everyone! Thank you so much for your feedback and appreciation for what we made : ]**
 
-Speaking of which, we want to make more projects in the future, so we have a team name! "Tobic Bay"! And it won't just be Roblox games ;)
+## How to Play
 
-# How to Play
-
-_Spooking Out!_ is a round based co-op game about catching ghosts. When the round starts, explore the map to find ghosts and use the Skullshot tool to sling skulls at ghosts.
+*Spooking Out!* is a round based co-op game about catching ghosts. When the round starts, explore the map to find ghosts and use the Skullshot tool to sling skulls at ghosts.
 
 After you deplete the ghost's health, switch to the Grab tool and click on it. You'll pick it up, now walk to the big hole and click again to throw it in! You can hold down the letting-go click to charge up your shot and throw it a farther distance.
 
@@ -38,9 +36,9 @@ Work together with everyone in the server to capture all the ghosts before time 
 
 Speaking of which, secondary items! You can choose a 2nd item to equip alongside your Skullshot. This tool or ability can help you and your team out, so try all of them to find your favorite!
 
-# Screenshots
+## Screenshots
 
-_Sorry for the black bar on the bottom, I didn't record it correctly. In that area would be a status bar telling you the amount of ghosts left and when the next round will start._
+*Sorry for the black bar on the bottom, I didn't record it correctly. In that area would be a status bar telling you the amount of ghosts left and when the next round will start.*
 
 <video height="320" width="480" controls>
   <source src="/blog/media/SpookingOutGameplay.mp4" type="video/mp4">
@@ -52,7 +50,7 @@ _Sorry for the black bar on the bottom, I didn't record it correctly. In that ar
 
 ![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](/blog/media/SpookingOutScreenshot-3.png)
 
-# What is Novetus?
+## What is Novetus?
 
 If you're interested in playing, you can install Novetus [here](https://bitl.itch.io/novetus)! Novetus is a free and open-source launcher for old Roblox clients that allows you to host servers, edit maps in Studio, and play solo or online.
 
@@ -71,7 +69,7 @@ If you're on Linux, you don't need to install Microsoft .NET Framework 4.0. When
 
 Speaking of which, this is unrelated to our game but if you are trying out Novetus and would like to play the 2007 or 2011+ clients, check the Dependency Installer to see what special dependencies you need to install to run them.
 
-# Behind the scenes
+## Behind the scenes
 
 This game started because Tobu.fi wanted to submit a game to a Halloween game contest in the [Novetus Discord server](https://discord.gg/Jfrdmx3ZwQ). The best game will be included in the launcher's pre-installed map collection.
 
@@ -85,12 +83,10 @@ We submitted it to the Novetus contest on October 22, and we got a couple player
 
 In fact, one of the players, [Lachrymogenic](https://lachrymogenic.gitlab.io), created a thumbnail for our game, which we've adopted as the logo and branding. Thank you so much!!!
 
-# Wrap-up
+## Wrap-up
 
-_Spooking Out!_ as well as the existing work from the original game took a lot of effort from both of us in all parts of development. We hope you enjoy playing it just as much we did making it!
+*Spooking Out!* as well as the existing work from the original game took a lot of effort from both of us in all parts of development. We hope you enjoy playing it just as much we did making it!
 
 As I mentioned at the start, you can currently play it on Novetus. But what if you don't have a computer or simply don't wish to install Novetus? Well, we plan to **port the game to modern Roblox**, and it's being worked on right now! When it's done, I'll write another article to introduce the modern port and it's behind-the-scenes when it releases.
 
 Enjoy!
-
-_- Tobic Bay_

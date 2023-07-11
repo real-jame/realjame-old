@@ -58,21 +58,21 @@ I also added some good old 88x31 buttons to the home page, they link to my favor
 
 And by the way... I MADE A BUTTON FOR THE SITE! I'll quote what I wrote on the home page about it.
 
-<a href="https://realja.me"><img src="/assets/mybutton/2023-03-31-baseplate.gif" alt="realja.me"></a>
+![realja.me](/assets/mybutton/2023-03-31-baseplate.gif)
 
 > I have my own 88x31 gif button for this website! I would be humbled if you make use of it. If you do, please let me know, I'd love to see your site!
-> 
+>
 > The button is a scene I quickly created in the old Roblox engine. I might change the button often in the future, putting the "logo" in different maps and skyboxes - right now it's just a good old baseplate and default skybox.
-> 
+>
 > So on that note, if you put the button on your site, it might be a good idea for the image source to link directly to my site, instead of making a copy on your own server. So when I update it, your website will have the updated design!
-> 
+>
 > <small>Hey, I mean you can do what you want to though.</small>
 
 And then you can add it to your site with this HTML code:
 
-<textarea readonly>
-    <a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="realja.me"></a>
-  </textarea>
+```html
+<a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="realja.me"></a>
+```
 
 ### Blog
 
@@ -93,7 +93,7 @@ Here's the topics I guaranteed want to make into blog posts (I'll update them in
 - [Making a ChatGPT plugin for old Roblox:](https://twitter.com/real__jame/status/1626674780983156762) because Roblox is putting AI in modern Studio, two can play at that game :troll: [(mastodon alt)](https://wetdry.world/@jame/109881886167603006)
 - Modding a USB-C port onto a Nintendo DSi
 
-## Welcome back...
+## Welcome back
 
 Okay, you might have been wondering why I've been inactive. I'm lazy, alright? Clean and simple. I've been growing content with sitting in my room, doing nothing, but just watching YouTube videos and scrolling Twitter, essentially. That's not the whole story, but the most important part is that I've been mostly inactive with things. Or even if I am making an effort, it's small, and barely productive. Life's been catching me by too; homework is piling up as we get closer to school ending, and family stuff (nothing bad, don't worry.)
 
@@ -107,7 +107,7 @@ Last thing is going on a short walk daily on my free days off to take breaks fro
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Thrifting haul!                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-I'm also reading some self-help books to help me "learn how to learn". 
+I'm also reading some self-help books to help me "learn how to learn".
 
 **My current backlog is:**
 

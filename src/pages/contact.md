@@ -12,7 +12,7 @@ I would recommend email if you simply want to talk to me, doesn't matter what, I
 
 As seen on the footer, my email address is [james@realja.me](james@realja.me)!
 
-## And my other accounts:
+## And my other accounts
 
 - Discord: realjame#3946
 - GitHub: [@real-jame](https://github.com/real-jame)

@@ -12,7 +12,7 @@ published: true
 
 Welcome to the 2nd [General Update]({% post_url /blog/2023-03-31-general-update %}). It's been almost a month since I've spoken here. In fact, it's May! **Almost June?!** My friend Nick has [written an article](https://nick64.me/netlogs/2023/05/first-post-of-may-status-update/) for his personal updates to mark the start of a new month, so you should read that too. He's dealing with stuff like money, college, and lots of personal projects... just like me.
 
-## New general update means new button!
+## New general update means new button
 
 I'm proud of my animated 88x31 button. I don't think my website has gotten any special backlinks yet, other than from Nick64's, but I still like it. **What's a personal website without its own button, after all?**
 
@@ -22,9 +22,9 @@ What this allows me to do is **update the button and have it automatically chang
 
 Well, here you go.
 
-<a href="https://realja.me"><img src="/assets/mybutton/2023-05-23-sfoth.gif" alt="realja.me"></a>
+![realja.me](/assets/mybutton/2023-05-23-sfoth.gif)
 
-Pop quiz: what map this is? 
+Pop quiz: what map this is?
 <small>*If you want to know, it's in the name of the file.*</small>
 
 ## How are things?

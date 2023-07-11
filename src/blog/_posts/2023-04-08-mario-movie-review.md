@@ -24,7 +24,6 @@ I really liked it.
   - [They didn't credit Grant Kirkhope for the DK Rap](#they-didnt-credit-grant-kirkhope-for-the-dk-rap)
 - [Conclusion](#conclusion)
 
-
 ## My Surprises
 
 ### Illumination was capable of making a genuinely good movie
@@ -91,4 +90,4 @@ If you're not a huge Mario fan, you might like it. But if you are, you will love
 
 *Sorry for not writing a lot in this section, I got tired of writing lol. But trust me, my praises for this movie greatly outweigh any nitpicks I wrote about earlier.*
 
-<small><a href="https://nick64.me/netlogs/2023/04/the-super-mario-bros-movie/">By the way, go read my friend Nick64's review of the movie. Thanks!</a></small>
+<small>[By the way, go read my friend Nick64's review of the movie. Thanks!](https://nick64.me/netlogs/2023/04/the-super-mario-bros-movie/)</small>

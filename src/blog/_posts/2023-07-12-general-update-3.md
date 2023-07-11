@@ -12,4 +12,4 @@ Hey, what's good? I've just been doing some housekeeping on the website.
 
 I went back and compressed all the images, like I did for the Washington trip blog post. All images are small now, and you can click on them to see them in their original resolution.
 
-This blog post is TODO
+This blog post is TODO.
