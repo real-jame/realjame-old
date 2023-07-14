@@ -118,9 +118,9 @@ There's also an ongoing update thread in the [Roblox Client Search Discord serve
 
 ## Last update's article ideas
 
-> Here's the topics I guaranteed want to make into blog posts (I'll update them into links when they get written):
+Here's the topics I guaranteed want to make into blog posts (I'll update them into links when they get written):
 
-> - Announcing the Old Roblox Wiki rehosting project
+- Announcing the Old Roblox Wiki rehosting project
 - The beginning of and being invited to the Novetus Creative Team (making old Roblox games "in-house" for the launcher as a small team)
 - A modern Roblox project I spent a lot of time working on in 2021 but gave up on
 - A 2nd failed project for modern Roblox that came before it
@@ -139,13 +139,13 @@ I'm not going to make an announcement article. It's already been announced, a lo
 
 For those who don't know about it, Roblox Legacy Documentation is a useful resource for people making Roblox games on old clients in the modern day, like I am. It could also be used simply for people who want to see what the Roblox engine and community was like back in the day.
 
-The wiki is built off an archive of the Roblox Wiki from June 2012, but we've been doing a lot of work to make it more helpful. 
+The wiki is built off an archive of the Roblox Wiki from June 2012, but we've been doing a lot of work to make it more helpful.
 
 After all, website documentation isn't really necessary anymore, right?
 
 | ![Screenshot of the "Archived Pages" section of the Roblox Legacy Docs site, containing all the website documentation pages.](/blog/media/devlog/wiki-2-ArchivedPages.jpeg) |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                   _Don't worry, they've been preserved._                                                                    |
+|                                                                   *Don't worry, they've been preserved.*                                                                    |
 
 I do want to make articles about the project though. Like how I started it in the first place, not knowing anything about MediaWiki (the server software used). Or our progress, including a newfound interest in April.
 
