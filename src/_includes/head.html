@@ -1,7 +1,19 @@
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	{%- seo -%} <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url
-	}}"> {%- feed_meta -%}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% comment %}
+    {% if page.permalink contains 'blog' %}
+    	{% include blog-breadcrumb.html %}
+    {% endif %}
+  {% endcomment %}
+  {%- seo -%}
+  <link
+    rel="stylesheet"
+    href="
+      {{ "/assets/main.css" | relative_url
+      }}
+    "
+  >
+  {%- feed_meta -%}
 </head>

@@ -1,27 +1,24 @@
 <header class="site-header" role="banner">
-  {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths
- = site.header_pages | default: default_paths -%}
-  <h1 class="page-title">{{ page.title | site.title | "" }}</h1>
+	{%- assign default_paths = site.pages | map: 'path' -%}
+	{%- assign page_paths = site.header_pages | default: default_paths -%}
+	<h1 class="page-title">{{ page.title | site.title | "" }}</h1>
 
-  {%- if page_paths -%}
-    <nav class="site-nav">
-
-      <ul class="footer-bar header-bar">
-        <li>
-          <a class="page-link" href="/">
-            Home</a>
-        </li>
-        <li>
-          <a class="page-link" href="/blog">Blog</a>
-        </li>
-        <li>
-          <a class="page-link" href="/tags/devlogs">Devlogs</a>
-        </li>
-        <li>
-          <a class="page-link" href="/contact">Contact</a>
-        </li>
-      </ul>
-
-    </nav>
-  {%- endif -%}
+	{%- if page_paths -%}
+		<nav class="site-nav">
+			<ul class="footer-bar header-bar">
+				<li>
+					<a class="page-link" href="/"> Home</a>
+				</li>
+				<li>
+					<a class="page-link" href="/blog">Blog</a>
+				</li>
+				<li>
+					<a class="page-link" href="/tags/devlogs">Devlogs</a>
+				</li>
+				<li>
+					<a class="page-link" href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	{%- endif -%}
 </header>

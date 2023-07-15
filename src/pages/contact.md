@@ -14,7 +14,8 @@ As seen on the footer, my email address is [james@realja.me](james@realja.me)!
 
 ## And my other accounts
 
-- Discord: realjame#3946
+- Discord: @realjame
 - GitHub: [@real-jame](https://github.com/real-jame)
+- Mastodon: [@jame@wetdry.world](https://wetdry.world/@jame)
 - Twitter: [@real\_\_jame](https://twitter.com/real__jame)
 - YouTube: [@realjame](https://www.youtube.com/@realjame)

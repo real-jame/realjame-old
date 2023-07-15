@@ -2,60 +2,58 @@
 layout: default
 title: "Posts"
 ---
-
 <div class="home">
+	{{ content }}
 
-  {{ content }}
+	{%- include tagcloud.html -%}
 
+	<h2>Posts</h2>
+	<p class="rss-subscribe">
+		subscribe
+		<a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+	</p>
 
-  {%- include tagcloud.html -%}
+	{% comment %}
+		this is awful
+	{% endcomment %}
 
-    <h2>Posts</h2>
-    <p class="rss-subscribe">subscribe
-      <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
-    </p>
+	<ul class="post-list post-list-outline">
+		{%- for post in site.posts -%}
+			<li
+				{% if post.tags contains 'Devlogs' %}
+					class="small-entry"
+				{% endif %}
+			>
+				{% if post.tags contains 'Devlogs' %}
+					<div class="stack">
+				{% endif %}
 
-    {% comment %}
-    this is awful
-    {% endcomment %}
+				{%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+				<span class="post-meta">
+					{% if post.tags contains 'Devlogs' -%}
+						<span class="green-tag">Devlog</span> -
+					{% endif %}
+					{{ post.date | date: date_format }}
+				</span>
 
-    <ul class="post-list post-list-outline">
-      {%- for post in site.posts -%}
-        <li
-          {% if post.tags contains "Devlogs" %}
-          class="small-entry"
-          {% endif %}
-        >
-          {% if post.tags contains "Devlogs" %}
-          <div class="stack">
-          {% endif %}
+				<a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | default: '-Untitled-' }}
+				</a>
 
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">
-            {% if post.tags contains "Devlogs" %}<span class="green-tag">Devlog</span> -
-            {% endif %}
-            {{ post.date | date: date_format }}
-          </span>
+				{% unless post.tags contains 'Devlogs' %}
+					{%- if post.description -%}
+						{{ post.description }}
+					{%- endif -%}
+				{% endunless %}
 
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | default: "-Untitled-" }}
-          </a>
+				{% if post.tags contains 'Devlogs' %}
+					</div>
+				{% endif %}
 
-          {% unless post.tags contains "Devlogs" %}
-            {%- if post.description -%}
-              {{ post.description }}
-            {%- endif -%}
-          {% endunless %}
+				<img src="{{ post.image }}" width="500" height="300">
+			</li>
 
-          {% if post.tags contains "Devlogs" %}
-            </div>
-          {% endif %}
-
-          <img src={{ post.image }} width="500" height="300"></img>
-          
-        </li>
-        
-        <br>
-      {%- endfor -%}
-    </ul>
+			<br>
+		{%- endfor -%}
+	</ul>
 </div>
