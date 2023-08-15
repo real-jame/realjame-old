@@ -33,17 +33,18 @@ body {
 	-o-font-feature-settings: "kern" 1;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
-	width: 60%;
-	margin: auto;
-	min-height: 100vh;
+	// width: 40em;
+	// margin: auto;
+	// min-height: 100vh;
+	margin: 0;
 
-	@include media-query($medium-screen) {
-		width: 75%;
-	}
+	// @include media-query($medium-screen) {
+	// 	width: 75%;
+	// }
 
-	@include media-query($small-screen) {
-		width: 90%;
-	}
+	// @include media-query($small-screen) {
+	// 	width: 90%;
+	// }
 
 	@include light-mode() {
 		color: $text-color-light;
@@ -72,17 +73,32 @@ figure,
 }
 
 h1,
-h2 {
-	margin: 0;
-	text-align: center;
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-shadow: 0 0 8px rebeccapurple;
+
+	h1,
+	h2 {
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.header-band {
+	background: linear-gradient(to bottom, rgb(154, 103, 175) 0%, rgb(96, 72, 129) 49%, rgb(100, 67, 130) 100%);
+	line-height: 1em;
 }
 
 /**
  * `main` element
  */
 main {
-	padding: 1em;
+	// padding: 1em;
 	display: block;
+	background-image: url(/assets/misc/starry-night512.gif);
 	/* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
@@ -236,19 +252,32 @@ textarea {
  * Wrapper
  */
 .wrapper {
-	max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-	max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: $spacing-unit;
-	padding-left: $spacing-unit;
-	@extend %clearfix;
+	// max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+	// max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+	// margin-right: auto;
+	// margin-left: auto;
+	// padding-right: $spacing-unit;
+	// padding-left: $spacing-unit;
+	// @extend %clearfix;
+
+	// @include media-query($small-screen) {
+	// 	max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+	// 	max-width: calc(#{$content-width} - (#{$spacing-unit}));
+	// 	padding-right: calc($spacing-unit / 2);
+	// 	padding-left: calc($spacing-unit / 2);
+	// }
+
+	// text-align: center;
+	// width: 35em;
+	margin: auto;
+
+	border-style: none solid;
+	border-color: $border-color;
+	border-width: $border-size;
+	padding: 1em;
 
 	@include media-query($small-screen) {
-		max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-		max-width: calc(#{$content-width} - (#{$spacing-unit}));
-		padding-right: calc($spacing-unit / 2);
-		padding-left: calc($spacing-unit / 2);
+		width: auto;
 	}
 }
 

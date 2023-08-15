@@ -1,3 +1,7 @@
+// * {
+// 	border: solid 1px rebeccapurple;
+// }
+
 /**
  * Site header
  */
@@ -5,12 +9,21 @@
 	// min-height: $spacing-unit * 1.865;
 
 	// Positioning context for the mobile navigation icon
-	position: relative;
-	margin-top: 1em;
+	position: fixed;
+	// margin-top: 1em;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 200px;
+
+	@include media-query($small-screen) {
+		height: 50px;
+		width: 100%;
+	}
 }
 
 .page-title {
-	border-radius: 10px 10px 0 0;
+	// border-radius: 10px 10px 0 0;
 	border: solid $border-color $border-size;
 	background-color: $title-background-color;
 
@@ -31,15 +44,18 @@
 
 		border: solid $border-color-light $border-size-light;
 	}
+
+	@include media-query($small-screen) {
+		display: none;
+		// TODO icon display
+	}
 }
 
 .site-nav {
 	background-color: $nav-background-color;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	height: 100%;
 	border: solid $border-color $border-size;
+	position: relative;
 
 	@include light-mode() {
 		background-color: $nav-background-color-light;
@@ -47,7 +63,7 @@
 	}
 
 	.page-link {
-		background-color: $nav-button-background-color;
+		// background-color: $nav-button-background-color;
 		margin: 0 1em;
 		padding: 0.5em;
 		border-radius: 3px;
@@ -56,14 +72,43 @@
 			background-color: $nav-button-background-color-light;
 		}
 
-		@include media-query($medium-screen) {
-			margin: 0 0.5em;
-			padding: 0.35em;
+		// @include media-query($medium-screen) {
+		// 	margin: 0 0.5em;
+		// 	padding: 0.35em;
+		// }
+
+		// @include media-query($small-screen) {
+		// 	margin: auto;
+		// 	padding: auto;
+		// }
+	}
+}
+
+.header-bar {
+	height: 100%;
+	margin: 0;
+	list-style: none;
+
+	@include media-query($small-screen) {
+		overflow-x: scroll;
+		overflow-y: visible;
+		white-space: nowrap;
+		display: inline-block;
+		position: relative;
+		width: 100vw;
+	}
+
+	li {
+		margin: 0.5em 0;
+
+		a {
+			width: 100%;
+			font-size: 1em;
 		}
 
 		@include media-query($small-screen) {
-			margin: auto;
-			padding: auto;
+			// Horizontal alignment
+			display: inline;
 		}
 	}
 }
@@ -156,34 +201,25 @@
 	}
 }
 
-.header-bar {
-	margin: 0;
-
-	li {
-		margin: 0.5em 0;
-
-		a {
-			width: 100%;
-			font-size: 1em;
-		}
-	}
-}
-
 /**
  * Page content
  */
 .page-content {
 	background-color: rgba($content-background-color, 0.95);
-	padding: 1em;
-
-	border-style: none solid;
-	border-color: $border-color;
-	border-width: $border-size;
+	// padding: 1em;
+	margin-left: 200px;
+	// width: calc(100vw - 200px);
+	width: auto;
 
 	@include light-mode() {
 		background-color: $content-background-color-light;
 		border-color: $border-color-light;
 		border-width: $border-size-light;
+	}
+
+	@include media-query($small-screen) {
+		margin-left: 0;
+		padding-top: 50px;
 	}
 }
 

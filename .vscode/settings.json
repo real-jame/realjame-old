@@ -4,5 +4,6 @@
 		"*.yaml.liquid": "yaml",
 		"*.md.liquid": "markdown",
 		"*.html": "liquid"
-	}
+	},
+	"liquid.format.enable": true
 }
