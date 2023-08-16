@@ -233,9 +233,11 @@
 .post-list {
 	margin-left: 0;
 	list-style: none;
+	display: flex;
 
 	@include media-query($small-screen) {
 		padding: 0;
+		display: block;
 	}
 }
 
@@ -243,18 +245,16 @@
 	li {
 		border: 2px solid $border-color;
 		border-radius: 2px;
-		padding-left: 0.5em;
+		padding: 0.5em;
 		background-color: $nav-background-color;
 		text-align: center;
+
+		display: flex;
+		flex-direction: column;
 
 		@include light-mode() {
 			border-color: $border-color-light;
 			background-color: $nav-background-color-light;
-		}
-
-		img {
-			margin: auto;
-			height: auto;
 		}
 
 		@include media-query($small-screen) {
@@ -265,6 +265,18 @@
 	> li > a {
 		@include relative-font-size(1.4);
 		font-weight: bold;
+	}
+}
+
+.card-image {
+	border: solid 5px rebeccapurple;
+	height: auto;
+	max-width: 20vw;
+	margin-top: auto;
+
+	@include media-query($small-screen) {
+		width: 90%;
+		max-width: 90%;
 	}
 }
 
@@ -319,44 +331,45 @@
 	}
 }
 
-.small-entry {
-	display: flex;
-	height: 100%;
-	justify-content: center;
+// .small-entry {
+// 	// display: flex;
+// 	// height: 100%;
+// 	// justify-content: center;
 
-	@include media-query($small-screen) {
-		flex-direction: column;
-		padding: 0;
-	}
+// 	@include media-query($small-screen) {
+// 		flex-direction: column;
+// 		padding: 0;
+// 	}
 
-	.stack {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		padding-right: 0.5em;
+// 	.stack {
+// 		width: 100%;
+// 		display: flex;
+// 		align-items: center;
+// 		flex-direction: column;
+// 		padding-right: 0.5em;
 
-		.post-meta {
-			white-space: nowrap;
-		}
+// 		.post-meta {
+// 			white-space: nowrap;
+// 		}
 
-		.post-link {
-			font-size: 25px;
-			text-align: center;
-		}
-	}
+// 		.post-link {
+// 			font-size: 25px;
+// 			text-align: center;
+// 		}
+// 	}
 
-	img {
-		margin: 0;
-		margin-left: auto;
-		align-self: flex-end;
-		justify-self: center;
+// 	img {
+// 		margin: 0;
+// 		margin-left: auto;
+// 		align-self: flex-end;
+// 		justify-self: center;
 
-		@include media-query($small-screen) {
-			min-width: 100%;
-		}
-	}
-}
+// 		@include media-query($small-screen) {
+// 			min-width: 100%;
+// 		}
+// 	}
+// }
+// TODO: Get rid of using small entry / stacks, unused in the redesign.
 
 .green-tag {
 	background-color: green;

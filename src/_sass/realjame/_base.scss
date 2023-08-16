@@ -258,7 +258,7 @@ textarea {
 	// margin-left: auto;
 	// padding-right: $spacing-unit;
 	// padding-left: $spacing-unit;
-	// @extend %clearfix;
+	// @extend %clearfix;ls
 
 	// @include media-query($small-screen) {
 	// 	max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -279,6 +279,9 @@ textarea {
 	@include media-query($small-screen) {
 		width: auto;
 	}
+
+	display: flex;
+	max-width: 1000px;
 }
 
 /**
