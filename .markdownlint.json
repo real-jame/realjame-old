@@ -1,7 +1,7 @@
 {
     "default": true,
     "line-length": {
-        "code_block_line_length": 80,
+        "code_block_line_length": 999,
         "line_length": 999
     },
     "no-trailing-punctuation": {
@@ -11,7 +11,8 @@
         "allowed_elements": [
             "video",
             "source",
-            "small"
+            "small",
+            "marquee"
         ]
     },
     "no-emphasis-as-header": false

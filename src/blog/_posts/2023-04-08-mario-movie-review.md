@@ -1,5 +1,6 @@
 ---
 layout: post
+section: blog
 title: "\"The Super Mario Bros. Movie\" Is Pretty Good"
 tags: [Review]
 image: /blog/media/mario64-gangnamstyle.gif

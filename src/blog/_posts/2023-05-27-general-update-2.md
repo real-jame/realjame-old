@@ -1,5 +1,6 @@
 ---
 layout: post
+section: blog
 title: "General Update II - Hi I'm Still Here"
 tags: [News, Web, Personal]
 image: /blog/media/2023-05-23-CRT.jpg

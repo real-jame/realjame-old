@@ -1,7 +1,57 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: bloghome
-title: "Blog"
+layout: default
+title: "posts"
+permalink: /blog
 ---
+<div class="home">
+    <marquee>TODO: get rid of stack structure for these cards</marquee>
+    {%- include tagcloud.html -%}
+    <marquee>TODO: add rss icon also switch to the style of tagcloud used in the daily page</marquee>
+    <p class="rss-subscribe">
+        subscribe
+        <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+    </p>
+
+    <ul class="post-list post-list-outline">
+        {%- for post in site.categories.blog -%}
+            <li
+                {% if post.tags contains 'Devlogs' %}
+                class="small-entry"
+                {% endif %}>
+                {% if post.tags contains 'Devlogs' %}
+                    <div class="stack">
+                    {% endif %}
+
+                    {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+                    <span class="post-meta">
+                        {% if post.tags contains 'Devlogs' -%}
+                            <span class="green tag">Devlog</span>
+                            -
+                        {% endif %}
+                        {{ post.date | date: date_format }}
+                    </span>
+
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | default: '-Untitled-' }}
+                    </a>
+
+                    {% unless post.tags contains 'Devlogs' %}
+                        {%- if post.description -%}
+                            {{ post.description }}
+                        {%- endif -%}
+                    {% endunless %}
+
+                    {% if post.tags contains 'Devlogs' %}
+                    </div>
+                {% endif %}
+
+                <img
+                    src="{{ post.image }}"
+                    width="500"
+                    height="300">
+            </li>
+
+            <br>
+        {%- endfor -%}
+    </ul>
+</div>

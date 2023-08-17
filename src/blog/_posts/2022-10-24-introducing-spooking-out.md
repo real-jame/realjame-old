@@ -1,6 +1,6 @@
 ---
 layout: post
-section: news
+section: blog
 title: "Introducing Spooking Out!"
 tags: [News, Roblox]
 image: /blog/media/SpookingOutThumbnail.png

@@ -1,6 +1,6 @@
 ---
 layout: post
-section: news
+section: blog
 title: "General Update"
 tags: [News, Roblox, Web]
 image: /realjame.gif

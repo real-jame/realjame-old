@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<h1>daily notes</h1>
+
+<p>
+    Extremely frequent brief* writings. Primarily collecting things I've learned, but there may be thoughts and other random stuff too.
+    <a href="{% post_url /blog/2023-08-30-update-3 %}">Why?</a>
+</p>
+<small>*not actually daily</small>
+
+{% assign all_tags = "" %}
+
+{% for post in site.posts %}
+    {% if post.section == "dailynote" %}
+        {% for tag in post.tags %}
+            {% assign all_tags = all_tags | append: tag | append: " " %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+{% assign tags_array = all_tags | split: " " | sort %}
+{% assign unique_tags = tags_array | uniq %}
+
+<p>
+    <b>Browse by topic:</b>
+    {% for tag in unique_tags %}
+        {% assign tag_count = 0 %}
+        {% for t in tags_array %}
+            {% if t == tag %}
+                {% assign tag_count = tag_count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        <a href="/tags/{{ tag }}">{{ tag }}</a>
+        <b>{{ tag_count }}</b>
+    {% endfor %}
+</p>
+
+<h2>Recent notes</h2>
+
+<marquee>TODO: RSS feed link here</marquee>
+
+{% for post in site.posts %}
+    {% if post.section == "dailynote" %}
+        <h3>
+            <span class="topics">
+                {% for tag in post.tags %}
+                    <a href="/tags/{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <p>{{ post.excerpt }}</p>
+    {% endif %}
+{% endfor %}

@@ -1,3 +1,3 @@
 # realja.me
 
-My personal website! Built with Jekyll and Docker.
+My personal website, created using Jekyll.

@@ -1,5 +1,6 @@
 ---
 layout: post
+section: blog
 title: "Tribute to the Taft Test"
 tags: [Web]
 image: /blog/media/TODO.png

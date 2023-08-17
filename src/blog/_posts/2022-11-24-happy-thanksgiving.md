@@ -1,6 +1,6 @@
 ---
 layout: post
-section: news
+section: blog
 title: "Happy Thanksgiving!"
 tags: [Personal]
 image: /blog/media/OldRoblox2010Thanksgiving.png

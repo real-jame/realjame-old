@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Contact"
+title: "contact"
 permalink: /contact
 ---
+
+<marquee>TODO: rewrite the contact page</marquee>
 
 ## ...with email!
 
