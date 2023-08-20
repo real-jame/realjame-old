@@ -1,6 +1,6 @@
 ---
 layout: post
-section: blog
+category: blog
 title: "Renewing the life of an old Android tablet"
 tags: [Web]
 image: /blog/media/TODO.png

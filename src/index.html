@@ -10,30 +10,28 @@ title: "realja.me"
     <h2 class="header-band">Recent Posts</h2>
     <ul class="post-list post-list-outline" style="margin: 0;">
         {%- assign count = 0 -%}
-        {%- for post in site.posts -%}
-            {%- unless post.tags contains 'Devlogs' -%}
-                {%- if count < 3 -%}
-                    {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
-                    <li class="small-entry">
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
-                            {{ post.title | default: '-Untitled-' }}
-                        </a>
-                        {%- if post.description -%}
-                            {{ post.description }}
-                        {%- endif -%}
-                        <img
-                            src="{{ post.image }}"
-                            width="500"
-                            height="300"
-                            class="card-image">
-                    </li>
-                    <br>
-                    {%- assign count = count | plus: 1 -%}
-                {%- else -%}
-                    {%- break -%}
-                {%- endif -%}
-            {%- endunless %}
+        {%- for post in site.categories.blog -%}
+            {%- if count < 3 -%}
+                {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+                <li class="small-entry">
+                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | default: '-Untitled-' }}
+                    </a>
+                    {%- if post.description -%}
+                        {{ post.description }}
+                    {%- endif -%}
+                    <img
+                        src="{{ post.image }}"
+                        width="500"
+                        height="300"
+                        class="card-image">
+                </li>
+                <br>
+                {%- assign count = count | plus: 1 -%}
+            {%- else -%}
+                {%- break -%}
+            {%- endif -%}
         {%- endfor -%}
     </ul>
     <br>
@@ -41,27 +39,25 @@ title: "realja.me"
 
     <ul class="post-list post-list-outline" style="margin: 0;">
         {%- assign count = 0 -%}
-        {%- for post in site.posts -%}
-            {%- if post.tags contains 'Devlogs' -%}
-                {%- if count < 3 -%}
-                    {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
-                    <li class="small-entry">
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
-                            {{ post.title | default: '-Untitled-' }}
-                        </a>
-                        <img
-                            src="{{ post.image }}"
-                            width="300"
-                            height="200"
-                            class="card-image">
-                    </li>
-                    <br>
-                    {%- assign count = count | plus: 1 -%}
-                {%- else -%}
-                    {%- break -%}
-                {%- endif -%}
-            {%- endif %}
+        {%- for post in site.categories.devlog -%}
+            {%- if count < 3 -%}
+                {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+                <li class="small-entry">
+                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | default: '-Untitled-' }}
+                    </a>
+                    <img
+                        src="{{ post.image }}"
+                        width="300"
+                        height="200"
+                        class="card-image">
+                </li>
+                <br>
+                {%- assign count = count | plus: 1 -%}
+            {%- else -%}
+                {%- break -%}
+            {%- endif -%}
         {%- endfor -%}
     </ul>
 
@@ -117,20 +113,7 @@ title: "realja.me"
         </dt>
     </dl>
 
-    <h2 class="header-band">About Me</h2>
-
-    <i>This is the website of "realjame", AKA James, a programmer with some finished projects and a mountain of unfinished
-        ones.</i>
-
-    <p>
-        I'm primarily known for old Roblox stuff - making new games in decade-old versions of the Roblox client, or
-        otherwise supporting such efforts. This is only the beginning 😉 I also do general programming, currently only web
-                                                                                		development, but I am interested in other fields such as desktop and homebrew software.</p>
-
-    <p>
-        The blog is the main part of this site. I probably left out a couple things I've written about, after all.
-        <a href="/blog">Care to take a read?</a>
-    </p>
+    <marquee>TODO: Could we do a side design where these quick links and gif banners are on the right for desktop?</marquee>
 
     <h2 class="header-band">My Button</h2>
 
@@ -147,7 +130,7 @@ title: "realja.me"
     <p>
         So on that note, if you put the button on your site, it might be a good idea for the image source to link directly
         to my site, instead of making a copy on your own server. So when I update it, your website will have the updated
-                                                                                		design!</p>
+                                                                                                                                                        		design!</p>
 
     <small>Hey, I mean you can do what you want to though.</small>
 

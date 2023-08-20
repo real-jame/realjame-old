@@ -1,6 +1,6 @@
 ---
 layout: post
-section: blog
+category: blog
 title: "I'm Working On Cool Stuff"
 tags: [News, Web, Roblox]
 image: /blog/media/TextareaSiteScreenshot.png

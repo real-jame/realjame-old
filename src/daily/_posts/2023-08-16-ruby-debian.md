@@ -1,12 +1,12 @@
 ---
 layout: dailynote
-section: dailynote
+category: dailynote
 title: "Installing the latest Ruby using rbenv on Debian 11"
-category: til
+section: til
 tags: [ruby, debian]
 # image: /blog/media/TODO.png
 # description: ""
-date: 2023-07-16
+date: 2023-08-16
 published: true
 ---
 I decided to switch from running Ruby natively on Windows to WSL, because Ruby on Windows is pretty bad. Installing the rbenv tool to manage multiple versions of Ruby is simple, but in order to add (by compiling) a Ruby version, there are a few dependencies to install.

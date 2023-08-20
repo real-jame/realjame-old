@@ -1,0 +1,3 @@
+---
+---
+{% include feed.xml title="Daily Notes" category="dailynote" description="Brief, frequent (not actually daily) writings. Primarily collecting things I've learned, but there may also be occasional thoughts." %}

@@ -6,11 +6,8 @@ permalink: /blog
 <div class="home">
     <marquee>TODO: get rid of stack structure for these cards</marquee>
     {%- include tagcloud.html -%}
-    <marquee>TODO: add rss icon also switch to the style of tagcloud used in the daily page</marquee>
-    <p class="rss-subscribe">
-        subscribe
-        <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
-    </p>
+    <marquee>TODO: switch tagcloud to the style used in the daily page</marquee>
+    {% include rss.html %}
 
     <ul class="post-list post-list-outline">
         {%- for post in site.categories.blog -%}

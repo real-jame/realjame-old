@@ -1,6 +1,6 @@
 ---
 layout: post
-section: blog
+category: blog
 title: "Spooking Out's Modern Roblox Port"
 tags: [News, Roblox]
 image: /blog/media/SpookingOutThumbnail.png

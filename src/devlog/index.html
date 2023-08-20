@@ -1,0 +1,36 @@
+---
+layout: default
+title: "posts"
+permalink: /devlog
+---
+<div class="home">
+    <marquee>TODO: get rid of stack structure for these cards</marquee>
+    {%- include tagcloud.html -%}
+    <marquee>TODO: switch to the style of tagcloud used in the daily page</marquee>
+    {% include rss.html %}
+
+    <ul class="post-list post-list-outline">
+        {%- for post in site.categories.devlog -%}
+            <li>
+                {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+                <span class="post-meta">
+                    {{ post.date | date: date_format }}
+                </span>
+
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | default: '-Untitled-' }}
+                </a>
+
+                {%- if post.description -%}
+                    {{ post.description }}
+                {%- endif -%}
+
+                <img
+                    src="{{ post.image }}"
+                    width="500"
+                    height="300">
+            </li>
+            <br>
+        {%- endfor -%}
+    </ul>
+</div>

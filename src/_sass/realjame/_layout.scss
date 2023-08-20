@@ -64,7 +64,6 @@
 
 	.page-link {
 		// background-color: $nav-button-background-color;
-		margin: 0 1em;
 		padding: 0.5em;
 		border-radius: 3px;
 
@@ -280,7 +279,6 @@
 }
 
 .card-image {
-	border: solid 5px rebeccapurple;
 	height: auto;
 	max-width: 20vw;
 	margin-top: auto;
@@ -353,6 +351,31 @@
 		font-size: 0.65em;
 		position: relative;
 		top: -1px;
+	}
+}
+
+body {
+	background-color: #121212; // Deep dark background
+}
+
+.rss-subscribe-list {
+	a {
+		display: block;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #afcce7; // Metallic blue for text
+		background: linear-gradient(135deg, #1e1e1e, #2d2d2d); // A subtle gradient
+		border: 3px double #afcce7; // Double border with metallic blue
+		box-shadow: 0 0 10px #afcce7; // Blue glow around the link
+		text-shadow: 0 0 5px #afcce7; // Text glow for that Y2K feel
+		margin-bottom: 8px;
+		transition: all 0.3s; // Smooth transitions
+
+		&:hover {
+			background: linear-gradient(135deg, #2d2d2d, #1e1e1e); // Inverted gradient on hover
+			color: #e1f0fc; // A lighter shade of the blue on hover
+			box-shadow: 0 0 15px #8ab4d3; // Intensified glow on hover
+		}
 	}
 }
 

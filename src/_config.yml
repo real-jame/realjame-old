@@ -12,7 +12,7 @@ defaults:
       path: "blog"
       type: "posts"
     values:
-      section: blog
+      category: blog
       permalink: /blog/:title.html
   - scope:
       path: "daily/_posts"
@@ -20,6 +20,12 @@ defaults:
     values:
       section: daily
       permalink: /daily/:title.html
+  - scope:
+      path: "devlog/_posts"
+      type: "posts"
+    values:
+      category: devlog
+      permalink: /devlog/:title.html
 future: true
 
 # Build settings
