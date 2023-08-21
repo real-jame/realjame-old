@@ -4,9 +4,7 @@ title: "posts"
 permalink: /blog
 ---
 <div class="home">
-    <marquee>TODO: get rid of stack structure for these cards</marquee>
-    {%- include tagcloud.html -%}
-    <marquee>TODO: switch tagcloud to the style used in the daily page</marquee>
+    {%- include tagcloud.html category = "blog" -%}
     {% include rss.html %}
 
     <ul class="post-list post-list-outline">

@@ -9,7 +9,8 @@
 {% assign tags_array = all_tags | split: " " | sort %}
 {% assign unique_tags = tags_array | uniq %}
 
-<ul class="tagcloud">
+<p>
+    <b>Browse by topic:</b>
     {% for tag in unique_tags %}
         {% assign tag_count = 0 %}
         {% for t in tags_array %}
@@ -17,19 +18,7 @@
                 {% assign tag_count = tag_count | plus: 1 %}
             {% endif %}
         {% endfor %}
-        {% assign icon = site.tagicons[tag] %}
-
-        <li>
-            {% if icon %}
-                <a href="/tags/{{ tag }}"><img
-                        src="{{icon}}"
-                        alt=""
-                        height="16"
-                        width="16"
-                        class="icon">{% endif %}
-                {{ tag }} ·
-                <b>{{ tag_count }}</b>
-            </a>
-        </li>
+        <a href="/tags/{{ tag }}">{{ tag }}</a>
+        <b>{{ tag_count }}</b>
     {% endfor %}
-</ul>
+</p>

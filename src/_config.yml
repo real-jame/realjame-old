@@ -28,6 +28,15 @@ defaults:
       permalink: /devlog/:title.html
 future: true
 
+tagicons:
+  News: "/assets/silk/newspaper.png"
+  Personal: "/assets/silk/user_comment.png"
+  Roblox: "/assets/silk/brick.png"
+  Web: "/assets/silk/world.png"
+  Travel: "/assets/silk/world_go.png"
+
+
+
 # Build settings
 plugins:
   - jekyll-feed
