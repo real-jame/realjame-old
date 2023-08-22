@@ -1,5 +1,5 @@
 # Build Jekyll
-FROM jekyll/jekyll:4.2.2 AS jekyll-build
+FROM ruby:latest AS jekyll-build
 
 WORKDIR /website
 
@@ -7,9 +7,9 @@ COPY ./src /website
 
 RUN chmod 777 /website
 
-RUN bundle install
+RUN bundle update
 
-RUN jekyll build --future
+RUN bundle exec jekyll build --future
 
 # Serve with nginx
 FROM nginx
