@@ -4,49 +4,8 @@ title: "posts"
 permalink: /blog
 ---
 <div class="home">
-    {%- include tagcloud.html category = "blog" -%}
+    {% include tagcloud.html category = "blog" %}
     {% include rss.html %}
 
-    <ul class="post-list post-list-outline">
-        {%- for post in site.categories.blog -%}
-            <li
-                {% if post.tags contains 'Devlogs' %}
-                class="small-entry"
-                {% endif %}>
-                {% if post.tags contains 'Devlogs' %}
-                    <div class="stack">
-                    {% endif %}
-
-                    {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
-                    <span class="post-meta">
-                        {% if post.tags contains 'Devlogs' -%}
-                            <span class="green tag">Devlog</span>
-                            -
-                        {% endif %}
-                        {{ post.date | date: date_format }}
-                    </span>
-
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        {{ post.title | default: '-Untitled-' }}
-                    </a>
-
-                    {% unless post.tags contains 'Devlogs' %}
-                        {%- if post.description -%}
-                            {{ post.description }}
-                        {%- endif -%}
-                    {% endunless %}
-
-                    {% if post.tags contains 'Devlogs' %}
-                    </div>
-                {% endif %}
-
-                <img
-                    src="{{ post.image }}"
-                    width="500"
-                    height="300">
-            </li>
-
-            <br>
-        {%- endfor -%}
-    </ul>
+    {% include post-list.html category = "blog" %}
 </div>

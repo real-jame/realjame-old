@@ -16,6 +16,8 @@
 	height: 100%;
 	width: 200px;
 
+	border-right: solid $accent-color 4px;
+
 	@include media-query($small-screen) {
 		height: 50px;
 		width: 100%;
@@ -25,18 +27,15 @@
 .page-title {
 	// border-radius: 10px 10px 0 0;
 	border: solid $border-color $border-size;
+	background: none;
 	background-color: $title-background-color;
 
 	font-size: 1.8em;
 	color: $text-color;
-	// font-weight: bold;
-	// line-height: $base-line-height * $base-font-size * 2.25;
-	// letter-spacing: -1px;
 	margin: 0;
+	padding-left: 0;
 	text-align: center;
-	// display: flex;
 	justify-content: center;
-	// line-height: normal; // override to match realja.me
 
 	@include light-mode() {
 		background-color: $title-background-color-light;
@@ -47,13 +46,11 @@
 
 	@include media-query($small-screen) {
 		display: none;
-		// TODO icon display
 	}
 }
 
 .site-nav {
 	background-color: $nav-background-color;
-	border-right: solid $accent-color 4px;
 	position: relative;
 
 	@include light-mode() {
@@ -65,9 +62,10 @@
 
 	@include media-query($small-screen) {
 		overflow-x: scroll;
-		overflow-y: visible;
+		overflow-y: hidden;
 		white-space: nowrap;
 		width: calc(100vw - 18px);
+		height: auto;
 		padding-right: 18px;
 
 		.header-item {
@@ -76,6 +74,7 @@
 			margin: 0;
 			padding-top: 0;
 			padding-bottom: 0;
+			transition-property: background, box-shadow;
 		}
 	}
 }
@@ -191,6 +190,17 @@
 		margin-left: 0;
 		padding-top: 50px;
 	}
+
+	border-style: none solid;
+	border-color: $border-color;
+	border-width: $border-size;
+	padding: 1em;
+
+	@include media-query($small-screen) {
+		width: auto;
+	}
+
+	max-width: 1000px;
 }
 
 .post-list-heading {
@@ -200,24 +210,22 @@
 	line-height: normal; // override to match realja.me
 }
 
-// TODO: why are these separate classes? merge them
 .post-list {
 	margin-left: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 1em;
 
 	@include media-query($small-screen) {
 		padding: 0;
 		display: block;
 	}
-}
 
-.post-list-outline {
 	li {
 		border: 2px solid $border-color;
 		border-radius: 2px;
-		padding: 0.5em;
+		padding: 0.1em;
 		background-color: $nav-background-color;
 		text-align: center;
 

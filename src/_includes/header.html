@@ -3,13 +3,13 @@ Actually being used as a sidebar currently.
 {% endcomment %}
 
 <header class="site-header" role="banner">
-    {%- assign default_paths = site.pages | map: 'path' -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {% assign default_paths = site.pages | map: 'path' %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
     <h1 class="page-title">{{ site.title | "realjame" }}</h1>
-    {%- if page_paths -%}
+    {% if page_paths %}
         <nav class="site-nav">
             <a class="header-item" href="/"><img
-                    src="../assets/silk/page_world.png"
+                    src="../assets/silk/house.png"
                     alt=""
                     height="16"
                     width="16"
@@ -45,19 +45,12 @@ Actually being used as a sidebar currently.
                     class="icon">Projects
             </a>
             <a class="header-item" href="/contact"><img
-                    src="../assets/silk/link.png"
-                    alt=""
-                    height="16"
-                    width="16"
-                    class="icon">Contact
-            </a>
-            <a class="header-item" href="/aboutme"><img
                     src="../assets/silk/vcard.png"
                     alt=""
                     height="16"
                     width="16"
-                    class="icon">About Me
+                    class="icon">About + Contact
             </a>
         </nav>
-    {%- endif -%}
+    {% endif %}
 </header>
