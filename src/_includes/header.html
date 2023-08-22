@@ -6,68 +6,58 @@ Actually being used as a sidebar currently.
     {%- assign default_paths = site.pages | map: 'path' -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <h1 class="page-title">{{ site.title | "realjame" }}</h1>
-
     {%- if page_paths -%}
         <nav class="site-nav">
-            <ul class="header-bar">
-                <li>
-                    <a class="page-link" href="/"><img
-                            src="../assets/silk/page_world.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">
-                        Home</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/blog"><img
-                            src="../assets/feedicons-color/01.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">Blog</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/daily"><img
-                            src="../assets/feedicons-color/16.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">Daily Notes</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/devlog"><img
-                            src="../assets/feedicons-color/25.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">Devlogs</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/projects"><img
-                            src="../assets/silk/bricks.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">Projects</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/contact"><img
-                            src="../assets/silk/link.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">Contact</a>
-                </li>
-                <li>
-                    <a class="page-link" href="/aboutme"><img
-                            src="../assets/silk/vcard.png"
-                            alt=""
-                            height="16"
-                            width="16"
-                            class="icon">About Me</a>
-                </li>
-            </ul>
+            <a class="header-item" href="/"><img
+                    src="../assets/silk/page_world.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">
+                Home
+            </a>
+            <a class="header-item" href="/blog"><img
+                    src="../assets/feedicons-color/01.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">Blog
+            </a>
+            <a class="header-item" href="/daily"><img
+                    src="../assets/feedicons-color/16.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">Daily Notes
+            </a>
+            <a class="header-item" href="/devlog"><img
+                    src="../assets/feedicons-color/25.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">Devlogs
+            </a>
+            <a class="header-item" href="/projects"><img
+                    src="../assets/silk/bricks.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">Projects
+            </a>
+            <a class="header-item" href="/contact"><img
+                    src="../assets/silk/link.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">Contact
+            </a>
+            <a class="header-item" href="/aboutme"><img
+                    src="../assets/silk/vcard.png"
+                    alt=""
+                    height="16"
+                    width="16"
+                    class="icon">About Me
+            </a>
         </nav>
     {%- endif -%}
 </header>

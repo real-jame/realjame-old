@@ -61,9 +61,6 @@ $spacing-unit: 30px !default;
 $text-color: #cafffa !default;
 $text-color-light: #24413d !default;
 
-// $link-color: lightblue !default;
-// $link-color-light: #30829c !default;
-
 // unused due to image
 $background-color: #111 !default;
 $background-color-light: #bbb !default;
@@ -74,8 +71,8 @@ $content-background-color-light: #fff !default;
 $nav-background-color: #222 !default;
 $nav-background-color-light: #f2f2f2 !default;
 
-$nav-button-background-color: #444 !default;
-$nav-button-background-color-light: #f4f4f4 !default;
+$alt-background-color: #444 !default;
+$alt-background-color-light: #f4f4f4 !default;
 
 $title-background-color: #272727 !default;
 $title-background-color-light: #eee !default;
@@ -86,8 +83,7 @@ $border-color-light: #bbb !default;
 $border-size: 1px !default;
 $border-size-light: 2px !default;
 
-$brand-color: lightblue !default;
-$brand-color-light: #30829c !default;
+$accent-color: #b3d4f0 !default;
 
 $code-background-color: #444 !default;
 $code-background-color-light: $nav-background-color-light !default;
@@ -111,10 +107,6 @@ $medium-screen: 1500px !default;
 	@media screen and (prefers-color-scheme: light) {
 		@content;
 	}
-}
-
-@mixin relative-font-size($ratio) {
-	font-size: $base-font-size * $ratio;
 }
 
 // Import partials.

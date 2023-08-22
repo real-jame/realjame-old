@@ -1,29 +1,22 @@
-<footer class="site-footer h-card">
-    <data class="u-url" href="{{ " /" | relative_url }}"></data>
+<footer class="site-footer">
+    <a class="footer-item pretty-button" href="mailto:{{ site.email }}">{{ site.email }}</a>
 
-    <ul class="footer-bar">
-        <li>
-            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-        </li>
+    <a class="footer-item pretty-button" href="https://twitter.com/real__jame">
+        <img
+            class="icon flat-icon"
+            src="/assets/twitter.svg"
+            alt="Mastodon">
+        @real__jame
+    </a>
 
-        <li>
-            <a href="https://twitter.com/real__jame">
-                <svg class="svg-icon">
-                    <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
-                </svg>
-                <span class="username">@real__jame</span>
-            </a>
-        </li>
-
-        <li>
-            <a rel="me" href="https://wetdry.world/@jame">
-                <img
-                    class="svg-icon"
-                    src="{{ '/assets/mastodon.svg' | relative_url }}"
-                    alt="Mastodon">
-                <span class="username">@jame@wetdry.world</span>
-            </a>
-        </li>
-        <marquee>TODO: revamp this to fit the redesigned layout somehow</marquee>
-    </ul>
+    <a
+        class="footer-item pretty-button"
+        rel="me"
+        href="https://wetdry.world/@jame">
+        <img
+            class="icon flat-icon"
+            src="/assets/mastodon.svg"
+            alt="Mastodon">
+        @jame@wetdry.world
+    </a>
 </footer>

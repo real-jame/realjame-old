@@ -78,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-	text-shadow: 0 0 8px rebeccapurple;
+	text-shadow: 0 0 8px #1c4971;
 
 	h1,
 	h2 {
@@ -88,8 +88,14 @@ h6 {
 }
 
 .header-band {
-	background: linear-gradient(to bottom, rgb(154, 103, 175) 0%, rgb(96, 72, 129) 49%, rgb(100, 67, 130) 100%);
+	color: #13222f;
+	background: linear-gradient(to right, $accent-color 0, #7ac2ffff 50%, #006ecb00 100%);
 	line-height: 1em;
+	margin-left: -20%;
+	padding-left: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-shadow: 0 0 12px #2d93ec;
 }
 
 /**
@@ -161,12 +167,12 @@ li {
  * Links
  */
 a {
-	color: $brand-color;
+	color: $accent-color;
 	// text-decoration: none;
 
-	@include light-mode() {
-		color: $brand-color-light;
-	}
+	// @include light-mode() {
+	// 	color: $accent-color-light;
+	// }
 
 	&:hover {
 		color: $text-color;
@@ -176,13 +182,24 @@ a {
 			color: $text-color-light;
 		}
 	}
+}
 
-	.social-media-list &:hover {
-		text-decoration: none;
+.pretty-button {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: $accent-color;
+	background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+	border: 3px double $accent-color;
+	box-shadow: 0 0 10px $accent-color;
+	text-shadow: 0 0 5px $accent-color;
+	margin-bottom: 8px;
+	transition: all 0.3s;
+	border-radius: 10px;
 
-		.username {
-			text-decoration: underline;
-		}
+	&:hover {
+		background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
+		color: #e1f0fc;
+		box-shadow: 0 0 15px $accent-color;
 	}
 }
 
@@ -195,7 +212,7 @@ blockquote {
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 	padding-left: calc($spacing-unit / 2);
-	@include relative-font-size(1.1);
+	font-size: 1.1em;
 	letter-spacing: -1px;
 	font-style: italic;
 
@@ -213,7 +230,7 @@ blockquote {
  */
 pre,
 code {
-	@include relative-font-size(0.9375);
+	font-size: 0.9375em;
 	border: 1px solid $gray-color;
 	border-radius: 3px;
 	background-color: $code-background-color;
@@ -296,15 +313,6 @@ textarea {
  * Icons
  */
 
-.svg-icon {
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	// fill: #{$gray-color};
-	// padding-right: 5px;
-	// vertical-align: text-top;
-}
-
 .icon {
 	image-rendering: pixelated;
 	width: 16px;
@@ -313,10 +321,8 @@ textarea {
 	display: inline-block;
 }
 
-.social-media-list {
-	li + li {
-		padding-top: 5px;
-	}
+.flat-icon {
+	filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(328deg) brightness(104%) contrast(100%);
 }
 
 /**
@@ -337,10 +343,10 @@ table {
 
 	tr {
 		&:nth-child(even) {
-			background-color: $nav-button-background-color;
+			background-color: $alt-background-color;
 
 			@include light-mode() {
-				background-color: $nav-button-background-color-light;
+				background-color: $alt-background-color-light;
 			}
 		}
 	}

@@ -27,7 +27,7 @@
 	border: solid $border-color $border-size;
 	background-color: $title-background-color;
 
-	// @include relative-font-size(1.8);
+	font-size: 1.8em;
 	color: $text-color;
 	// font-weight: bold;
 	// line-height: $base-line-height * $base-font-size * 2.25;
@@ -53,8 +53,7 @@
 
 .site-nav {
 	background-color: $nav-background-color;
-	height: 100%;
-	border: solid $border-color $border-size;
+	border-right: solid $accent-color 4px;
 	position: relative;
 
 	@include light-mode() {
@@ -62,53 +61,48 @@
 		border: solid $border-color-light $border-size-light;
 	}
 
-	.page-link {
-		// background-color: $nav-button-background-color;
-		padding: 0.5em;
-		border-radius: 3px;
-
-		@include light-mode() {
-			background-color: $nav-button-background-color-light;
-		}
-
-		// @include media-query($medium-screen) {
-		// 	margin: 0 0.5em;
-		// 	padding: 0.35em;
-		// }
-
-		// @include media-query($small-screen) {
-		// 	margin: auto;
-		// 	padding: auto;
-		// }
-	}
-}
-
-.header-bar {
 	height: 100%;
-	margin: 0;
-	list-style: none;
 
 	@include media-query($small-screen) {
 		overflow-x: scroll;
 		overflow-y: visible;
 		white-space: nowrap;
-		display: inline-block;
-		position: relative;
-		width: 100vw;
+		width: calc(100vw - 18px);
+		padding-right: 18px;
+
+		.header-item {
+			display: inline-block;
+
+			margin: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.header-item {
+	display: block;
+	width: auto;
+
+	padding: 5px 10px;
+	text-decoration: none;
+	color: $accent-color;
+
+	margin-bottom: 8px;
+	transition: all 0.3s;
+	border-radius: 10px;
+
+	&:hover {
+		background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
+		color: #e1f0fc;
+		box-shadow: 0 0 15px $accent-color;
 	}
 
-	li {
-		margin: 0.5em 0;
-
-		a {
-			width: 100%;
-			font-size: 1em;
-		}
-
-		@include media-query($small-screen) {
-			// Horizontal alignment
-			display: inline;
-		}
+	@include media-query($small-screen) {
+		border: 3px double $accent-color;
+		background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+		box-shadow: 0 0 10px $accent-color;
+		text-shadow: 0 0 5px $accent-color;
 	}
 }
 
@@ -137,47 +131,24 @@
 }
 
 .site-footer {
-	background-color: $content-background-color;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-left: 200px;
+	width: auto;
+	text-align: center;
+}
 
-	border-style: none solid solid;
-	border-color: $border-color;
-	border-width: $border-size;
+.footer-item {
+	display: inline-block;
 
-	@include light-mode() {
-		background-color: $content-background-color-light;
-		border-color: $border-color-light;
-		border-width: $border-size-light;
-	}
-
-	a {
-		width: auto;
-		padding: 1em;
-		background-color: $nav-button-background-color;
-		margin: 0 1em;
-		border-radius: 3px;
-		white-space: nowrap;
-
-		@include light-mode() {
-			background-color: $nav-button-background-color-light;
-		}
-
-		@include media-query($medium-screen) {
-			margin: 0 0.5em;
-			padding: 0.5em;
-		}
-
-		@include media-query($small-screen) {
-			margin: 0 -0.25em;
-			padding: 0.5em;
-		}
+	.flat-icon {
+		padding: 0;
+		width: 32px;
+		height: 32px;
+		vertical-align: middle;
 	}
 }
 
 .footer-heading {
-	@include relative-font-size(1.125);
+	font-size: 1.125em;
 	margin-bottom: calc($spacing-unit / 2);
 }
 
@@ -223,7 +194,7 @@
 }
 
 .post-list-heading {
-	@include relative-font-size(1.75);
+	font-size: 1.75em;
 	text-align: center;
 	// font-weight: bold;
 	line-height: normal; // override to match realja.me
@@ -268,7 +239,7 @@
 	}
 
 	> li > a {
-		@include relative-font-size(1.4);
+		font-size: 1.4em;
 		font-weight: bold;
 	}
 
@@ -304,7 +275,7 @@
 .post-link {
 	display: block;
 
-	@include relative-font-size(1.5);
+	font-size: 1.5em;
 }
 
 .post-link > p {
@@ -327,83 +298,21 @@
 	li {
 		display: inline-block;
 
-		a {
-			border-radius: 10px;
-			padding: 5px 10px;
-			text-decoration: none;
-			color: #afcce7; // Metallic blue for text
-			background: linear-gradient(135deg, #1e1e1e, #2d2d2d); // A subtle gradient
-			border: 3px double #afcce7; // Double border with metallic blue
-			box-shadow: 0 0 10px #afcce7; // Blue glow around the link
-			text-shadow: 0 0 5px #afcce7; // Text glow for that Y2K feel
-			margin-bottom: 8px;
-			transition: all 0.3s; // Smooth transitions
-			border-radius: 10px;
-
-			.icon {
-				padding: 0;
-				height: 24px;
-				width: 24px;
-				vertical-align: middle;
-			}
-
-			text-decoration: none;
-
-			&:hover {
-				background: linear-gradient(135deg, #2d2d2d, #1e1e1e); // Inverted gradient on hover
-				color: #e1f0fc; // A lighter shade of the blue on hover
-				box-shadow: 0 0 15px #8ab4d3; // Intensified glow on hover
-			}
+		a .icon {
+			padding: 0;
+			height: 32px;
+			width: 32px;
+			vertical-align: middle;
 		}
 	}
 }
 
-// TODO: we really gotta make this style a standardized thing via a class or something
-.topics {
-	a {
-		padding: 5px 10px;
-		text-decoration: none;
-		color: #afcce7; // Metallic blue for text
-		background: linear-gradient(135deg, #1e1e1e, #2d2d2d); // A subtle gradient
-		border: 3px double #afcce7; // Double border with metallic blue
-		box-shadow: 0 0 10px #afcce7; // Blue glow around the link
-		text-shadow: 0 0 5px #afcce7; // Text glow for that Y2K feel
-		margin-bottom: 8px;
-		transition: all 0.3s; // Smooth transitions
-		border-radius: 10px;
-
-		font-size: 0.65em;
-		position: relative;
-		top: -1px;
-
-		&:hover {
-			background: linear-gradient(135deg, #2d2d2d, #1e1e1e); // Inverted gradient on hover
-			color: #e1f0fc; // A lighter shade of the blue on hover
-			box-shadow: 0 0 15px #8ab4d3; // Intensified glow on hover
-		}
-	}
+.topic-item {
+	font-size: 0.65em;
 }
 
-.rss-subscribe-list {
-	a {
-		display: block;
-		padding: 5px 10px;
-		text-decoration: none;
-		color: #afcce7; // Metallic blue for text
-		background: linear-gradient(135deg, #1e1e1e, #2d2d2d); // A subtle gradient
-		border: 3px double #afcce7; // Double border with metallic blue
-		box-shadow: 0 0 10px #afcce7; // Blue glow around the link
-		text-shadow: 0 0 5px #afcce7; // Text glow for that Y2K feel
-		margin-bottom: 8px;
-		transition: all 0.3s; // Smooth transitions
-		border-radius: 10px;
-
-		&:hover {
-			background: linear-gradient(135deg, #2d2d2d, #1e1e1e); // Inverted gradient on hover
-			color: #e1f0fc; // A lighter shade of the blue on hover
-			box-shadow: 0 0 15px #8ab4d3; // Intensified glow on hover
-		}
-	}
+.rss-subscribe-list a {
+	display: block;
 }
 
 // .small-entry {
@@ -472,41 +381,41 @@
 }
 
 .post-title {
-	@include relative-font-size(2.625);
+	font-size: 2.625em;
 	letter-spacing: -1px;
 	line-height: 1;
 	text-align: center;
 	font-weight: bold;
 
-	@include media-query($small-screen) {
-		@include relative-font-size(2.25);
-	}
+	// @include media-query($small-screen) {
+	// 	font-size: 2.25em;
+	// }
 }
 
 .post-content {
 	margin-bottom: $spacing-unit;
 
 	h2 {
-		@include relative-font-size(2);
+		font-size: 2em;
 
 		@include media-query($small-screen) {
-			@include relative-font-size(1.75);
+			font-size: 1.75em;
 		}
 	}
 
 	h3 {
-		@include relative-font-size(1.625);
+		font-size: 1.625em;
 
 		@include media-query($small-screen) {
-			@include relative-font-size(1.375);
+			font-size: 1.375em;
 		}
 	}
 
 	h4 {
-		@include relative-font-size(1.25);
+		font-size: 1.25em;
 
 		@include media-query($small-screen) {
-			@include relative-font-size(1.125);
+			font-size: 1.125em;
 		}
 	}
 }
