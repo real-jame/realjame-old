@@ -69,7 +69,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-	margin-bottom: calc($spacing-unit / 2);
+	// margin-bottom: calc($spacing-unit / 2);
 }
 
 h1,
@@ -198,7 +198,7 @@ a {
 }
 
 .pretty-button,
-.post-list li {
+.card {
 	padding: 5px 10px;
 	text-decoration: none;
 	color: $accent-color;
@@ -206,7 +206,7 @@ a {
 	border: 3px double $accent-color;
 	box-shadow: 0 0 10px $accent-color;
 	text-shadow: 0 0 5px $accent-color;
-	margin-bottom: 8px;
+	margin-bottom: 1em;
 	transition: all 0.3s;
 	border-radius: 10px;
 
@@ -215,6 +215,7 @@ a {
 		color: #e1f0fc;
 		box-shadow: 0 0 15px $accent-color;
 	}
+	// TODO: should move the hover to a rule exclusive to .pretty-button
 }
 
 /**
@@ -225,7 +226,7 @@ blockquote {
 	border-left: 4px solid $gray-color;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	padding-left: calc($spacing-unit / 2);
+	// padding-left: calc($spacing-unit / 2);
 	font-size: 1.1em;
 	letter-spacing: -1px;
 	font-style: italic;
@@ -304,11 +305,24 @@ textarea {
 	filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(328deg) brightness(104%) contrast(100%);
 }
 
+.flat-icon {
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+
+.project-icon {
+	width: 32px;
+	height: 32px;
+	vertical-align: sub;
+}
+
 /**
  * Tables
  */
 table {
-	margin-bottom: $spacing-unit;
+	// margin-bottom: $spacing-unit;
 	width: 100%;
 	text-align: $table-text-align;
 	// color: lighten($text-color, 18%);
@@ -332,7 +346,7 @@ table {
 
 	th,
 	td {
-		padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
+		// padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
 	}
 
 	th {
@@ -356,4 +370,26 @@ table {
  */
 .text-focus {
 	text-align: center;
+}
+
+.divider {
+	display: flex;
+	align-items: center; // align text and lines vertically
+	color: #bbb;
+	font-style: italic;
+
+	&:before,
+	&:after {
+		content: "";
+		height: 1px;
+		background-color: #ccc;
+		flex-grow: 1; // both lines will expand to occupy the available space
+	}
+
+	&:before {
+		margin-right: 5%;
+	}
+	&:after {
+		margin-left: 5%;
+	}
 }

@@ -3,53 +3,98 @@ layout: page
 title: "projects"
 permalink: /projects
 ---
-<marquee>TODO: the projects page</marquee>
-<h2 class="header-band">Quick Links</h2>
+<!--
+yeah, i have a ton of regret for not being able to see projects through completion.
+in my life i always either have 0 motivation to do anything or i "hyperfocus" and basically spend whole days doing nothing but working on something.
+right now, i guess i'm hyperfocusing on the site redesign.
+but since like spring 2023 up to now, august, its been just non-stop executive dysfunction for the most part
+
+that's why textarea.site rotted,
+fxreddit never got past a really early prototype,
+and any other possible projects didn't even get started.
+i've spent all this time working on roblox games, like my entire high school life but i've only released 1. spooking out, which was due to my friend helping me that prevented it from rotting.
+
+i hope getting back into the schedule of school and other stuff thats improving my life will allow me to be more productive.
+we'll see.
+
+these html comments are nice for letting me vent
+i never talk about this stuff online
+
+thank you for reading. i will persevere
+--><marquee>TODO: add all the cards, add links, download button (for spooking out)</marquee>
+<div class="card card-active">
+    <h3 class="project-title"><img
+            src="../assets/icons/rbx-legacydocs.ico"
+            alt=""
+            height="32"
+            width="32"
+            class="icon project-icon">Roblox Legacy Documentation</h3>
+    <p class="project-status">Active since December 2022</p>
+    <p class="project-description">A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
+        new games for classic clients in 2023.</p>
+</div>
+
+<div class="card card-inactive">
+    <h3 class="project-title">Inactive example card</h3>
+    <p class="project-status">January 2023 - March 2023, currently on hiatus</p>
+    <p class="project-description">Lorem ipsum something or other</p>
+</div>
+{% comment %}
+Emmet notation for making a new card
+
+replace the .card-active with the given status:
+.card-active
+.card-inactive
+
+div.card-active>h3.project-title+p.project-status+p.project-description
+{% endcomment %}{% comment %}
+
+<h2>Quick Links</h2>
 <dl>
-    <dt>
-        <img
-            src="https://wiki.realja.me/images/favicon.ico"
-            alt="Old Roblox Wiki icon"
-            class="icon">
-        <a href="https://wiki.realja.me">Roblox Legacy Documentation</a>
-    </dt>
-    <dd>
-        A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
-        new games for classic clients in 2023.
-    </dd>
-    <dt>
-        <img
-            src="assets/icons/textarea.ico"
-            alt="Textarea.site icon"
-            class="icon">
-        <a href="https://textarea.site">textarea.site</a>
-    </dt>
-    <dd>A simple textbox to instantly start writing.</dd>
-    <dt>
-        <img
-            src="assets/icons/spookingout.png"
-            alt="Spooking Out icon"
-            class="icon">
-        <a href="" {% post_url /blog/2022-10-24-introducing-spooking-out %}>Spooking Out!</a>
-    </dt>
-    <dd>
-        A game made for the 2010 Roblox engine about catching ghosts.
-        <a href="{% post_url /blog/2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
-    </dd>
-    <dt>
-        <img
-            src="assets/icons/github.png"
-            alt="GitHub icon"
-            class="icon">
-        <a href="https://github.com/real-jame">My GitHub</a>
-    </dt>
-    <dt>
-        <img
-            src="assets/icons/twitter.png"
-            alt="Twitter icon"
-            class="icon">
-        <a href="https://twitter.com/real__jame">Follow me on Twitter!</a>
-        <a href="https://wetdry.world/@jame">(Or Mastodon!)</a>
-    </dt>
+<dt>
+<img
+src="https://wiki.realja.me/images/favicon.ico"
+alt="Old Roblox Wiki icon"
+class="icon">
+<a href="https://wiki.realja.me">Roblox Legacy Documentation</a>
+</dt>
+<dd>
+A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
+new games for classic clients in 2023.
+</dd>
+<dt>
+<img
+src="assets/icons/textarea.ico"
+alt="Textarea.site icon"
+class="icon">
+<a href="https://textarea.site">textarea.site</a>
+</dt>
+<dd>A simple textbox to instantly start writing.</dd>
+<dt>
+<img
+src="assets/icons/spookingout.png"
+alt="Spooking Out icon"
+class="icon">
+<a href="" {% post_url /blog/2022-10-24-introducing-spooking-out %}>Spooking Out!</a>
+</dt>
+<dd>
+A game made for the 2010 Roblox engine about catching ghosts.
+<a href="{% post_url /blog/2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
+</dd>
+<dt>
+<img
+src="assets/icons/github.png"
+alt="GitHub icon"
+class="icon">
+<a href="https://github.com/real-jame">My GitHub</a>
+</dt>
+<dt>
+<img
+src="assets/icons/twitter.png"
+alt="Twitter icon"
+class="icon">
+<a href="https://twitter.com/real__jame">Follow me on Twitter!</a>
+<a href="https://wetdry.world/@jame">(Or Mastodon!)</a>
+</dt>
 </dl>
-THIS IS TEMPORARY
+{% endcomment %}

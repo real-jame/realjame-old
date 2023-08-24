@@ -76,6 +76,17 @@
 			padding-bottom: 0;
 			transition-property: background, box-shadow;
 		}
+
+		.divider {
+			display: inline-flex;
+			vertical-align: top;
+			padding: 0 1em;
+
+			&:before,
+			&:after {
+				width: 2em;
+			}
+		}
 	}
 }
 
@@ -133,22 +144,21 @@
 	margin-left: 200px;
 	width: auto;
 	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+
+	@include media-query($small-screen) {
+		margin: 0;
+	}
 }
 
 .footer-item {
 	display: inline-block;
-
-	.flat-icon {
-		padding: 0;
-		width: 32px;
-		height: 32px;
-		vertical-align: middle;
-	}
 }
 
 .footer-heading {
 	font-size: 1.125em;
-	margin-bottom: calc($spacing-unit / 2);
+	// margin-bottom: calc($spacing-unit / 2);
 }
 
 .footer-bar {
@@ -385,7 +395,7 @@
 }
 
 .post-header {
-	margin-bottom: $spacing-unit;
+	// margin-bottom: $spacing-unit;
 }
 
 .post-title {
@@ -401,7 +411,7 @@
 }
 
 .post-content {
-	margin-bottom: $spacing-unit;
+	// margin-bottom: $spacing-unit;
 
 	h2 {
 		font-size: 2em;
@@ -425,5 +435,50 @@
 		@include media-query($small-screen) {
 			font-size: 1.125em;
 		}
+	}
+}
+
+/**
+ * Project page
+ */
+.project-title {
+	margin: 0.25em;
+}
+.project-status {
+	margin: 0.25em 0;
+
+	margin-right: -10px;
+	padding-right: 10px;
+
+	text-align: center;
+}
+
+.card-active {
+	border-color: #b6ffb6;
+	box-shadow: 0 0 10px #b6ffb6;
+
+	.project-status {
+		color: #143014;
+		background: linear-gradient(to left, #b6ffb6 50%, #8afb8a 70%, #00000000 100%);
+		text-shadow: 0 0 5px #25e425;
+	}
+
+	&:hover {
+		box-shadow: 0 0 15px #b6ffb6;
+	}
+}
+
+.card-inactive {
+	border-color: #ffe1ad;
+	box-shadow: 0 0 10px #ffe1ad;
+
+	.project-status {
+		color: #143014;
+		background: linear-gradient(to left, #ffe1ad 50%, #ffd58e 70%, #00000000 100%);
+		text-shadow: 0 0 5px #e09920;
+	}
+
+	&:hover {
+		box-shadow: 0 0 15px #ffe1ad;
 	}
 }

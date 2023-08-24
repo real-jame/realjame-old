@@ -9,6 +9,7 @@ tags: [kindle, jailbreak, ebook]
 date: 2023-08-18
 published: true
 ---
+<!-- kindle is so swag :) -->
 I love my 2014 Kindle Voyage, actively been using it for almost 10 years now. But after finding out update support ended a while ago, why not finally jailbreak it and install more open and featureful e-reader software?
 
 I'm new to KOReader, so I'll have to see if I actually like using it as a daily driver. But it can't hurt to try, and at the very least, liberating the device might come in handy in the future.

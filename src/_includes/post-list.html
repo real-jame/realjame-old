@@ -3,7 +3,7 @@
     {% assign limit = include.limit | default: 999 %}
     {% for post in site.categories[include.category] %}
         {% if count < limit %}
-            <li class="post-item">
+            <li class="post-item card">
                 {% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
                 <span class="post-meta">
                     {{ post.date | date: date_format }}
