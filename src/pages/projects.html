@@ -23,21 +23,42 @@ i never talk about this stuff online
 thank you for reading. i will persevere
 --><marquee>TODO: add all the cards, add links, download button (for spooking out)</marquee>
 <div class="card card-active">
+    TODO: find an icon for here
+    <h3 class="project-title"><img
+            src="../assets/silk/TODO"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">Project Micrathena</h3>
+    <p class="project-status">July 2023 - early August 2023, September 2023 - ?</p>
+    <p class="project-description">A new game for 2008 Roblox. Active development is on hold due to school starting up and the website redesign, but still in active planning and designing. More details will be revealed about the project in September.</p>
+</div>
+<div class="card card-active">
     <h3 class="project-title"><img
             src="../assets/icons/rbx-legacydocs.ico"
             alt=""
-            height="32"
             width="32"
+            height="32"
             class="icon project-icon">Roblox Legacy Documentation</h3>
     <p class="project-status">Active since December 2022</p>
     <p class="project-description">A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
         new games for classic clients in 2023.</p>
 </div>
-
+<div class="card card-active">
+    <h3 class="project-title"><img
+            src="/realjame.gif"
+            alt=""
+            width="88"
+            height="31"
+            class="icon project-icon"
+            style="width: 88px; height: 31px;">realja.me</h3>
+    <p class="project-status">Active since November 2021</p>
+    <p class="project-description">This website is a project in itself. It's been on and off, but so far its endured 3 comprehensive redesigns and expansions. It currently has a blog, devlogs, and "daily notes". As of August 2023, posting should finally be active and consistent.</p>
+</div>
 <div class="card card-inactive">
-    <h3 class="project-title">Inactive example card</h3>
-    <p class="project-status">January 2023 - March 2023, currently on hiatus</p>
-    <p class="project-description">Lorem ipsum something or other</p>
+    <h3 class="project-title">Untitled farming game for 2012 Roblox</h3>
+    <p class="project-status">April - June 2023, currently shelved</p>
+    <p class="project-description">This was planned to be a new game for the 2012 Roblox engine. Gameplay is divided into peaceful Stardew Valley inspired gameplay of farming, decorating your farm, etc. and part roguelike-style exploring wild forests to collect materials. Make money to level up your farm, and a whole lot more ideas and plans. However, the game suffered intense scope creep, and I got burned out from development (especially in the later 2 months) and shelved it. I'd still like to make it, though.</p>
 </div>
 {% comment %}
 Emmet notation for making a new card
@@ -46,7 +67,7 @@ replace the .card-active with the given status:
 .card-active
 .card-inactive
 
-div.card-active>h3.project-title+p.project-status+p.project-description
+div.card.card-active>h3.project-title+p.project-status+p.project-description
 {% endcomment %}{% comment %}
 
 <h2>Quick Links</h2>
