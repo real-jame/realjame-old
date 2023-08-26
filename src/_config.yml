@@ -34,7 +34,8 @@ tagicons:
   Roblox: "/assets/silk/brick.png"
   Web: "/assets/silk/world.png"
   Travel: "/assets/silk/world_go.png"
-
+callouticons:
+  info: 
 
 
 # Build settings
