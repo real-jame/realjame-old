@@ -3,25 +3,7 @@ layout: page
 title: "projects"
 permalink: /projects
 ---
-{% comment %} TODO: recreate Obsidian callouts https://help.obsidian.md/Editing+and+formatting/Callouts {% endcomment %}
-<div class="callout callout-info">
-    <div class="callout-title">
-        <img
-            src="../assets/silk/information.png"
-            alt=""
-            width="32"
-            height="32"
-            class="icon callout-icon">
-        <div class="callout-title-inner">Important</div>
-    </div>
-    <div class="callout-content">
-        <p>
-            Please check my
-            <a href="/resume.pdf">resume</a>
-            for professional information. I am open to work!
-        </p>
-    </div>
-</div>
+{% include callout.html type = "info" content = "Please check my <a href='/resume.pdf'>resume</a> for professional information. I am open to work!" %}
 
 <!--
 yeah, i have a ton of regret for not being able to see projects through completion.
@@ -41,24 +23,29 @@ these html comments are nice for letting me vent
 i never talk about this stuff online
 
 thank you for reading. i will persevere
---><marquee>TODO: add all the cards, add links, download button (for spooking out)</marquee>
-<div class="card card-active">
+--><div class="card card-active">
     <h3 class="project-title"><img
-            src="../assets/silk/brick.png"
+            src="/assets/silk/tag_purple.png"
             alt=""
             width="32"
             height="32"
             class="icon project-icon">Project Micrathena</h3>
-    <p class="project-status">July 2023 - early August 2023, September 2023 - ?</p>
-    <p class="project-description">A new game for 2008 Roblox. Active development is on hold due to school starting up and the website redesign, but still in active planning and designing. More details will be revealed about the project in September.</p>
+    <p class="project-status">July 2023, returning September</p>
+    <p class="project-description">A new game for 2008 Roblox. Active development is on hold due to school starting up and the website redesign, but it is still in active planning and designing.<br>Development will resume in September. More details will be revealed then!<br><small>There will be a modern Roblox port :)</small>
+    </p>
 </div>
 <div class="card card-active">
     <h3 class="project-title"><img
-            src="../assets/icons/rbx-legacydocs.ico"
+            src="/assets/icons/rbx-legacydocs.ico"
             alt=""
             width="32"
             height="32"
             class="icon project-icon">Roblox Legacy Documentation</h3>
+    <p class="project-links">
+        <a href="https://wiki.realja.me">https://wiki.realja.me</a>
+        <a href="/devlogs/wiki-1.html">Announcement post</a>
+        <a href="/devlogs/wiki-2.html">April update post</a>
+    </p>
     <p class="project-status">Active since December 2022</p>
     <p class="project-description">A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
         new games for classic clients in 2023.</p>
@@ -71,13 +58,97 @@ thank you for reading. i will persevere
             height="31"
             class="icon project-icon"
             style="width: 88px; height: 31px;">realja.me</h3>
+    <p class="project-links">
+        <a href="https://github.com/real-jame/realjame">Source code</a>
+    </p>
     <p class="project-status">Active since November 2021</p>
     <p class="project-description">This website is a project in itself. It's been on and off, but so far its endured 3 comprehensive redesigns and expansions. It currently has a blog, devlogs, and "daily notes". As of August 2023, posting should finally be active and consistent.</p>
 </div>
+<div class="card card-complete">
+    <h3 class="project-title"><img
+            src="/assets/icons/spookingout.png"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">Spooking Out</h3>
+    <p class="project-links">
+        <a href="https://drive.google.com/file/d/1T1XiYSWPxSThOLF8B5Xc60imWTxiufPO/view">2010 RBXL Download</a>
+        ·
+        <a href="https://www.roblox.com/games/11373614692/Spooking-Out">Modern port</a>
+        ·
+        <a href="/blog/announcing-spooking-out.html">Announcement post</a>
+        ·
+        <a href="/blog/spooking-out-modern-roblox-port.html">Port announcement</a>
+    </p>
+    <p class="project-status">Complete! | September - November 2022</p>
+    <p class="project-description">Spooking Out is a Halloween game made for 2010 Roblox by me and a friend. It's a simple arcade-style game about working together to catch ghosts in various maps. A simple game, but we had a lot of fun making it and playing it with the community on release :)<br>It was submitted for the Novetus Halloween game contest,
+        <b>and we won!!!!!!! Our game is now bundled with Novetus as a default map.</b><br>I also ported it to modern Roblox, adding controller/Xbox/mobile support and badges.</p>
+</div>
 <div class="card card-inactive">
-    <h3 class="project-title">Untitled farming game for 2012 Roblox</h3>
-    <p class="project-status">April - June 2023, currently shelved</p>
+    <h3 class="project-title"><img
+            src="/assets/icons/textarea.ico"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">textarea.site</h3>
+    <p class="project-links">
+        <a href="https://textarea.site">https://textarea.site</a>
+        ·
+        <a href="https://real-jame.github.io/textarea">Nightly version</a>
+        ·
+        <a href="https://github.com/real-jame/textarea">Source code</a>
+    </p>
+    <p class="project-status">Will return soon | August - November 2022</p>
+    <p class="project-description">Textarea is an auto-saving textbox website. It's intentionally simple - only plain text, and only the 1 page. When you reopen the site, anything previously written will remain. Great for taking quick notes.<br>It's fully working and stable, but I would like to go back and add more utility features such as importing text files, more themes, sharing your text, etc.</p>
+</div>
+<div class="card card-inactive">
+    <h3 class="project-title"><img
+            src="/assets/silk/tag_orange.png"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">fxreddit (FixReddit)</h3>
+    <p class="project-links">
+        <a href="https://github.com/real-jame/FixReddit">Source code</a>
+    </p>
+    <p class="project-status">Will return soon | December 2022</p>
+    <p class="project-description">fxreddit is a service that fixes Reddit video embeds by making it appear as a native video on Discord (and Telegram, etc.).<br>There was a bit of work done on a prototype in December 2022, but didn't get far.<br>I plan to revisit it soon, although
+        <a href="https://github.com/libreddit/libreddit/issues/840">recent API changes</a>
+        designed to kill 3rd-party apps and scrapers may jeopardize the project.</p>
+</div>
+<div class="card card-inactive">
+    <h3 class="project-title"><img
+            src="/assets/silk/tag_green.png"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">Untitled farming game for 2012 Roblox</h3>
+    <p class="project-links">
+        <a href="/devlogs/farming-1.html">Devlog 1</a>
+        ·
+        <a href="/devlogs/farming-2.html">Devlog 2</a>
+        ·
+        <a href="/devlogs/farming-3.html">Devlog 3</a>
+    </p>
+    <p class="project-status">April - June 2023</p>
     <p class="project-description">This was planned to be a new game for the 2012 Roblox engine. Gameplay is divided into peaceful Stardew Valley inspired gameplay of farming, decorating your farm, etc. and part roguelike-style exploring wild forests to collect materials. Make money to level up your farm, and a whole lot more ideas and plans. However, the game suffered intense scope creep, and I got burned out from development (especially in the later 2 months) and shelved it. I'd still like to make it, though.</p>
+</div>
+<div class="card card-inactive">
+    <h3 class="project-title"><img
+            src="/assets/silk/tag_pink.png"
+            alt=""
+            width="32"
+            height="32"
+            class="icon project-icon">2010 Roblox prototype experiments</h3>
+    <p class="project-links">
+        <a href="/devlogs/lava-escape-proto-1.html">Lava escape</a>
+        ·
+        <a href="/devlogs/factorio-proto-1.html">Factorio-inspired</a>
+        ·
+        <a href="/devlogs/movementpvp-proto-2.html">Movement PVP</a>
+    </p>
+    <p class="project-status">January - April 2023</p>
+    <p class="project-description">I was experimenting with random game ideas while trying to think of something to make with other Novetus creators. None really seemed like "the one", but the lava one could make for a simple fun game to be made in a weekend.</p>
 </div>
 {% comment %}
 Emmet notation for making a new card
@@ -85,56 +156,7 @@ Emmet notation for making a new card
 replace the .card-active with the given status:
 .card-active
 .card-inactive
+.card-complete
 
-div.card.card-active>h3.project-title+p.project-status+p.project-description
-{% endcomment %}{% comment %}
-
-<h2>Quick Links</h2>
-<dl>
-<dt>
-<img
-src="https://wiki.realja.me/images/favicon.ico"
-alt="Old Roblox Wiki icon"
-class="icon">
-<a href="https://wiki.realja.me">Roblox Legacy Documentation</a>
-</dt>
-<dd>
-A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make
-new games for classic clients in 2023.
-</dd>
-<dt>
-<img
-src="assets/icons/textarea.ico"
-alt="Textarea.site icon"
-class="icon">
-<a href="https://textarea.site">textarea.site</a>
-</dt>
-<dd>A simple textbox to instantly start writing.</dd>
-<dt>
-<img
-src="assets/icons/spookingout.png"
-alt="Spooking Out icon"
-class="icon">
-<a href="" {% post_url /blog/2022-10-24-introducing-spooking-out %}>Spooking Out!</a>
-</dt>
-<dd>
-A game made for the 2010 Roblox engine about catching ghosts.
-<a href="{% post_url /blog/2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
-</dd>
-<dt>
-<img
-src="assets/icons/github.png"
-alt="GitHub icon"
-class="icon">
-<a href="https://github.com/real-jame">My GitHub</a>
-</dt>
-<dt>
-<img
-src="assets/icons/twitter.png"
-alt="Twitter icon"
-class="icon">
-<a href="https://twitter.com/real__jame">Follow me on Twitter!</a>
-<a href="https://wetdry.world/@jame">(Or Mastodon!)</a>
-</dt>
-</dl>
+div.card.card-active>h3.project-title+p.project-links+p.project-status+p.project-description
 {% endcomment %}

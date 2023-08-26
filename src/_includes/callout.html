@@ -1,0 +1,19 @@
+{% assign type = include.type | default: 'note' %}
+{% assign icon_path = site.callouticons[type] | default: '/assets/silk/pencil.png' %}
+
+<div class="callout callout-{{ type }}">
+    <div class="callout-title">
+        <img
+            src="{{ icon_path }}"
+            alt=""
+            width="32"
+            height="32"
+            class="icon callout-icon">
+        <div class="callout-title-inner">{{ type | capitalize }}</div>
+    </div>
+    <div class="callout-content">
+        <p>
+            {{ include.content }}
+        </p>
+    </div>
+</div>

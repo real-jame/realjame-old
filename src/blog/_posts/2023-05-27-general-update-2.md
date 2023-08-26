@@ -107,7 +107,7 @@ I've been working on this project recently (very, very slowly).
 
 It's a new game for classic Roblox! It's kind of like Stardew Valley at first glance, but a lot has been changed, removed, or added to make this game feel right at home with classic Roblox.
 
-![2012 Roblox engine screenshot of the green jeep from the famous Welcome to Roblox Building game (and Stamper Tool lineup) parked next to a cozy wooden house with a dark red roof, all on top of a green baseplatte in the middle of the day.](/blog/media/devlog/farming-3-Jeep.jpeg)
+![2012 Roblox engine screenshot of the green jeep from the famous Welcome to Roblox Building game (and Stamper Tool lineup) parked next to a cozy wooden house with a dark red roof, all on top of a green baseplatte in the middle of the day.](/devlog/media/farming-3-Jeep.jpeg)
 
 ### Stay tuned
 
@@ -144,7 +144,7 @@ The wiki is built off an archive of the Roblox Wiki from June 2012, but we've be
 
 After all, website documentation isn't really necessary anymore, right?
 
-| ![Screenshot of the "Archived Pages" section of the Roblox Legacy Docs site, containing all the website documentation pages.](/blog/media/devlog/wiki-2-ArchivedPages.jpeg) |
+| ![Screenshot of the "Archived Pages" section of the Roblox Legacy Docs site, containing all the website documentation pages.](/devlog/media/wiki-2-ArchivedPages.jpeg) |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                   *Don't worry, they've been preserved.*                                                                    |
 

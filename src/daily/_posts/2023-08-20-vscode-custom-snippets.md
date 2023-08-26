@@ -9,6 +9,8 @@ tags: [vscode]
 date: 2023-08-20
 published: true
 ---
+I was making a lot of `<marquee>` elements while revamping my website. But when I used the [Emmet tool](https://emmet.io/) to create a marquee element just by typing "marquee", it kept adding attributes I didn't need! So I learned how to make custom snippets, to do it my way.
+
 <!-- all this marquee talk reminds me of blink
 yknow modern browsers dont even support <blink>
 you gotta use javascript
@@ -20,7 +22,6 @@ hey uncomment this next comment im bringing back BLINK!!!!!!!!!!! i dont even ne
 <!-- 
 <span style="animation: blinker 1s step-end infinite; display: inline-block;"><style>@keyframes blinker { 50% { opacity: 0; } }</style>thanks for checking out these "easter egg" comments btw</span>
 -->
-<marquee>TODO: this article.</marquee>
 
 - I wanted to create a custom snippet to insert a marquee element without any attributes, as Emmet defaulted to that and I didn't want it
 - What are snippets?

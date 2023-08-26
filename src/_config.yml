@@ -35,7 +35,19 @@ tagicons:
   Web: "/assets/silk/world.png"
   Travel: "/assets/silk/world_go.png"
 callouticons:
-  info: 
+  note: "/assets/silk/note.png"
+  info: "/assets/silk/information.png"
+  summary: "/assets/silk/page.png"
+  todo: "/assets/silk/note_edit.png"
+  tip: "/assets/silk/lightbulb.png"
+  success: "/assets/silk/tick.png"
+  question: "/assets/silk/help.png"
+  warning: "/assets/silk/error.png"
+  failure: "/assets/silk/cross.png"
+  danger: "/assets/silk/exclamation.png"
+  bug: "/assets/silk/bug.png"
+  example: "/assets/silk/magnifier.png"
+  quote: "/assets/silk/book_open.png"
 
 
 # Build settings

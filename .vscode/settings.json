@@ -3,7 +3,7 @@
 		"*.json.liquid": "json",
 		"*.yaml.liquid": "yaml",
 		"*.md.liquid": "markdown",
-		"*.html": "liquid"
+		"*.html": "jekyll"
 	},
 	"liquid.format.enable": true
 }

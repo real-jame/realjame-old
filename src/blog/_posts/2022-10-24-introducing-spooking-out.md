@@ -38,7 +38,7 @@ Speaking of which, secondary items! You can choose a 2nd item to equip alongside
 
 ## Screenshots
 
-<video width="400" height="240" controls>
+<video width="1280" height="720" controls>
   <source src="/blog/media/SpookingOutGameplay.mp4" type="video/mp4">
 </video>
 
