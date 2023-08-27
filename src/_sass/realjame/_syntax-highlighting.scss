@@ -3,7 +3,6 @@
  */
 .highlight {
 	background: $code-background-color;
-	@extend %vertical-rhythm;
 
 	@include light-mode() {
 		background-color: $code-background-color-light;

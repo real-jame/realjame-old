@@ -1,18 +1,6 @@
 /**
  * Basic styling
  */
-// :root::before {
-// 	content: "";
-// 	position: absolute;
-// 	width: 200%;
-// 	height: 200%;
-// 	top: -50%;
-// 	left: -50%;
-// 	z-index: -1;
-// 	background-image: url(/assets/misc/truss-single.png);
-// 	transform: rotate(30deg);
-// }
-
 :root {
 	color-scheme: dark;
 
@@ -33,43 +21,12 @@ body {
 	-o-font-feature-settings: "kern" 1;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
-	// width: 40em;
-	// margin: auto;
-	// min-height: 100vh;
 	margin: 0;
-
-	// @include media-query($medium-screen) {
-	// 	width: 75%;
-	// }
-
-	// @include media-query($small-screen) {
-	// 	width: 90%;
-	// }
 
 	@include light-mode() {
 		color: $text-color-light;
 		background-color: $background-color-light;
 	}
-}
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-ul,
-ol,
-dl,
-figure,
-%vertical-rhythm {
-	// margin-bottom: calc($spacing-unit / 2);
 }
 
 h1,
@@ -101,24 +58,11 @@ h2,
 	text-shadow: 0 0 12px #2d93ec;
 }
 
-// h3 > a {
-// 	color: #124169;
-// 	text-shadow: 0 0 12px #2d93ec;
-// 	transition: all 0.2s;
-
-// 	&:hover {
-// 		color: #020406;
-// 	}
-// }
-
 /**
  * `main` element
  */
 main {
-	// padding: 1em;
 	display: block;
-	background-image: url(/assets/misc/starry-night512.gif);
-	/* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 /**
@@ -128,7 +72,6 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	// width: 100%;
 	max-width: 60%;
 
 	@include media-query($small-screen) {
@@ -181,11 +124,6 @@ li {
  */
 a {
 	color: $accent-color;
-	// text-decoration: none;
-
-	// @include light-mode() {
-	// 	color: $accent-color-light;
-	// }
 
 	&:hover {
 		color: $text-color;
@@ -225,7 +163,6 @@ blockquote {
 	border-left: 4px solid $gray-color;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	// padding-left: calc($spacing-unit / 2);
 	font-size: 1.1em;
 	letter-spacing: -1px;
 	font-style: italic;
@@ -304,63 +241,51 @@ textarea {
 	filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(328deg) brightness(104%) contrast(100%);
 }
 
-.flat-icon {
-	padding: 0;
-	width: 32px;
-	height: 32px;
-	vertical-align: middle;
-}
-
-.project-icon {
-	width: 32px;
-	height: 32px;
-	vertical-align: sub;
-}
-
 /**
  * Tables
  */
 table {
-	// margin-bottom: $spacing-unit;
 	width: 100%;
-	text-align: $table-text-align;
-	// color: lighten($text-color, 18%);
+	text-align: center;
 	border-collapse: collapse;
-	border: 1px solid $gray-color;
-	border-radius: 4px;
+	border: 3px double $accent-color;
+	box-shadow: 0 0 10px $accent-color;
+	border-radius: 10px;
 
-	@include light-mode() {
-		// color: lighten($text-color-light, 18%);
-	}
+	thead,
+	th {
+		background: linear-gradient(to bottom, #36414b 50%, rgb(49, 78, 105) 100%);
+		// color: #13222f;
+		text-shadow: 0 0 6px #2d93ec;
+		font-size: 1.2em;
 
-	tr {
-		&:nth-child(even) {
-			background-color: $alt-background-color;
-
-			@include light-mode() {
-				background-color: $alt-background-color-light;
+		tr {
+			background: none;
+			td {
+				padding: 0.5em 0;
 			}
 		}
 	}
 
-	th,
-	td {
-		// padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
-	}
-
-	th {
+	tr {
 		background-color: $nav-background-color;
-		border: 1px solid $gray-color;
-		border-radius: 4px;
 
-		@include light-mode() {
-			background-color: $nav-background-color-light;
+		&:nth-child(even) {
+			background-color: $alt-background-color;
 		}
 	}
 
 	td {
-		border: 1px solid $gray-color;
-		border-radius: 4px;
+		border: 1px solid $accent-color;
+
+		&.column-icon {
+			width: 10%;
+		}
+
+		.icon {
+			width: 32px;
+			height: 32px;
+		}
 	}
 }
 
