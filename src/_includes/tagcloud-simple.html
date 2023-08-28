@@ -1,16 +1,24 @@
 {% assign all_tags = "" %}
 
-{% for post in site.categories[include.category] %}
-    {% for tag in post.tags %}
-        {% assign all_tags = all_tags | append: tag | append: " " %}
+{% if include.category %}
+    {% for post in site.categories[include.category] %}
+        {% for tag in post.tags %}
+            {% assign all_tags = all_tags | append: tag | append: " " %}
+        {% endfor %}
     {% endfor %}
-{% endfor %}
+{% else %}
+    {% for post in site.posts %}
+        {% for tag in post.tags %}
+            {% assign all_tags = all_tags | append: tag | append: " " %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
 
 {% assign tags_array = all_tags | split: " " | sort %}
 {% assign unique_tags = tags_array | uniq %}
 
 <p>
-    <b>Browse by topic:</b>
+    <b>{{ include.message | default: "Browse by topic:" }}</b>
     {% for tag in unique_tags %}
         {% assign tag_count = 0 %}
         {% for t in tags_array %}
@@ -18,7 +26,15 @@
                 {% assign tag_count = tag_count | plus: 1 %}
             {% endif %}
         {% endfor %}
-        <a href="/tags/{{ tag }}">{{ tag }}</a>
-        <b>{{ tag_count }}</b>
+        {% assign icon = site.tagicons[tag] %}
+        {% unless icon %}
+            <a href="/_tags{% if include.category %}/{{include.category}}{% endif %}/{{ tag }}">{{ tag }}</a>
+            <b>{{ tag_count }}
+            </b>
+            {% if tag != unique_tags.last %}
+                ·
+            {% endif %}
+        {% endunless %}
+
     {% endfor %}
 </p>

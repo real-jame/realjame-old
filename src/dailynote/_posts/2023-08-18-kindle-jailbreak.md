@@ -1,16 +1,15 @@
 ---
-layout: dailynote
+layout: post
 category: dailynote
 title: "Jailbreaking a Kindle Voyage and installing KOReader"
 section: til
 tags: [kindle, jailbreak, ebook]
-# image: /blog/media/TODO.png
-# description: ""
 date: 2023-08-18
 published: true
 ---
-<!-- kindle is so swag :) -->
 I love my 2014 Kindle Voyage, actively been using it for almost 10 years now. But after finding out update support ended a while ago, why not finally jailbreak it and install more open and featureful e-reader software?
+
+<!-- kindle is so swag :) -->
 
 I'm new to KOReader, so I'll have to see if I actually like using it as a daily driver. But it can't hurt to try, and at the very least, liberating the device might come in handy in the future.
 
@@ -26,7 +25,7 @@ After researching a bit, I found the source for the jailbreak is at a forum call
 
 [Tutorial: Open Sesame! (AKA., The New & Improved JailBreak Index)](https://www.mobileread.com/forums/showthread.php?t=320564)
 
-Like with the previous note about [installing the latest Ruby on Debian]({% post_url /daily/2023-08-16-ruby-debian %}), I will not directly provide instructions, both because that would take much longer to write, and because **information can change**. There might be a new exploit method, or a new security update by Amazon, or new jailbreak software to install for setup. In all of these cases, the guides will be altered, and my information will become out of date and will be unhelpful or even harmful. A brick or even a ban are near-zero chances, but I can't guarantee. Please read the forum posts if you're here to do what I did, and I'll just provide the basic outline of running through the tutorial here.
+Like with the previous note about [installing the latest Ruby on Debian]({% post_url /dailynote/2023-08-16-ruby-debian %}), I will not directly provide instructions, both because that would take much longer to write, and because **information can change**. There might be a new exploit method, or a new security update by Amazon, or new jailbreak software to install for setup. In all of these cases, the guides will be altered, and my information will become out of date and will be unhelpful or even harmful. A brick or even a ban are near-zero chances, but I can't guarantee. Please read the forum posts if you're here to do what I did, and I'll just provide the basic outline of running through the tutorial here.
 
 ### Identification
 

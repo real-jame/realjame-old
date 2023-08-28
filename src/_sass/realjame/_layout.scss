@@ -187,6 +187,10 @@
 /**
  * Page content
  */
+.post-header .post-meta {
+	margin-top: -2em;
+}
+
 .page-content {
 	margin-left: 200px;
 	width: auto;
@@ -223,6 +227,7 @@
 
 .post-list {
 	margin-left: 0;
+	padding: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -234,8 +239,6 @@
 	}
 
 	li {
-		border: 2px solid $border-color;
-		border-radius: 2px;
 		padding: 0.1em;
 		background-color: $nav-background-color;
 		text-align: center;
@@ -243,6 +246,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		text-shadow: 0 0 1px #b3d4f0;
 
 		min-width: 40%;
 		flex: 1;
@@ -265,6 +270,14 @@
 	img {
 		max-width: 100%;
 		height: auto;
+	}
+}
+
+.post-item.card .topics {
+	margin-bottom: 5px;
+
+	a {
+		box-shadow: 0 0 3px #b3d4f0;
 	}
 }
 
@@ -316,6 +329,7 @@
 
 	li {
 		display: inline-block;
+		margin-top: 1em;
 
 		a .icon {
 			padding: 0;
@@ -575,6 +589,43 @@
 
 	img {
 		image-rendering: auto;
+	}
+}
+
+/**
+ * Tag filter page
+ */
+.tag-description {
+	h2 {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
+}
+
+.tag-filter-links {
+	p {
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin-top: 0;
+		list-style: none;
+
+		position: relative;
+		left: -1em;
+	}
+}
+
+.tag-filter-tagclouds {
+	p {
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin-top: 0;
 	}
 }
 

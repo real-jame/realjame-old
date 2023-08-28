@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "I'm Working On Cool Stuff"
-tags: [News, Web, Roblox]
+tags: [news, web, roblox, status-update]
 image: /blog/media/TextareaSiteScreenshot.png
 description: "2 cool web projects are in the works - textarea.site, and an fxtwitter clone for Reddit links. Plus, some ideas for classic roblox things."
 date: 2022-12-21

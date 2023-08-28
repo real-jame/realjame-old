@@ -2,7 +2,7 @@
 layout: post
 category: devlog
 title: "Factorio-inspired concept prototype"
-tags: [Roblox]
+tags: [roblox, prototype]
 image: /devlog/media/factorio-1-thumbnail.jpg
 description: "A concept demo for a game with Factorio-like gameplay."
 date: 2023-01-31

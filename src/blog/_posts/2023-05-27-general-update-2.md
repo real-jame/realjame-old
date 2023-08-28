@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "General Update II - Hi I'm Still Here"
-tags: [News, Web, Personal]
+tags: [news, web, personal, status-update]
 image: /blog/media/2023-05-23-CRT.jpg
 description: "New devlogs section! Mirrors my Twitter teaser posts."
 date: 2023-05-27
@@ -58,13 +58,13 @@ Also... you just never know what'll happen with Twitter.
 
 *I wonder if this site could act as a sort of "portfolio" of my work. I mean, I already have the quick links section on the home page. Now that would be something...*
 
-### [Click here to view all the devlogs!](/tags/devlogs)
+### [Click here to view all the devlogs!](/devlogs)
 
 The devlogs are short, usually just an image or maybe a video, and a description. Future devlog posts will probably have some additional information not contained in the tweet. For the devlogs, you'll see old Roblox games, websites, just whatever I'm working on really.
 
 Not all the devlogs have been fully transcribed onto here. Some of the older ones are just a direct Twitter link and nothing else. I'll clean them up later, I hope.
 
-By the way, the News and Devlogs section currently are in the same pool as standard blog posts. Hopefully you aren't too annoyed that I'm separating these articles if you use an RSS feeder... no one has complained about that yet, so I'll leave it as-is. Cuz I'm lazy.
+By the way, the news and Devlogs section currently are in the same pool as standard blog posts. Hopefully you aren't too annoyed that I'm separating these articles if you use an RSS feeder... no one has complained about that yet, so I'll leave it as-is. Cuz I'm lazy.
 
 So, what am I doing with the site next?
 
@@ -111,7 +111,7 @@ It's a new game for classic Roblox! It's kind of like Stardew Valley at first gl
 
 ### Stay tuned
 
-[Scroll through the devlogs to find more info.](/tags/devlogs)
+[Scroll through the devlogs to find more info.](/devlogs)
 
 [Follow me on Twitter and Mastodon for updates.](/contact)
 

@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "Happy Thanksgiving!"
-tags: [Personal]
+tags: [personal]
 image: /blog/media/OldRoblox2010Thanksgiving.png
 description: "🦃"
 date: 2022-11-24

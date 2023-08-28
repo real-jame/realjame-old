@@ -1,14 +1,13 @@
 ---
-layout: dailynote
+layout: post
 category: dailynote
 title: "Adding custom snippets to VS Code"
 section: til
 tags: [vscode]
-# image: /blog/media/TODO.png
-# description: ""
 date: 2023-08-20
 published: true
 ---
+
 I was making a lot of `<marquee>` elements while revamping my website. But when I used the [Emmet tool](https://emmet.io/) to create a marquee element just by typing "marquee", it kept adding attributes I didn't need! So I learned how to make custom snippets, to do it my way.
 
 <!-- all this marquee talk reminds me of blink

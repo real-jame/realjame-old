@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "Spooking Out's Modern Roblox Port"
-tags: [News, Roblox]
+tags: [news, roblox, spooking-out]
 image: /blog/media/SpookingOutThumbnail.png
 description: "Spooking Out has been ported to modern Roblox!"
 date: 2022-11-02

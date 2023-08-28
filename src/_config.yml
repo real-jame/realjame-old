@@ -15,25 +15,40 @@ defaults:
       category: blog
       permalink: /blog/:title.html
   - scope:
-      path: "daily/_posts"
+      path: "dailynote"
       type: "posts"
     values:
-      section: daily
-      permalink: /daily/:title.html
+      category: dailynote
+      permalink: /dailynote/:title.html
   - scope:
-      path: "devlog/_posts"
+      path: "devlog"
       type: "posts"
     values:
       category: devlog
       permalink: /devlog/:title.html
 future: true
 
+categories:
+  - dailynote
+  - blog
+  - devlog
+category_display_names:
+  blog: Blog Posts
+  dailynote: Daily Notes
+  devlog: Devlogs
+categoryicons:
+  blog: "/assets/feedicons-color/01.png"
+  dailynote: "/assets/feedicons-color/16.png"
+  devlog: "/assets/feedicons-color/25.png"
+  all: "/assets/silk/feed.png"
+
 tagicons:
-  News: "/assets/silk/newspaper.png"
-  Personal: "/assets/silk/user_comment.png"
-  Roblox: "/assets/silk/brick.png"
-  Web: "/assets/silk/world.png"
-  Travel: "/assets/silk/world_go.png"
+  news: "/assets/silk/newspaper.png"
+  personal: "/assets/silk/user_comment.png"
+  roblox: "/assets/silk/brick.png"
+  web: "/assets/silk/world.png"
+  travel: "/assets/silk/car.png"
+  prototype: "/assets/silk/cog.png"
 callouticons:
   note: "/assets/silk/note.png"
   info: "/assets/silk/information.png"
@@ -48,7 +63,6 @@ callouticons:
   bug: "/assets/silk/bug.png"
   example: "/assets/silk/magnifier.png"
   quote: "/assets/silk/book_open.png"
-
 
 # Build settings
 plugins:

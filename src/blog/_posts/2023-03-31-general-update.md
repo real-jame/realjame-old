@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "General Update"
-tags: [News, Roblox, Web]
+tags: [news, roblox, web, status-update]
 image: /realjame.gif
 description: "Where have I been these past few months? What have I been (not) doing?"
 date: 2023-03-31

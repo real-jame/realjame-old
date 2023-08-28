@@ -33,7 +33,7 @@ Despicable Me, the first movie by Illumination, was a genuinely good movie. It t
 
 So how did this movie turn out so good?! This movie is dripping with real love and passion for Mario in every second and every frame. Everyone's guess is that Miyamoto was breathing down their backs the whole time, and that seems to be about right. Miyamoto and Chris Meledandri (Founder and CEO of Illumination) seem to be buddy-buddy now as well. By the way, I wonder what a Mario movie by Dreamworks would have turned out like... Universal owns both studios, so Miyamoto could have gone to them instead.
 
-| ![Art of a yellow hand holding a fictional ransom note: "Dear Illumination. If the Mario movie scores anything lower than 80% on rotten tomatoes, we will Shoot Bob in the face." The letter is signed by Miyamoto, and a picture of Bob (the Minions character) held at gunpoint is attached. There is also a blood stain and a Nintendo Seal of Quality on the letter.](../blog/media/MarioRansomLetter.jpeg) |
+| ![Art of a yellow hand holding a fictional ransom note: "Dear Illumination. If the Mario movie scores anything lower than 80% on rotten tomatoes, we will Shoot Bob in the face." The letter is signed by Miyamoto, and a picture of Bob (the Minions character) held at gunpoint is attached. There is also a blood stain and a Nintendo Seal of Quality on the letter.](/blog/media/MarioRansomLetter.jpeg) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | By [@datbx_](https://twitter.com/datbx_) on Twitter                                                                                                                                                                                                                                                                                                                                                             |
 
@@ -69,7 +69,7 @@ This is just criminal! Luigi is a lot of people's favorite Mario character and t
 
 My first reaction was ... okay? We already saw Yoshi in the movie, if only for a brief scene. But thinking about it later, it does set up the plot for Mario 2, possibly. A baby Yoshi runs rampant in Brooklyn eating stuff, and Mario and Luigi have to return to handle the situation. So there you go.
 
-![A stick figure looking at Sonic the Hedgehog 2 and The Super Mario Bros. Movie, screaming "WHERE THE FUCK IS WARIO"](../blog/media/WhereIsWario.jpg)
+![A stick figure looking at Sonic the Hedgehog 2 and The Super Mario Bros. Movie, screaming "WHERE THE FUCK IS WARIO"](/blog/media/WhereIsWario.jpg)
 
 ### The trailers showed almost the entire movie
 
