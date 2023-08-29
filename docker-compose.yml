@@ -5,7 +5,6 @@ services:
     container_name: realja.me
     ports:
       - 1000:1000
-      # - 1001:443
     environment:
       - JEKYLL_UID=1000
       - JEKYLL_GID=1000

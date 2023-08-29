@@ -2,30 +2,30 @@ title: realjame
 email: james@realja.me
 description: >- # this means to ignore newlines until "baseurl:"
   realjame is a personal website and blog that writes about a variety of topics: mainly tech such as web development and old Roblox games.
-baseurl: "/"
+baseurl: ""
 url: "https://realja.me"
 twitter_username: real__jame
 # github_username: real-jame
 
 defaults:
   - scope:
-      path: "blog"
-      type: "posts"
+      path: blog
+      type: posts
     values:
       category: blog
-      permalink: /blog/:title.html
+      permalink: "/blog/:title.html"
   - scope:
-      path: "dailynote"
+      path: dailynote
       type: "posts"
     values:
       category: dailynote
-      permalink: /dailynote/:title.html
+      permalink: "/dailynote/:title.html"
   - scope:
-      path: "devlog"
-      type: "posts"
+      path: devlog
+      type: posts
     values:
       category: devlog
-      permalink: /devlog/:title.html
+      permalink: "/devlog/:title.html"
 future: true
 
 categories:

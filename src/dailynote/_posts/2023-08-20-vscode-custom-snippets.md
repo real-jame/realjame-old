@@ -5,7 +5,7 @@ title: "Adding custom snippets to VS Code"
 section: til
 tags: [vscode]
 date: 2023-08-20
-published: true
+published: false
 ---
 
 I was making a lot of `<marquee>` elements while revamping my website. But when I used the [Emmet tool](https://emmet.io/) to create a marquee element just by typing "marquee", it kept adding attributes I didn't need! So I learned how to make custom snippets, to do it my way.
