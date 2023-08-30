@@ -15,8 +15,6 @@ I'm new to KOReader, so I'll have to see if I actually like using it as a daily 
 
 By the way, man I love tiny devices like this. I have an iPod Mini I've been meaning to write about. I think small portable devices that serve a single purpose are pretty cool! The Kindle Voyage is the smallest one they made, with a 6-inch screen. Super thin, too. It may not have USB-C, and it may not be waterproof, but that's OK.
 
-<marquee>TODO: Take a picture of my Kindle and put it here.</marquee>
-
 ## Jailbreaking
 
 My Kindle Voyage stopped getting updates at 5.13.6. Luckily, there is a known Kindle exploit working up to 5.14.2, so we're good here!
@@ -116,4 +114,6 @@ Simply just unzip the archive into the root, and that's it! There are additional
 
 Now I have KOReader, an e-reader software that's packed with far more features than the vanilla Kindle firmware. It also has built-in integration with Calibre, which is fantastic.
 
-I'll see if I like it or not, but for now, I'm interested in seeing what else you can do with a jailbroken Kindle!
+![Picture of my jailbroken Kindle Voyage showing the KOReader About screen.](/dailynote/media/kindle-jailbreak.jpg)
+
+I'll see if I like it or not, but for now, I'm interested in seeing what else I can do with a jailbroken Kindle!

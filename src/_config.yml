@@ -67,6 +67,7 @@ callouticons:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 markdown: kramdown
 kramdown:

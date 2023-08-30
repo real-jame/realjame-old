@@ -71,7 +71,7 @@ And by the way... I MADE A BUTTON FOR THE SITE! I'll quote what I wrote on the h
 And then you can add it to your site with this HTML code:
 
 ```html
-<a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="realja.me"></a>
+<a href="https://realja.me"><img src="https://realja.me/realjame.gif" width="88" height="31" alt="realja.me"></a>
 ```
 
 ### Blog
@@ -103,9 +103,7 @@ I also am reducing screen time usage on my phone, and the biggest thing is keepi
 
 Last thing is going on a short walk daily on my free days off to take breaks from looking at screens, and reading books as well. I plan to post book reviews, basically just my thoughts on books right after finishing it (with no background knowledge on the book or how it was reviewed/critiqued by others). I've found some interesting books at the library and various thrift stores.
 
-| ![A collection of things laid out: The Catcher in the Rye, "Don't Sweat the Small Stuff at Work" book, "Complete Idiot's Guide to Windows Me" book, "Teach yourself CGI Programming in a Week" book, "Coyote Waits" book, "Web 2.0: New Tools, New Schools" book, a pocket Italian dictionary, Big Brain Academy: Wii Degree for Wii, an insect nature puzzle, and an orca whale plush.](/blog/media/ThriftingHaul.jpg) |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Thrifting haul!                                                                                                                                                                                                                                                                                                                                                                                                         |
+{% include image.html url="/blog/media/ThriftingHaul.jpg" alt="A collection of things laid out: The Catcher in the Rye, 'Don't Sweat the Small Stuff at Work' book, 'Complete Idiot's Guide to Windows Me' book, 'Teach yourself CGI Programming in a Week' book, 'Coyote Waits' book, 'Web 2.0: New Tools, New Schools' book, a pocket Italian dictionary, Big Brain Academy: Wii Degree for Wii, an insect nature puzzle, and an orca whale plush." caption="Thrifting haul!" width="" height="" %}
 
 I'm also reading some self-help books to help me "learn how to learn".
 
@@ -150,13 +148,9 @@ Stay tuned for more.
 
 I got a CRT monitor a week or two ago.
 
-| ![Image of the monitor.](/blog/media/CRT.jpg) |
-| --------------------------------------------- |
-| Compaq MV5500 from 2002.                      |
+{% include image.html url="/blog/media/CRT.jpg" alt="Picture of the monitor, a grey CRT with the Compaq logo on the front." caption="Compaq MV5500 from 2002." width="" height="" %}
 
-I've been interested in getting one for a while, just to try it out and see. Finally, I decided to do it. So I got this one off Facebook Marketplace.
-
-As promised earlier, I'll write a blog post about it soon, but in short: was it worth it? Ehh... I'm not getting rid of it though, for a few reasons I'll write in the article.
+I've been interested in getting one for a while, just to try it out and see. Finally, I decided to do it. So I got this one off Facebook Marketplace. Was it worth it? Ehh... I'm not getting rid of it though. It's still nice.
 
 ## Conclusion
 

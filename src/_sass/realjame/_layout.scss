@@ -381,6 +381,8 @@ body .button-row {
 	p img,
 	figure img {
 		max-width: 100%;
+		width: auto;
+		height: 100%;
 	}
 }
 
@@ -395,6 +397,10 @@ body .button-row {
 	padding-left: 50vw;
 
 	background: linear-gradient(to right, #b3d4f0 50%, #7ac2ff 80%, rgba(0, 110, 203, 0) 100%);
+
+	@include media-query($small-screen) {
+		margin-top: -10px;
+	}
 }
 
 .post-content {
@@ -581,6 +587,10 @@ body .button-row {
 		margin-top: -20px;
 		margin-bottom: 0.1em;
 		font-size: 1.8em;
+
+		@include media-query($small-screen) {
+			margin-top: -10px;
+		}
 	}
 
 	p {

@@ -9,11 +9,12 @@
     },
     "no-inline-html": {
         "allowed_elements": [
-            "video",
-            "source",
-            "small",
+            "a",
+            "br",
             "marquee",
-            "br"
+            "small",
+            "source",
+            "video"
         ]
     },
     "no-emphasis-as-header": false

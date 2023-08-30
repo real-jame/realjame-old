@@ -1,6 +1,12 @@
 <figure class="image">
-    <img src="{{ include.url }}" alt="{{ include.alt | default: include.description | default: "" }}">
-    {% if include.description %}
-        <figcaption>{{ include.description }}</figcaption>
+    <img
+        src="{{ include.url }}"
+        width="{{ include.width | default: 512 }}"
+        {% if include.height and include.height != "" %}
+        height="{{ include.height }}"
+        {% endif %}
+        alt="{{ include.alt | default: include.caption | default: "" }}">
+    {% if include.caption %}
+        <figcaption>{{ include.caption }}</figcaption>
     {% endif %}
 </figure>

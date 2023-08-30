@@ -33,9 +33,7 @@ It's not acually that big an issue, at least for me and my friends, we don't pos
 
 **It's barely even a prototype right now, but I'm working on it occasionally.** [(Source is on GitHub)](https://github.com/real-jame/fixreddit)
 
-| ![A reddit.com embed on Discord.](/blog/media/RedditVideoEmbed.png)                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------- |
-| The problem I need to fix; the video player isn't native, and the karma and OP aren't shown. (On mobile, there is no video player.) |
+{% include image.html url="/blog/media/RedditVideoEmbed.png" alt="A reddit.com embed on Discord." caption="The problem I need to fix; the video player isn't native, and the karma and OP aren't shown. On mobile, there is no video player at all." width="" height="" %}
 
 ## Old Roblox stuff
 

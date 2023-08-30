@@ -144,9 +144,7 @@ The wiki is built off an archive of the Roblox Wiki from June 2012, but we've be
 
 After all, website documentation isn't really necessary anymore, right?
 
-| ![Screenshot of the "Archived Pages" section of the Roblox Legacy Docs site, containing all the website documentation pages.](/devlog/media/wiki-2-ArchivedPages.jpeg) |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                   *Don't worry, they've been preserved.*                                                                    |
+{% include image.html url="/devlog/media/wiki-2-ArchivedPages.jpeg" alt="Screenshot of the \"Archived Pages\" section of the Roblox Legacy Docs site, containing all the website documentation pages." caption="Don't worry, they've been preserved." width="" height="" %}
 
 I do want to make articles about the project though. Like how I started it in the first place, not knowing anything about MediaWiki (the server software used). Or our progress, including a newfound interest in April.
 

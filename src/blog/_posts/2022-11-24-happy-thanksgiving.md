@@ -6,8 +6,6 @@ tags: [personal]
 image: /blog/media/OldRoblox2010Thanksgiving.png
 description: "🦃"
 date: 2022-11-24
----
+---                                                                                                                        |
 
-| ![Old Roblox screenshot of some players next to a turkey, outside of a house in the autumn fields.](/blog/media/OldRoblox2010Thanksgiving.png) |
-| :--------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                   A "turkey"                                                                   |
+{% include image.html url="/blog/media/OldRoblox2010Thanksgiving.png" alt="Old Roblox screenshot of some players next to a turkey, outside of a house in the autumn fields." caption="A \"turkey\"" width="" height="" %}

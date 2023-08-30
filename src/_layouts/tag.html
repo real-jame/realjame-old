@@ -20,24 +20,28 @@ layout: default
                 src="/assets/silk/feed.png"
                 height="16"
                 width="16"
+                alt=""
                 class="icon"><a href="/_tags/{{ page.tag }}.html">All categories</a>
         </li>
         <li><img
                 src="/assets/feedicons-color/01.png"
                 height="16"
                 width="16"
+                alt=""
                 class="icon"><a href="/_tags/blog/{{ page.tag }}.html">Blog posts</a>
         </li>
         <li><img
                 src="/assets/feedicons-color/16.png"
                 height="16"
                 width="16"
+                alt=""
                 class="icon"><a href="/_tags/dailynote/{{ page.tag }}.html">Daily notes</a>
         </li>
         <li><img
                 src="/assets/feedicons-color/25.png"
                 height="16"
                 width="16"
+                alt=""
                 class="icon"><a href="/_tags/devlog/{{ page.tag }}.html">Devlogs</a>
         </li>
     </ul>
@@ -69,6 +73,7 @@ layout: default
                             src="{{site.categoryicons[post.category]}}"
                             height="16"
                             width="16"
+                            alt=""
                             class="icon">
                         {{ post.title | default: '-Untitled-' }}
                     </a>
@@ -80,8 +85,8 @@ layout: default
                     {% if post.image %}
                         <img
                             src="{{ post.image }}"
-                            width="500"
-                            height="300"
+                            width="512"
+                            height="384"
                             class="post-list-image">
                     {% endif %}
 
@@ -97,6 +102,7 @@ layout: default
                             src="{{site.categoryicons[post.category]}}"
                             height="16"
                             width="16"
+                            alt=""
                             class="icon">{{ post.title }}</a>
                     {{ post.excerpt }}
                     <span class="topics">
