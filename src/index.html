@@ -2,33 +2,31 @@
 layout: default
 title: "realja.me"
 ---
-<div class="home">
-    <p class="text-focus">
-        <i>realjame: Always under construction, never working, always sleeping...</i>
-    </p>
+<p class="text-focus">
+    <i>realjame: Always under construction, never working, always sleeping...</i>
+</p>
 
-    <h2>Welcome</h2>
-    <p>You have found realja.me. This is my website, and has a little bit of content at the moment.</p>
-    <p>In short, I do web programming. I also like making Roblox games, specifically in old versions of the engine.</p>
-    <p>Here, you'll find 3 separate blogs: a
-        <a href="/blog">standard blog</a>,
-        <a href="/devlog">devlogs</a>
-        - updates on my ongoing projects mainly through screenshots, and
-        <a href="/dailynote">"daily notes"</a>
-        - brief, frequent writing about stuff I've learned.</p>
-    <p>It's mainly informative content, but hopefully not entirely boring (daily notes aside) and impersonal. I wish to write about the things I enjoy in a way that'll make other people appreciate them.</p>
-    <p>Of course, this website is always slowly expanding, as are my collection of projects. You can
-        <a href="/contact">subscribe to the RSS feed and find me on social media</a>
-        to stay up to date.</p>
+<h2>Welcome</h2>
+<p>You have found realja.me. This is my website, and has a little bit of content at the moment.</p>
+<p>In short, I do web programming. I also like making Roblox games, specifically in old versions of the engine.</p>
+<p>Here, you'll find 3 separate blogs: a
+    <a href="/blog">standard blog</a>,
+    <a href="/devlog">devlogs</a>
+    - updates on my ongoing projects mainly through screenshots, and
+    <a href="/dailynote">"daily notes"</a>
+    - brief, frequent writing about stuff I've learned.</p>
+<p>It's mainly informative content, but hopefully not entirely boring (daily notes aside) and impersonal. I wish to write about the things I enjoy in a way that'll make other people appreciate them.</p>
+<p>Of course, this website is always slowly expanding, as are my collection of projects. You can
+    <a href="/contact">subscribe to the RSS feed and find me on social media</a>
+    to stay up to date.</p>
 
-    <h2>Recent Daily Notes</h2>
-    <div>
-        {% include post-list-simple.html category = "dailynote" limit=2 %}
-    </div>
-
-    <h2 class="header-band">Recent Posts</h2>
-    {% include post-list.html category = "blog" limit=2 %}
-    <h2 class="header-band">Recent Devlogs</h2>
-
-    {% include post-list.html category = "devlog" limit=2 %}
+<h2>Recent Daily Notes</h2>
+<div>
+    {% include post-list-simple.html category = "dailynote" limit=2 %}
 </div>
+
+<h2 class="header-band">Recent Posts</h2>
+{% include post-list.html category = "blog" limit=2 %}
+<h2 class="header-band">Recent Devlogs</h2>
+
+{% include post-list.html category = "devlog" limit=2 %}

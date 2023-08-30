@@ -12,7 +12,8 @@
             "video",
             "source",
             "small",
-            "marquee"
+            "marquee",
+            "br"
         ]
     },
     "no-emphasis-as-header": false

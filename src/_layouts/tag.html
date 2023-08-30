@@ -2,9 +2,7 @@
 layout: default
 ---
 <div class="tag-description">
-    <h2>Viewing posts tagged with:
-        <strong>{{ page.tag }}</strong>
-    </h2>
+    <h2>Viewing posts tagged with: {{ page.tag }}</h2>
     {% if page.category %}
         {% assign category_name = page.category %}
         <p>Currently viewing under the
