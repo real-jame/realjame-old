@@ -4,15 +4,8 @@
 .highlight {
 	background: $code-background-color;
 
-	@include light-mode() {
-		background-color: $code-background-color-light;
-	}
-
 	.highlighter-rouge & {
 		background: $code-background-color;
-		@include light-mode() {
-			background-color: $code-background-color-light;
-		}
 	}
 
 	.c {
@@ -107,15 +100,9 @@
 	} // Literal.Number
 	.s {
 		color: #e1abb8;
-		@include light-mode() {
-			color: #c22b4f;
-		}
 	} // Literal.String
 	.na {
 		color: #13debb;
-		@include light-mode() {
-			color: #047763;
-		}
 	} // Name.Attribute
 	.nb {
 		color: #0086b3;
@@ -143,9 +130,6 @@
 	} // Name.Namespace
 	.nt {
 		color: #b7b7ff;
-		@include light-mode() {
-			color: #3e3e9f;
-		}
 	} // Name.Tag
 	.nv {
 		color: #008080;

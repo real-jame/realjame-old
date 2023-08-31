@@ -3,10 +3,6 @@
  */
 :root {
 	color-scheme: dark;
-
-	@include light-mode() {
-		color-scheme: light;
-	}
 }
 
 body {
@@ -22,11 +18,6 @@ body {
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
 	margin: 0;
-
-	@include light-mode() {
-		color: $text-color-light;
-		background-color: $background-color-light;
-	}
 }
 
 h1,
@@ -136,10 +127,6 @@ a {
 	&:hover {
 		color: $text-color;
 		text-decoration: underline;
-
-		@include light-mode() {
-			color: $text-color-light;
-		}
 	}
 }
 
@@ -193,10 +180,6 @@ code {
 	border: 1px solid $gray-color;
 	border-radius: 3px;
 	background-color: $code-background-color;
-
-	@include light-mode() {
-		background-color: $code-background-color-light;
-	}
 }
 
 code {
@@ -218,10 +201,6 @@ pre {
 textarea {
 	border-radius: 4px;
 	background-color: $code-background-color;
-
-	@include light-mode() {
-		background-color: $code-background-color-light;
-	}
 }
 
 /**
