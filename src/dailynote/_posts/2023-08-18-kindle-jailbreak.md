@@ -2,8 +2,7 @@
 layout: post
 category: dailynote
 title: "Jailbreaking a Kindle Voyage and installing KOReader"
-section: til
-tags: [kindle, jailbreak, ebook]
+tags: [note, kindle, jailbreak, ebook]
 date: 2023-08-18
 published: true
 ---

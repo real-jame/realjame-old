@@ -399,7 +399,7 @@ body .button-row {
 	background: linear-gradient(to right, #b3d4f0 50%, #7ac2ff 80%, rgba(0, 110, 203, 0) 100%);
 
 	@include media-query($small-screen) {
-		margin-top: -10px;
+		margin-top: 0;
 	}
 }
 

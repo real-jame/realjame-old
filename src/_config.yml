@@ -49,6 +49,7 @@ tagicons:
   web: "/assets/silk/world.png"
   travel: "/assets/silk/car.png"
   prototype: "/assets/silk/cog.png"
+  note: "/assets/silk/note.png"
 callouticons:
   note: "/assets/silk/note.png"
   info: "/assets/silk/information.png"
