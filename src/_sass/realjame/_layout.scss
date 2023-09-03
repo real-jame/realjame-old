@@ -28,13 +28,6 @@
 	text-align: center;
 	justify-content: center;
 
-	@include light-mode() {
-		background-color: $title-background-color-light;
-		color: $text-color-light;
-
-		border: solid $border-color-light $border-size-light;
-	}
-
 	@include media-query($small-screen) {
 		display: none;
 	}
@@ -43,11 +36,6 @@
 .site-nav {
 	background-color: $nav-background-color;
 	position: relative;
-
-	@include light-mode() {
-		background-color: $nav-background-color-light;
-		border: solid $border-color-light $border-size-light;
-	}
 
 	height: 100%;
 
@@ -198,12 +186,6 @@ body .button-row {
 	margin-left: 200px;
 	width: auto;
 
-	@include light-mode() {
-		background-color: $content-background-color-light;
-		border-color: $border-color-light;
-		border-width: $border-size-light;
-	}
-
 	@include media-query($small-screen) {
 		margin-left: 0;
 		padding-top: 50px;
@@ -257,11 +239,6 @@ body .button-row {
 
 		min-width: 40%;
 		flex: 1;
-
-		@include light-mode() {
-			border-color: $border-color-light;
-			background-color: $nav-background-color-light;
-		}
 
 		@include media-query($small-screen) {
 			padding: 0;
