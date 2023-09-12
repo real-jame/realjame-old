@@ -2,39 +2,38 @@
     {% assign count = 0 %}
     {% assign limit = include.limit | default: 999 %}
     {% for post in site.categories[include.category] %}
-        {% if count < limit %}
-            <li class="post-item card">
-                {% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
-                <span class="post-meta">
-                    {{ post.date | date: date_format }}
-                </span>
+    {% if count < limit %} <li class="post-item card">
+        {% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
+        <span class="post-meta">
+            {{ post.date | date: date_format }}
+        </span>
 
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | default: '-Untitled-' }}
-                </a>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | default: '-Untitled-' }}
+        </a>
 
-                {% if post.description %}
-                    {{ post.description }}
-                {% endif %}
-
-                {% if post.image %}
-                    <img
-                        src="{{ post.image }}"
-                        width="512"
-                        height="384">
-                {% else %}
-                    {{ post.excerpt }}
-                {% endif %}
-
-                <span class="topics">
-                    {% for tag in post.tags %}
-                        <a href="/_tags/{{include.category}}/{{ tag }}" class="topic-item pretty-button">{{ tag }}</a>
-                    {% endfor %}
-                </span>
-            </li>
-            {% assign count = count | plus: 1 %}
-        {% else %}
-            {% break %}
+        {% if post.description %}
+        {{ post.description }}
         {% endif %}
-    {% endfor %}
+
+        {% if post.image %}
+        <img src="{{ post.image }}" width="512" height="384">
+        {% else %}
+        {{ post.excerpt }}
+        {% endif %}
+
+        <span class="topics">
+            {% for tag in post.tags %}
+            {% assign icon = site.tagicons[tag] %}
+            <a href="/_tags/{{include.category}}/{{ tag }}" class="topic-item pretty-button">{% if icon %}
+                <img src="{{icon}}" height="16" width="16" alt="" class="icon">
+                {% endif %}{{ tag }}</a>
+            {% endfor %}
+        </span>
+        </li>
+        {% assign count = count | plus: 1 %}
+        {% else %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
 </ul>

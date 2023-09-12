@@ -322,6 +322,11 @@ body .button-row {
 
 .topic-item {
 	font-size: 0.65em;
+
+	.icon {
+		vertical-align: middle;
+		padding-right: 0;
+	}
 }
 
 .rss-subscribe-list a {

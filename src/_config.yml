@@ -50,6 +50,7 @@ tagicons:
   travel: "/assets/silk/car.png"
   prototype: "/assets/silk/cog.png"
   note: "/assets/silk/note.png"
+  textarea.site: "/assets/silk/page_white_edit.png"
 callouticons:
   note: "/assets/silk/note.png"
   info: "/assets/silk/information.png"

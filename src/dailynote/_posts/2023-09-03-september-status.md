@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "September Status"
-tags: [personal, status-update]
+tags: [personal, status-update, textarea.site, roblox]
 date: 2023-09-03
 published: true
 ---
