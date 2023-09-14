@@ -1,10 +1,8 @@
 ---
 layout: post
-category: blog
+category: dailynote
 title: "Everything about tools in classic Roblox"
 tags: [roblox, classic-roblox]
-image: /blog/media/tools-thumbnail.png # TODO
-description: "An excruciatingly deep dive."
 date: 2023-09-13
 published: true
 ---
@@ -57,15 +55,21 @@ You get the idea. Let's just dive into the nerd info already.
 
 ### How do you stop players from dropping tools?
 
-In 2012, yes, but only for tools. https://wiki.realja.me/index.php/CanBeDropped_(Property)
+In 2012, yes, but only for tools. `https://wiki.realja.me/index.php/CanBeDropped_(Property)`
 
 In all previous versions, and with HopperBins, there is no way to prevent tools from being dropped.
+
+TODO: more info - there's probably custom workarounds to move it back when dropped...?
 
 ### Tool Grips
 
 ## Tool scripting
 
 ### First I have to explain the difference between LocalScript (client) and Script (server)
+
+### When do tool scripts execute?
+
+TODO: immediately on character spawn, not when equipped. it even executes if its just in the world in workspace, not under a player
 
 ### Where are tools stored?
 
@@ -122,6 +126,5 @@ The Mouse API is so complex and kinda confusing that it's getting its own whole 
 <hr>
 
 [^1]: To all the nerds in the crowd who already know: yes, HopperBins exist and were used instead of the "Tool" object back then (which didn't even exist in 2006). I'll get to HopperBins, but in this guide, I'm using "tool" (lowercase) as the common name for both a HopperBin and a Tool.
-[^modern-droppingtools]: Unlike Modern, which has the Tool.RequiresHandle boolean property.
 [^modern-mouse]: The Mouse object is the only way to receive user input in classic Roblox. Unfortunately, UserInputService and ContextActionService do not exist.
 [^modern-gettingmouse]: Classic does not have the Player:GetMouse() method.
