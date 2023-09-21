@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "Installing the latest Ruby with rbenv on Debian"
-tags: [note, ruby, debian]
+tags: [note, ruby, linux]
 date: 2023-08-16
 published: true
 ---
