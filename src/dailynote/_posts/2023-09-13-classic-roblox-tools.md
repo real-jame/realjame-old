@@ -1,7 +1,7 @@
 ---
 layout: post
 category: dailynote
-title: "Everything about tools in classic Roblox"
+title: "Trip ups with tool scripting in classic Roblox"
 tags: [roblox, classic-roblox]
 date: 2023-09-13
 published: true
@@ -18,7 +18,9 @@ Working with the classic Roblox (2006-2012) engines and studios is still fairly 
 
 **Tools.**
 
-I'm writing this guide to end my troubled relationship with these pesky little devils once and for all. To write down a common reference for every mistake I make, so finally, I will have ALL THE POWER IN THE WORLD to make a tool that is a rubber duck and goes _quack_ if you click :^) And I'm writing it for everyone else to learn from too!
+I'm writing this guide to end my troubled relationship with these pesky little devils once and for all. To write down a common reference for every mistake I make and confusing parts of it, so finally, I will have ALL THE POWER IN THE WORLD to make a tool that is a rubber duck and goes _quack_ if you click :^) And I'm writing it for everyone else to learn from too!
+
+{% include callout.html type="info" content="For more info on tools, I will refer to my Roblox Legacy Documentation project, which hosts documentation for classic Roblox based off an archive of the 2012 Roblox Wiki. Speaking of which, this article will likely be copied over to there as a guide sometime." %}
 
 ### What the heck are tools?
 
@@ -35,17 +37,7 @@ You get the idea. Let's just dive into the nerd info already.
 
 ## Tool building
 
-### The tool object
-
 ### Wait, what are HopperBins?
-
-### The HopperBin object
-
-### HopperBin.BinType property
-
-### TextureId property
-
-### Tool.ToolTip property
 
 ### Handle
 
@@ -73,11 +65,11 @@ TODO: immediately on character spawn, not when equipped. it even executes if its
 
 ### Where are tools stored?
 
-### Equipping and unequipping events
-
 ### How do you get the player?
 
 ### Tool.Activated event
+
+It doesn't give you the mouse object.
 
 ### Tool.Active property
 
@@ -85,7 +77,7 @@ TODO: immediately on character spawn, not when equipped. it even executes if its
 
 ### Humanoid.TargetPoint property
 
-### Example: a tool that fires rubber ducks where the mouse clicks
+It's kind of arcane knowledge, it's equivalent(?) to mouse.hit, only updates when a tool (or hopperbin..?) is equipped. it's used in the rocket tool, and you can probably get target using Ray (link to ray recreation script for pre-2010, link it to legacy docs) but you should use a workaround that'll come up later.
 
 ## Tool animating
 
@@ -114,6 +106,8 @@ The Mouse API is so complex and kinda confusing that it's getting its own whole 
 [^modern-gettingmouse]
 
 ### Can you use the mouse in server-side scripts?
+
+No, but you can have a local script that updates a Vector3 or ObjectValue for the current mouse.hit or mouse.target, etc. that server scripts can read.
 
 ### Changing the mouse icon
 
