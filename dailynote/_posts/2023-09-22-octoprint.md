@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "Octoprint is very cool!!!!!!!!!!!!!!!!!"
 tags: [3dprinting, linux, server]
-date: 2023-09-13
+date: 2023-09-22
 published: true
 ---
 Setting up a remote control / web UI for my 3D printer was a game changer, I regret doing this sooner. Give OctoPrint a try!
