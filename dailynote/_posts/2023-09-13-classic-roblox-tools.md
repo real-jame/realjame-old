@@ -4,7 +4,7 @@ category: dailynote
 title: "Trip ups with tool scripting in classic Roblox"
 tags: [roblox, classic-roblox]
 date: 2023-09-13
-published: true
+published: false
 ---
 
 <!--
