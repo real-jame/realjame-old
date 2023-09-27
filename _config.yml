@@ -51,6 +51,8 @@ tagicons:
   prototype: "/assets/silk/cog.png"
   note: "/assets/silk/note.png"
   textarea.site: "/assets/silk/page_white_edit.png"
+  tech: "/assets/silk/computer.png"
+  thought: "/assets/silk/heart.png"
 callouticons:
   note: "/assets/silk/note.png"
   info: "/assets/silk/information.png"

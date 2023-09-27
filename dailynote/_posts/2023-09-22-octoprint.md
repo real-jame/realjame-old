@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "Octoprint is very cool!!!!!!!!!!!!!!!!!"
-tags: [3dprinting, linux, server]
+tags: [3dprinting, linux, server, tech]
 date: 2023-09-22
 published: true
 ---
