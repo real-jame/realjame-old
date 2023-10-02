@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "Adding custom snippets to VS Code"
-tags: [note, vscode]
+tags: [note, vscode, tech]
 date: 2023-08-20
 published: false
 ---

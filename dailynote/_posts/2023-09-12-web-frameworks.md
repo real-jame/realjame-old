@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "⚛️ React: When everything looks like a nail..."
 section: til
-tags: [textarea.site, react, web, frontend]
+tags: [textarea.site, react, web, frontend, tech]
 date: 2023-09-12
 published: true
 ---

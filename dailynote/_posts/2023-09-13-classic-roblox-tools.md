@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "Trip ups with tool scripting in classic Roblox"
-tags: [roblox, classic-roblox]
+tags: [roblox, classic-roblox, tech]
 date: 2023-09-13
 published: false
 ---
