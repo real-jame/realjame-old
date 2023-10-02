@@ -1,9 +1,9 @@
 ---
 layout: post
-category: blog
+category: dailynote
 title: "Thoughts on corru.observer (it's very cool)"
 tags: [web, art, review, thought]
-date: 2023-09-29
+date: 2023-09-25
 published: true
 ---
 corru.observer is a very strange website. It's an interactive story that's part 3D game, part visual novel, part website. [Hypertext fiction](https://en.wikipedia.org/wiki/Hypertext_fiction) at its finest.
@@ -76,4 +76,4 @@ Writing... worldbuilding... it makes my head spin with how deep it goes, mainly 
 
 But speaking of writing, story-wise, is there a message or moral in here? I still love it from an art perspective, but in my head the story just seems like... a series of events. Oh well. The story isn't finished, anyways, so we'll have to see how it wraps up.
 
-I didn't play all of it - honestly I got a bit tired of the RPG gameplay but that was due to me doing everything up to that point in one sitting. But I've seen gameplay of the rest, and all in all, corru.observer is very swag, go try it and show the creator some love, they have a [Twitter](https://twitter.com/CorruWorks) and a [website](https://corru.works). That's all!
+I didn't play all of it - honestly I got a bit tired of the RPG gameplay but that was due to me doing everything up to that point in one sitting. But I've seen gameplay of the rest, and all in all, corru.observer is very swag, go try it and show the creator some love, they have a [Twitter](https://twitter.com/CorruWorks) and a [website](https://corru.works). That's all from me today!
