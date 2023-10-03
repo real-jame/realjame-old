@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "General Update II - Hi I'm Still Here"
-tags: [news, web, personal, status-update]
+tags: [news, web, personal, status-update, thought]
 image: /blog/media/2023-05-23-CRT.jpg
 description: "New devlogs section! Mirrors my Twitter teaser posts."
 date: 2023-05-27

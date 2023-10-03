@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: "Introducing Spooking Out!"
-tags: [news, roblox, classic-roblox, spooking-out]
+tags: [news, roblox, classic-roblox, spooking-out, tech, thought]
 image: /blog/media/SpookingOutThumbnail.png
 description: "I made a brand new game for old Roblox with the help of a friend!"
 date: 2022-10-24
