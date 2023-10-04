@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "CLICK TO TEN"
 tags: [game, thought]
-date: 2023-10-03 13:03 -0500
+date: 2023-10-04 12:17 -0500
 published: true
 ---
 <!-- i promised i would write more articles, but the main reason i'm writing about something as dumb as this is because Nick of nick64.me was the aforementioned friend and he said i should write a post about the game after I played it in vc with him, so here you go :^) -->
@@ -11,7 +11,11 @@ published: true
 
 I had to find out. And the game was free, too.
 
-Look at the wonderful trailer, this game *has* to be good!
+Look at the trailer, this game *has* to be good!
+
+<video width="854" height="480" controls>
+  <source src="/dailynote/media/click-to-ten.webm" type="video/mp4">
+</video>
 
 I installed it, and the worry set in as I slowly clicked.
 
@@ -32,6 +36,8 @@ I installed it, and the worry set in as I slowly clicked.
 8...?
 
 9...?!
+
+![](/dailynote/media/click-to-ten-9.jpg)
 
 One more. So close, yet so far. What could happen? Would it be a jumpscare? A funny image, maybe? Or what about a Steam achievement? There was only one way to find out.
 
@@ -72,3 +78,5 @@ I carefully lowered my index finger onto the mouse. I felt the cool plastic of t
 Yeah thats what it does it just closes the game. No wonder he beat it in a minute.
 
 (This post is sarcasm btw)
+
+<iframe src="https://store.steampowered.com/widget/1910580/" frameborder="0" width="646" height="190"></iframe>

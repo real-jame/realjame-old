@@ -15,7 +15,8 @@
             "marquee",
             "small",
             "source",
-            "video"
+            "video",
+            "iframe"
         ]
     },
     "no-emphasis-as-header": false
