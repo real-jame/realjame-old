@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "Thoughts on corru.observer (it's very cool)"
-tags: [web, art, review, thought]
+tags: [web, art, game, review, thought]
 date: 2023-09-25
 published: true
 ---

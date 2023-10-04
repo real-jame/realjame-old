@@ -2,7 +2,7 @@
 layout: post
 category: devlog
 title: "Lava Escape concept prototype"
-tags: [roblox, prototype]
+tags: [roblox, prototype, tech]
 image: /devlog/media/lavaescape-1-thumbnail.jpg
 description: "Can you survive the rising lava?"
 date: 2023-01-15
