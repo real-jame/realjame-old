@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    {% include head.html %}
+  {% include head.html %}
 
-        <body>
-        <!-- man its been 2 weeks working on this site redesign. i am so tired but it was worth it -jame -->
-        <!-- hi if youre reading this -->
-        <!-- there are more comments on various pages have fun -->
-        <!-- but like its inside the main/article wrappers and stuff -->
-        <!-- there's also not that many actually -->
-        <!-- https://realja.me/bloxycola.jpg -->
+    <body>
+    <!-- Hi! -->
+    <!-- I've written comments on several posts and pages of this website. -->
+    <!-- Please, try opening the latest daily note and check. -->
+    <!-- You'll have to dig a bit, expand div > main > "post-content" div -->
+    <!-- But if you do that, you'll find some more serious reflections. -->
+    <!-- https://realja.me/bloxycola.jpg -->
 
-        {% include header.html %}
-            <div class="page-content"> <main class="content-wrapper" aria-label="Content">{{ content }}</main>
-        </div>
+    {% include header.html %}
+    <div class="page-content">
+      <main class="content-wrapper" aria-label="Content">{{ content }}</main>
+    </div>
 
-        {% include footer.html %}
-    </body>
+    {% include footer.html %}
+  </body>
 </html>

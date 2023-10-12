@@ -5,5 +5,8 @@
 		"*.md.liquid": "markdown",
 		"*.html": "liquid"
 	},
-	"liquid.format.enable": true
+	"liquid.format.enable": true,
+	"[liquid]": {
+		"editor.formatOnSave": true
+	}
 }
