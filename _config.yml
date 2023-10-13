@@ -78,4 +78,4 @@ kramdown:
   smart_quotes: [apos, apos, quot, quot]
   typographic_symbols: { hellip: ... }
 feed:
-  posts_limit: 30
+  posts_limit: 9999
