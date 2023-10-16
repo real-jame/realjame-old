@@ -25,9 +25,9 @@ What a sight it was! It's something else entirely with such a simple lens - wher
 
 Anyways, about the competition, yeah. I didn't directly help much. But my teammates were very helpful, and it was nice meeting the majority of them for the first time. I mainly did just hang out and spectate, but I did help fetch a few things, as well as film the matches... that's gotta count for something, right?
 
-Driving to and from the place was really something though. 2 hours one way... I've never driven that long before. And after doing so, I can say it was *fine*, but it was excruciatingly boring at times. Just having to devote full focus to essentially nothing but moving the wheel by fractions of an inch along a big road, **for hours**. I'll probably have to do it to see my family depending on the college I choose, so that'll be fun. Anyway, I listened to a fanmade radio drama called "Sonic and Tails R" to pass the time, it was pretty good! [Link](https://www.youtube.com/watch?v=siOnf9lsCho&list=PLVucl6B8OcBPCfQdgCMGUUFxv2Y7jl5_s)
+Driving to and from the place was really something though. 2 hours one way... I've never driven that long before. And after doing so, I can say it was *fine*, but it was excruciatingly boring at times. Just having to devote full focus to essentially nothing but moving the wheel by fractions of an inch along a big road, **for hours**. I'll probably have to do it to see my family depending on the college I choose, so that'll be fun. Oh, along the way, I listened to a fanmade radio drama called "Sonic and Tails R" to pass the time, it was pretty good! [Link](https://www.youtube.com/watch?v=siOnf9lsCho&list=PLVucl6B8OcBPCfQdgCMGUUFxv2Y7jl5_s)
 
-I feel like I should be talking more about the reason I went to the competition - Robotics?! I mainly talked about the other minute details. I don't wanna say it was bad. There were a lot of periods of just waiting around doing nothing, but even then, it was fun! I got to talk to people, hang out, etc. All good. How about some more photos to wrap it up?
+I feel like I should be talking more about the reason I went to the competition - Robotics?! I mainly talked about the other minute details. I don't wanna say it was bad. There were a lot of periods of just waiting around doing nothing, but even then, it was fun! I got to talk to people, hang out, etc. Not much more to say. How about some more photos to wrap it up?
 
 {% include image.html url="/blog/media/spacecoast-robot_small.jpg" largeurl="/blog/media/spacecoast-robot.jpg" alt="Outdoor photo of my team's robot. Wheeled in on a small cart, a robot labeled 8775, with a complicated design of metal, wires, and various other robot-y components." caption="" x="768" y="1020" %}
 
@@ -35,4 +35,6 @@ I feel like I should be talking more about the reason I went to the competition 
 
 {% include image.html url="/blog/media/spacecoast-packup_small.jpg" largeurl="/blog/media/spacecoast-packup.jpg" alt="Photo from a parking lot, where our team is seen moving stuff into a U-Haul." caption="Packing up." x="1020" y="768" %}
 
-I was considering making this a daily note, but because of all the images and stuff, I might as well call it a blog post. Even if the writing feels like a daily note, but who really cares about categorizing? I am the only person on this planet who will care about how daily notes and blog posts are differentiated on realja.me. So why worry about it? :P
+I'm really looking forward to being a part of my high school's robotics team this year, and joining in for more competitions in the future. <3
+
+<small>*I was considering making this a daily note, but because of all the images and stuff, I might as well call it a blog post. Even if the writing feels like a daily note, but who really cares about categorizing? I am the only person on this planet who will care about how daily notes and blog posts are differentiated on realja.me. So why worry about it? :P*</small>
