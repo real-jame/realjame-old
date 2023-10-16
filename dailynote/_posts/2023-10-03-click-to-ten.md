@@ -79,4 +79,4 @@ Yeah thats what it does it just closes the game. No wonder he beat it in a minut
 
 (This post is sarcasm btw)
 
-<iframe src="https://store.steampowered.com/widget/1910580/" frameborder="0" width="646" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/1910580/" frameborder="0" x="646" height="190"></iframe>

@@ -40,7 +40,7 @@ I've already been using a calendar/to-do list to help guide myself day-by-day (b
 
 Oh, and another thing that may also help me... is a **job**.
 
-## I got an internship!
+## I got an internship
 
 It's a month-long (paid) IT internship at a health company! I got it through my school, and I'm really glad.
 
@@ -48,7 +48,7 @@ Since the start of this year I've been pressuring myself, maybe a bit too much, 
 
 I am still new to working standard jobs, specifically tech-related ones. But I am confident in my abilities, both technically and socially :^)
 
-## Devlogs, a new addition to the site!
+## Devlogs, a new addition to the site
 
 realja.me now hosts mirrored copies of the teaser/announcement posts I make on Twitter and Mastodon about what I'm working on.
 
@@ -144,7 +144,7 @@ The wiki is built off an archive of the Roblox Wiki from June 2012, but we've be
 
 After all, website documentation isn't really necessary anymore, right?
 
-{% include image.html url="/devlog/media/wiki-2-ArchivedPages.jpeg" alt="Screenshot of the \"Archived Pages\" section of the Roblox Legacy Docs site, containing all the website documentation pages." caption="Don't worry, they've been preserved." width="" height="" %}
+{% include image.html url="/devlog/media/wiki-2-ArchivedPages.jpeg" alt="Screenshot of the \"Archived Pages\" section of the Roblox Legacy Docs site, containing all the website documentation pages." caption="Don't worry, they've been preserved." x="" y="" %}
 
 I do want to make articles about the project though. Like how I started it in the first place, not knowing anything about MediaWiki (the server software used). Or our progress, including a newfound interest in April.
 
@@ -187,6 +187,6 @@ I like my website. But if I want people to discover and read it, a possibly effe
 
 I'll try reposting future blog posts (that aren't exclusively about the website) onto Medium. Not much else to say.
 
-### Goodbye!
+### Goodbye
 
 That's all for now. See you soon!

@@ -20,7 +20,7 @@ This means you can now play our game on modern Roblox. Oh, and we also went back
 
 There are also 5 badges -- essentially, achievements. Here's one of them:
 
-{% include image.html url="/blog/media/SpookingOutModernBadge.png" alt="Brown bag with the word 'Tix' printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filter." caption="Can you get them all?" width="" height="" %}
+{% include image.html url="/blog/media/SpookingOutModernBadge.png" alt="Brown bag with the word 'Tix' printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filter." caption="Can you get them all?" x="" y="" %}
 
 ## TL;DR
 
