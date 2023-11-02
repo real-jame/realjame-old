@@ -612,8 +612,7 @@ body .button-row {
 .callout {
 	overflow: hidden;
 	border-style: solid;
-	border-color: rgba(255, 2, 2, 0);
-	border-width: 0px;
+	border-width: 3px;
 	border-radius: 4px;
 	width: 50%;
 	margin: 1em auto;
@@ -625,11 +624,21 @@ body .button-row {
 	}
 }
 
+.callout-aside {
+	@media screen and (min-width: $small-screen) {
+		float: right;
+		clear: right;
+		width: 40%;
+		overflow-x: auto;
+	}
+}
+
 .callout-title {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	font-size: 1.5em;
+	color: var(--callout-title-color);
 }
 
 .callout-icon {
@@ -652,39 +661,80 @@ body .button-row {
 	}
 }
 
-.callout-note,
-.callout-info,
-.callout-todo {
+.callout-note {
 	background-color: rgba(27, 42, 53, 0.95);
+	border-color: #cea476;
+	--callout-title-color: #ffe88c;
 }
 
-.callout-summary,
+.callout-info {
+	background-color: rgba(27, 42, 53, 0.95);
+	border-color: #a2bddd;
+	--callout-title-color: #9bcdff;
+}
+
+.callout-summary {
+	background-color: #1b2a2a;
+	border-color: #d4e6fd;
+	--callout-title-color: #53dfdd;
+}
+
+.callout-todo {
+	background-color: rgba(27, 42, 53, 0.95);
+	border-color: #cea476;
+	--callout-title-color: #f6df80;
+}
+
 .callout-tip {
 	background-color: #04403f;
+	border-color: #fcf0c4;
+	--callout-title-color: #f6df80;
 }
 
 .callout-success {
 	background-color: #0f330f;
+	border-color: #90d284;
+	--callout-title-color: #82cb78;
 }
 
 .callout-question {
-	background-color: #454520;
+	background-color: #4a4f54;
+	border-color: #d0deee;
+	--callout-title-color: #9bcdff;
 }
 
 .callout-warning {
-	background-color: #8f5517;
+	background-color: #451602;
+	border-color: #e9973f;
+	--callout-title-color: #e9973f;
 }
 
-.callout-failure,
-.callout-danger,
+.callout-failure {
+	background-color: #521618;
+	border-color: #ff585b;
+	--callout-title-color: #ff7b7e;
+}
+
+.callout-danger {
+	background-color: #521618;
+	border-color: #eb6e5a;
+	--callout-title-color: #ff7b7e;
+}
+
 .callout-bug {
 	background-color: #521618;
+	border-color: #eb6e5a;
+	--callout-title-color: #ff7b7e;
 }
 
 .callout-example {
 	background-color: #382b58;
+	border-color: #a882ff;
+	--callout-title-color: #a882ff;
 }
 
 .callout-quote {
-	background-color: #3b3b3b;
+	background-color: #3b3f43;
+	border-color: #5d8bb3;
+	--callout-title-color: #7c7c7c;
 }

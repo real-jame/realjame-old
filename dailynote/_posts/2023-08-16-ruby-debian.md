@@ -12,9 +12,9 @@ For context, [rbenv](https://github.com/rbenv/rbenv) is a version manager tool f
 
 Not like having the latest version is the end of the world, but it's nice (and also to keep things consistent across devices and servers).
 
-The simplest way is to install one of many Ruby manager tools and build it from source. I chose **rbenv** for not much reason other than the other tools were more finicky to install, wasn't easy to set up [fish shell](https://fishshell.com/) integration for, or just not recommended by the Ruby community.
-
 {% include callout.html type="note" content="I've followed these steps on Ubuntu 22.04.3 WSL - this guide should apply to any Linux distribution based on Debian, not just Debian itself." %}
+
+The simplest way is to install one of many Ruby manager tools and build it from source. I chose **rbenv** for not much reason other than the other tools were more finicky to install, wasn't easy to set up [fish shell](https://fishshell.com/) integration for, or just not recommended by the Ruby community.
 
 ## Installation
 

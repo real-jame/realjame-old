@@ -1,21 +1,23 @@
 {% assign type = include.type | default: 'note' %}
 {% assign icon_path = site.callouticons[type] | default: '/assets/silk/pencil.png' %}
 
-<div class="callout callout-{{ type }}">
-    {% unless include.hideheader %}
-        <div class="callout-title">
-            <img
-                src="{{ icon_path }}"
-                width="32"
-                height="32"
-                alt=""
-                class="icon callout-icon">
-            <div class="callout-title-inner">{{ type | capitalize }}</div>
-        </div>
-    {% endunless %}
-    <div class="callout-content">
-        <p>
-            {{ include.content }}
-        </p>
+{% assign is_aside = include.aside | default: true %}
+
+<div class="callout{% if is_aside %} callout-aside{% endif %} callout-{{ type }}">
+  {% unless include.hideheader %}
+    <div class="callout-title ">
+      <img
+        src="{{ icon_path }}"
+        width="32"
+        height="32"
+        alt=""
+        class="icon callout-icon">
+      <div class="callout-title-inner">{{ type | capitalize }}</div>
     </div>
+  {% endunless %}
+  <div class="callout-content">
+    <p>
+      {{ include.content }}
+    </p>
+  </div>
 </div>
