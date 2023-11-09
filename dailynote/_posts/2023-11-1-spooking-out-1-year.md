@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "Spooking Out 1 year anniversary!"
 tags: [spooking-out, roblox, tech, personal]
-date: 2023-11-01 23:20 -0500
+date: 2023-11-01
 published: true
 ---
 <!-- I was gonna write this on Halloween, but I've been super busy with college applications the past few days. Oh well! -->
