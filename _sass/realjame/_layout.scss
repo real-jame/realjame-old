@@ -370,7 +370,7 @@ body .button-row {
 
 .post-title {
 	font-size: 2.625em;
-	letter-spacing: -1px;
+	// letter-spacing: -1px;
 	line-height: 1;
 	text-align: center;
 	font-weight: bold;
@@ -737,4 +737,10 @@ body .button-row {
 	background-color: #3b3f43;
 	border-color: #5d8bb3;
 	--callout-title-color: #7c7c7c;
+}
+
+// this comment is just a divider idk what to write here lol
+
+.big {
+	font-size: 1.5em;
 }

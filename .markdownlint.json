@@ -15,6 +15,7 @@
             "marquee",
             "small",
             "source",
+            "span",
             "video",
             "iframe"
         ]
