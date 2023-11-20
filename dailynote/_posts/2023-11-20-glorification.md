@@ -4,7 +4,7 @@ category: dailynote
 title: "Will people glorify the current internet in 20 years?"
 tags: [bookmark]
 date: 2023-11-20
-published: true
+published: false
 ---
 For the last few years, there's been low-stakes movements to rediscover the aesthetics and values that composed of the Web 1.0 era internet - that is, from the 90s to the early/mid 2000s.
 
