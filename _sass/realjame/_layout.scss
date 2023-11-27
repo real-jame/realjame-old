@@ -624,14 +624,17 @@ body .button-row {
 	}
 }
 
-.callout-aside {
-	@media screen and (min-width: $small-screen) {
-		float: right;
-		clear: right;
-		width: 40%;
-		overflow-x: auto;
-	}
-}
+// disabled because i dont know how to prevent it from overlapping header bars and stuff.
+
+// .callout-aside {
+// 	@media screen and (min-width: $small-screen) {
+// 		float: right;
+// 		clear: right;
+// 		width: 40%;
+// 		overflow-x: auto;
+// 		margin-bottom: 5em;
+// 	}
+// }
 
 .callout-title {
 	display: flex;

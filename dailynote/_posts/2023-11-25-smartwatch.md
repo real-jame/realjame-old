@@ -6,7 +6,7 @@ tags: [thought]
 date: 2023-11-25
 published: true
 ---
-Buy an expensive companion for your phone, and that'll lead you to use your phone *less*? It sounds like an oxymoron. But after over a month of using my Google Pixel Watch, it seems to be true!
+Buy an expensive companion for your phone, and that'll lead you to use your phone *less*? It sounds like an oxymoron. But after over a month of using my [Google Pixel Watch](https://en.wikipedia.org/wiki/Pixel_Watch), it seems to be true!
 
 So, yeah. I've been dealing with spending more time on my phone than I'd like. And I try stuff like time tracking apps, blocking, etc. but nothing works. Quite simply, if my phone was there, I would be on it, such as before going to bed and then immediately waking up.
 
@@ -22,7 +22,7 @@ Smartwatches seem to be equally good for 3 different things:
 - A remote control and display for your phone's media player and driving navigations
 - A replacement for your phone at times (e.g. going out for a walk)
 
-And it's that 3rd thing that works amazingly for me. Thanks to my smartphone both having LTE and otherwise being tethered to my phone, I can receive and send text messages and voice calls.
+All of these are useful, but it's that 3rd thing that's super helpful in this situation. Thanks to my watch being tethered to my phone, I can send and receive text messages and voice calls.
 
 Plus, it's the best alarm clock I've ever owned. Seriously! It being directly pressing and buzzing against your wrist is super effective at waking me up - no audio needed, so I don't have to annoy anyone with a loud alarm.
 
@@ -40,10 +40,12 @@ Other manufacturers are probably doing stuff too, mainly Samsung. I wasn't reall
 
 I got my LTE Pixel Watch from eBay for $160 by making an offer on a buy-it-now listing, but they seem to go anywhere from $100-200 on both eBay and Facebook Marketplace. So be vigilant on both platforms for a good deal. I hunted for maybe a week or two.
 
-Scams are rare but possible, and you won't get warranty buying second-hand. [Not like Google repairs the Pixel Watch, though.](https://www.theverge.com/23874281/google-pixel-watch-cracks-no-repairs-warranty)
-
 {% include callout.html type="note" content="The Pixel Watch also comes with 6 months of Fitbit Premium. Weirdly, when I set up my Watch, it *did* give me the offer. Maybe I got lucky and bought it from someone who never used it? Or does Google just offer it to any Google account who sets up a Pixel Watch? Not sure." %}
 
-## About my smartwatch in particular
+Scams are rare but possible, plus you don't get warranty buying second-hand. [Not like Google repairs the Pixel Watch, though.](https://www.theverge.com/23874281/google-pixel-watch-cracks-no-repairs-warranty)
 
-I might as well use this note to put down my thoughts on the Google Pixel Watch.
+## End
+
+Maybe I'll write a daily note specifically about my experiences about the Pixel Watch, but I'll leave it at that for now.
+
+Smartwatches are basically just a pager for your phone. And I love that. 📟
