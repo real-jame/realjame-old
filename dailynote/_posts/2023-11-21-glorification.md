@@ -2,11 +2,12 @@
 layout: post
 category: dailynote
 title: "Will people glorify the current internet in 20 years?"
-tags: [thought]
+tags: [thought, tech, web]
 date: 2023-11-21
 published: true
 ---
 For the last few years, there's been low-stakes movements to rediscover the aesthetics and values that composed of the Web 1.0 era internet - that is, from the 90s to the early/mid 2000s.
+<!-- I didn't meant to publish this post now (11/27) but I don't really have any more inspiration. A 90% post, I explain it in the next post. -->
 
 {% include image.html url="/dailynote/media/glorification-neocities.png" alt="Index page for websites people have made on Neocities" caption="Neocities is a modern-day platform for website creation and hosting, which people commonly use for their personal, sometimes Web 1.0 themed, websites." %}
 

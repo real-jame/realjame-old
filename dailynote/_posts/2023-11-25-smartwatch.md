@@ -2,11 +2,20 @@
 layout: post
 category: dailynote
 title: "Wanna cut down on phone usage? Try a smartwatch!"
-tags: [thought]
+tags: [thought, personal, tech, phone, watch, health]
 date: 2023-11-25
 published: true
 ---
 Buy an expensive companion for your phone, and that'll lead you to use your phone *less*? It sounds like an oxymoron. But after over a month of using my [Google Pixel Watch](https://en.wikipedia.org/wiki/Pixel_Watch), it seems to be true!
+<!-- 
+This is a "90% post", something I realized about my process of writing notes and what holds me back a bit.
+I sit down and write 90% of the post with a burst of energy. "I'll come back to it later and finish the rest", I say. 
+But then, I don't. Maybe I do sit down but I have no more motivation to write about this topic, let alone have any ideas for what to write next. Sometimes I just get lazy or forget about it.
+I've probably sort of come to this conclusion in earlier notes, but oh well.
+The thing is that the existing 90% is already really good in itself, so I might as well publish it.
+The last 10% of this post was going to be my thoughts on my Pixel Watch, but I might as well make it its own note at this point.
+End of this ramble. Have a good day -jame
+-->
 
 So, yeah. I've been dealing with spending more time on my phone than I'd like. And I try stuff like time tracking apps, blocking, etc. but nothing works. Quite simply, if my phone was there, I would be on it, such as before going to bed and then immediately waking up.
 
