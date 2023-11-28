@@ -48,4 +48,4 @@ Scams are rare but possible, plus you don't get warranty buying second-hand. [No
 
 Maybe I'll write a daily note specifically about my experiences about the Pixel Watch, but I'll leave it at that for now.
 
-Smartwatches are basically just a pager for your phone. And I love that. 📟
+Basically, it's a pretty nice pager for your phone. 📟
