@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "Wanna cut down on phone usage? Try a smartwatch!"
 tags: [thought]
-date: 2023-11-25
+date: 2023-11-27
 published: true
 ---
 Buy an expensive companion for your phone, and that'll lead you to use your phone *less*? It sounds like an oxymoron. But after over a month of using my [Google Pixel Watch](https://en.wikipedia.org/wiki/Pixel_Watch), it seems to be true!
@@ -48,4 +48,4 @@ Scams are rare but possible, plus you don't get warranty buying second-hand. [No
 
 Maybe I'll write a daily note specifically about my experiences about the Pixel Watch, but I'll leave it at that for now.
 
-Smartwatches are basically just a pager for your phone. And I love that. 📟
+Basically, it's a pretty nice pager for your phone. 📟
