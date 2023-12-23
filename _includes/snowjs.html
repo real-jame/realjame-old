@@ -1,0 +1,94 @@
+{% comment %} Too lazy to do the CSS-only route lol. {% endcomment %}
+<script src="/assets/snowstorm-min.js"></script>
+<button class="snow-settings-show" onclick="toggleModal()"><img src="/assets/silk/weather_snow.png" alt="Snow Settings"></button>
+<div class="snow-settings">
+  <a href="#" onclick="snowStorm.randomizeWind();return false">Change Wind</a>
+  <a href="#" onclick="toggleSnow();return false">Toggle Snowing</a>
+  <div>
+    <input
+      type="range"
+      min="20"
+      max="200"
+      value="128"
+      name="snowflake-count"
+      id="snowflake-count"
+      oninput="updateCount()">
+    <label for="snowflake-count">Max Snowflakes</label>
+  </div>
+  <div>
+    <input
+      type="checkbox"
+      name="snowflake-follow"
+      id="snowflake-follow"
+      onchange="toggleFollow()">
+    <label for="snowflake-follow">Follow Mouse</label>
+  </div>
+</div>
+<style>
+  .snow-settings {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    bottom: calc(1em + 32px);
+    right: calc(1em);
+    background-color: #2c2c2c;
+    padding: 0.5em;
+  }
+
+  .snow-settings-show {
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    padding: 0;
+  }
+
+  .snow-settings-show img {
+    max-width: unset;
+    height: 32px;
+    width: 32px;
+    image-rendering: pixelated;
+  }
+</style>
+<script>
+  snowStorm.excludeMobile = false; // it's 2023, mobile CPUs and batteries have seen worse.
+
+  const savedSettings = JSON.parse(localStorage.getItem('snowSettings')) || {
+    flakesMaxActive: 128,
+    followMouse: true,
+  };
+
+  snowStorm.flakesMaxActive = savedSettings.flakesMaxActive;
+  snowStorm.followMouse = savedSettings.followMouse;
+
+  function toggleModal() {
+    const div = document.querySelector(".snow-settings");
+    div.style.display = div.style.display == "none" ? "flex" : "none";
+  }
+
+  function updateCount() {
+    const slider = document.getElementById("snowflake-count");
+    snowStorm.flakesMaxActive = slider.value;
+    saveSettings();
+  }
+
+  function toggleFollow() {
+    snowStorm.followMouse = !snowStorm.followMouse;
+    saveSettings();
+  }
+
+  function toggleSnow() {
+    snowStorm.toggleSnow();
+    saveSettings();
+  }
+  
+  const followCheck = document.getElementById("snowflake-follow");
+  followCheck.value = snowStorm.followMouse;
+
+  function saveSettings() {
+    const settings = {
+      flakesMaxActive: snowStorm.flakesMaxActive,
+      followMouse: snowStorm.followMouse,
+    };
+    localStorage.setItem('snowSettings', JSON.stringify(settings));
+  }
+</script>
