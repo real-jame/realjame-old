@@ -6,23 +6,13 @@
   <a href="#" onclick="toggleSnow();return false">Toggle Snowing</a>
   <div>
     <input
-      type="range"
-      min="20"
-      max="200"
-      value="128"
-      name="snowflake-count"
-      id="snowflake-count"
-      oninput="updateCount()">
-    <label for="snowflake-count">Max Snowflakes</label>
-  </div>
-  <div>
-    <input
       type="checkbox"
       name="snowflake-follow"
       id="snowflake-follow"
       onchange="toggleFollow()">
     <label for="snowflake-follow">Follow Mouse</label>
   </div>
+  <p style="margin: 0;">Your changes will save.</p>
 </div>
 <style>
   .snow-settings {
@@ -53,22 +43,18 @@
   snowStorm.excludeMobile = false; // it's 2023, mobile CPUs and batteries have seen worse.
 
   const savedSettings = JSON.parse(localStorage.getItem('snowSettings')) || {
-    flakesMaxActive: 128,
+    show: true,
     followMouse: true,
   };
 
-  snowStorm.flakesMaxActive = savedSettings.flakesMaxActive;
   snowStorm.followMouse = savedSettings.followMouse;
+  let show = savedSettings.show;
+  const followCheck = document.getElementById("snowflake-follow");
+  followCheck.checked = snowStorm.followMouse;
 
   function toggleModal() {
     const div = document.querySelector(".snow-settings");
     div.style.display = div.style.display == "none" ? "flex" : "none";
-  }
-
-  function updateCount() {
-    const slider = document.getElementById("snowflake-count");
-    snowStorm.flakesMaxActive = slider.value;
-    saveSettings();
   }
 
   function toggleFollow() {
@@ -78,17 +64,16 @@
 
   function toggleSnow() {
     snowStorm.toggleSnow();
+    show = !show;
     saveSettings();
   }
-  
-  const followCheck = document.getElementById("snowflake-follow");
-  followCheck.value = snowStorm.followMouse;
 
   function saveSettings() {
     const settings = {
-      flakesMaxActive: snowStorm.flakesMaxActive,
       followMouse: snowStorm.followMouse,
+      show: show,
     };
     localStorage.setItem('snowSettings', JSON.stringify(settings));
+    console.log(localStorage.getItem("snowSettings"));
   }
 </script>
