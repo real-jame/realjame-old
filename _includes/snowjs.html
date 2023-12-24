@@ -1,38 +1,20 @@
 {% comment %} Too lazy to do the CSS-only route lol. {% endcomment %}
 <script src="/assets/snowstorm-min.js"></script>
-<button class="snow-settings-show" onclick="toggleModal()"><img src="/assets/silk/weather_snow.png" alt="Snow Settings"></button>
-<div class="snow-settings">
-  <a href="#" onclick="snowStorm.randomizeWind();return false">Change Wind</a>
-  <a href="#" onclick="toggleSnow();return false">Toggle Snowing</a>
-  <div>
-    <input
-      type="checkbox"
-      name="snowflake-follow"
-      id="snowflake-follow"
-      onchange="toggleFollow()">
-    <label for="snowflake-follow">Follow Mouse</label>
-  </div>
-  <p style="margin: 0;">Your changes will save.</p>
-</div>
+<button id="snow-toggle" onclick="toggleClick()">
+  <img
+    src="/assets/silk/weather_snow.png"
+    alt="Toggle Snow"
+    id="snow-icon">
+</button>
 <style>
-  .snow-settings {
-    position: fixed;
-    display: none;
-    flex-direction: column;
-    bottom: calc(1em + 32px);
-    right: calc(1em);
-    background-color: #2c2c2c;
-    padding: 0.5em;
-  }
-
-  .snow-settings-show {
+  #snow-toggle {
     position: fixed;
     bottom: 1em;
     right: 2em;
     padding: 0;
   }
 
-  .snow-settings-show img {
+  #snow-icon {
     max-width: unset;
     height: 32px;
     width: 32px;
@@ -41,37 +23,36 @@
 </style>
 <script>
   snowStorm.excludeMobile = false; // it's 2023, mobile CPUs and batteries have seen worse.
+  snowStorm.vMaxX = 0.2;
+  snowStorm.vMaxY = 2;
 
   const savedSettings = JSON.parse(localStorage.getItem('snowSettings')) || {
-    show: true,
-    followMouse: true,
+    snowEffect: true,
   };
+  console.log(localStorage.getItem("snowSettings"));
 
-  snowStorm.followMouse = savedSettings.followMouse;
-  let show = savedSettings.show;
-  const followCheck = document.getElementById("snowflake-follow");
-  followCheck.checked = snowStorm.followMouse;
-
-  function toggleModal() {
-    const div = document.querySelector(".snow-settings");
-    div.style.display = div.style.display == "none" ? "flex" : "none";
-  }
-
-  function toggleFollow() {
-    snowStorm.followMouse = !snowStorm.followMouse;
+  let snow = savedSettings.snowEffect;
+  function updateSnowing() {
+    if (snow) {
+        snowStorm.flakesMaxActive = 64;
+    } else {
+        snowStorm.flakesMaxActive = 0;
+    }
+    document.getElementById('snow-icon').src = snow ? '/assets/silk/weather_snow.png' : '/assets/silk/weather_sun.png';
     saveSettings();
   }
+  if (!snow) {
+    updateSnowing() // apply previously saved changes on page load
+  }
 
-  function toggleSnow() {
-    snowStorm.toggleSnow();
-    show = !show;
-    saveSettings();
+  function toggleClick() {
+    snow = !snow;
+    updateSnowing();
   }
 
   function saveSettings() {
     const settings = {
-      followMouse: snowStorm.followMouse,
-      show: show,
+        snowEffect: snow,
     };
     localStorage.setItem('snowSettings', JSON.stringify(settings));
     console.log(localStorage.getItem("snowSettings"));
