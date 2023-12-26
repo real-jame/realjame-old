@@ -4,7 +4,7 @@ category: dailynote
 title: "A few books"
 tags: [thought, personal, reading]
 date: 2023-12-18
-published: true
+published: false
 ---
 Here are some thoughts on the books I read at least a bit. (I've gotten a bit lazy on reading this week.) No weekly posting, I guess, but oh well.
 <!-- been in a weird state of mind recently -->
