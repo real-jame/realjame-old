@@ -3,11 +3,16 @@
 <style>
   /* customizable snowflake styling */
   .snowflake {
-    color: #fff;
+    color: rgba(1, 1, 1, 0.9);
     font-size: 0.3em;
     font-family: Arial
     , sans-serif;
-    /* text-shadow: 0 0 5px #000; */
+    text-shadow: 0 0 5px #000;
+  }
+
+  .snowflake:nth-child(odd) {
+    color: rgba(1, 1, 1, 0.8);
+    font-size: 0.5em;
   }
 
   .snowflake,
@@ -40,11 +45,11 @@
     user-select: none;
     cursor: default;
     animation-name: snowflakes-shake;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out
   }
   .snowflake .inner {
-    animation-duration: 10s;
+    animation-duration: 12s;
     animation-name: snowflakes-fall;
     animation-timing-function: linear
   }
@@ -125,7 +130,7 @@
     animation-delay: 2.5s
   }
 </style>
-<div class="snowflakes" aria-hidden="true">
+<div id="snowflakes" aria-hidden="true">
   <div class="snowflake">
     <div class="inner">⚪</div>
   </div>
@@ -163,3 +168,51 @@
     <div class="inner">⚪</div>
   </div>
 </div>
+<button id="snow-toggle" onclick="toggleClick()">
+  <img
+    src="/assets/silk/weather_snow.png"
+    alt="Toggle Snow"
+    id="snow-icon">
+</button>
+<style>
+  #snow-toggle {
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    padding: 0;
+  }
+
+  #snow-icon {
+    max-width: unset;
+    height: 32px;
+    width: 32px;
+    image-rendering: pixelated;
+  }
+</style>
+<script>
+  const savedSettings = JSON.parse(localStorage.getItem('snowSettings')) || {
+    snowEffect: true,
+  };
+
+  let snow = savedSettings.snowEffect;
+  function updateSnowing() {
+    document.getElementById("snowflakes").style.display = snow ? "block" : "none";
+    document.getElementById('snow-icon').src = snow ? '/assets/silk/weather_snow.png' : '/assets/silk/weather_sun.png';
+    saveSettings();
+  }
+  if (!snow) {
+    updateSnowing() // apply previously saved changes on page load
+  }
+
+  function toggleClick() {
+    snow = !snow;
+    updateSnowing();
+  }
+
+  function saveSettings() {
+    const settings = {
+        snowEffect: snow,
+    };
+    localStorage.setItem('snowSettings', JSON.stringify(settings));
+  }
+</script>
