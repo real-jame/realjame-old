@@ -13,7 +13,7 @@ I've been reading a bit every day this month, so I'll be blogging each week abou
 <!-- Is that an excuse? Well, I don't think anyone really cares either way if I work or not, this is just for my sake. -->
 <!-- I regret not blogging either - I've had a few ideas for articles but never had the motivation to write them. -->
 <!-- What will it take to break free of this cycle of not doing something, then coming up with an explanation for it and a plan to fix it, and nothing changes? -->
-I'll say more in that week's article, but I try to find books I've never heard of and seem interesting when I'm at the library.
+I'll say more in the first week's article, but I try to find books I've never heard of and seem interesting when I'm at the library.
 
 In other words, I'm not trying to *read* all of these books, but *explore* them. Even if you give up on a book, or simply skim it, you still gain something, I think.
 
