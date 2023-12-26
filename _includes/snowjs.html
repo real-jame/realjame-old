@@ -1,5 +1,5 @@
 {% comment %} Too lazy to do the CSS-only route lol. {% endcomment %}
-<script src="/assets/snowstorm-min.js"></script>
+<script src="/assets/snowstorm.js"></script>
 <button id="snow-toggle" onclick="toggleClick()">
   <img
     src="/assets/silk/weather_snow.png"
@@ -20,11 +20,15 @@
     width: 32px;
     image-rendering: pixelated;
   }
+
+  .snowflake {
+    text-shadow: 0 0 32px black;
+  }
 </style>
 <script>
   snowStorm.excludeMobile = false; // it's 2023, mobile CPUs and batteries have seen worse.
   snowStorm.vMaxX = 0.2;
-  snowStorm.vMaxY = 2;
+  snowStorm.vMaxY = 0.8;
 
   const savedSettings = JSON.parse(localStorage.getItem('snowSettings')) || {
     snowEffect: true,
@@ -34,7 +38,7 @@
   let snow = savedSettings.snowEffect;
   function updateSnowing() {
     if (snow) {
-        snowStorm.flakesMaxActive = 64;
+        snowStorm.flakesMaxActive = 32;
     } else {
         snowStorm.flakesMaxActive = 0;
     }
