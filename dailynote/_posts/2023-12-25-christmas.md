@@ -1,10 +1,10 @@
 ---
 layout: post
 category: dailynote
-title: "Christmas!"
+title: "Christmas"
 tags: [thought, personal]
 date: 2023-12-25
-published: false
+published: true
 ---
 Hope it was a good one. I know mine was. ❤️
 

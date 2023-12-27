@@ -3,7 +3,7 @@ layout: post
 category: dailynote
 title: "New webcomic by my friend Nick64!"
 tags: [thought, personal, art, webcomic]
-date: 2023-12-09
+date: 2023-12-29
 published: false
 ---
 <!-- TODO -->
