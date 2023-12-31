@@ -1,6 +1,13 @@
 {% assign count = 0 %}
-{% assign limit = include.limit | default: 999 %}
-{% for post in site.categories[include.category] %}
+{% assign limit = include.limit | default: 9 %}
+
+{% if include.category %}
+  {% assign posts = site.categories[include.category] %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
   {% if count < limit %}
     <h3>
       <span class="topics">
