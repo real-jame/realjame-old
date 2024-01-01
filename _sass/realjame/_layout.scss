@@ -200,6 +200,12 @@ body .button-row {
 .content-wrapper {
 	margin: auto;
 	max-width: 50em;
+	padding-right: 5em;
+	padding-left: 1em;
+
+	@include media-query($small-screen) {
+		padding: unset;
+	}
 }
 
 .post-list-heading {
