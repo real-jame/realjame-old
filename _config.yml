@@ -28,6 +28,9 @@ defaults:
       permalink: "/devlog/:title.html"
 future: true
 
+# excerpt_separator: <!--more-->
+# TODO: this doesn't seem to work but it would be nice in order to have longer excerpts
+
 categories:
   - dailynote
   - blog

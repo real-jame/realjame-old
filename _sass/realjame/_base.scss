@@ -20,6 +20,38 @@ body {
 	margin: 0;
 }
 
+/**
+ * Links
+ */
+a {
+	color: $accent-color;
+
+	&:hover {
+		color: $text-color;
+		text-decoration: underline;
+	}
+}
+
+.pretty-button,
+.card {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: $accent-color;
+	background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+	border: 3px double $accent-color;
+	box-shadow: 0 0 8px $accent-color;
+	text-shadow: 0 0 5px $accent-color;
+	margin-bottom: 1em;
+	transition: all 0.3s;
+	border-radius: 10px;
+
+	&:hover {
+		background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
+		color: #e1f0fc;
+		box-shadow: 0 0 15px $accent-color;
+	}
+}
+
 h1 {
 	text-wrap: balance; // Not exactly a standard feature, but pretty nifty!
 }
@@ -31,12 +63,6 @@ h4,
 h5,
 h6 {
 	text-shadow: 0 0 8px #1c4971;
-
-	h1,
-	h2 {
-		margin: 0;
-		text-align: center;
-	}
 }
 
 h1,
@@ -44,13 +70,19 @@ h2,
 .header-band {
 	background: linear-gradient(to right, $accent-color 50%, #7ac2ffff 70%, #006ecb00 100%);
 	line-height: 1em;
-	margin-left: -1em;
-	padding-left: 1em;
+	margin-left: -15em; // really long so it always shows off-screen on longer screens no matter what
+	padding-left: 15em;
 	padding-top: 5px;
 	padding-bottom: 5px;
 
 	color: #13222f;
 	text-shadow: 0 0 12px #2d93ec;
+
+	a {
+		display: block;
+		width: 80%;
+		color: inherit;
+	}
 }
 
 p {
@@ -119,38 +151,6 @@ li {
 	> ul,
 	> ol {
 		margin-bottom: 0;
-	}
-}
-
-/**
- * Links
- */
-a {
-	color: $accent-color;
-
-	&:hover {
-		color: $text-color;
-		text-decoration: underline;
-	}
-}
-
-.pretty-button,
-.card {
-	padding: 5px 10px;
-	text-decoration: none;
-	color: $accent-color;
-	background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
-	border: 3px double $accent-color;
-	box-shadow: 0 0 10px $accent-color;
-	text-shadow: 0 0 5px $accent-color;
-	margin-bottom: 1em;
-	transition: all 0.3s;
-	border-radius: 10px;
-
-	&:hover {
-		background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
-		color: #e1f0fc;
-		box-shadow: 0 0 15px $accent-color;
 	}
 }
 

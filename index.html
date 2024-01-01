@@ -6,7 +6,7 @@ title: "realja.me"
   <i>realjame: Always under construction, never working, always sleeping...</i>
 </p>
 
-<h2>Welcome</h2>
+<h1>Welcome</h1>
 <p>This is realja.me. My website, and has a little bit of content at the moment.</p>
 <p>I'm a programmer, supposedly.</p>
 <p>Here, you'll find 3 separate blogs: a
@@ -21,13 +21,4 @@ title: "realja.me"
   to stay up to date.</p>
 <p>Thanks! - james</p>
 
-<h2>Recent Daily Notes</h2>
-<div>
-  {% include post-list-simple.html category = "dailynote" limit=2 %}
-</div>
-
-<h2 class="header-band">Recent Posts</h2>
-{% include post-list.html category = "blog" limit=2 %}
-<h2 class="header-band">Recent Devlogs</h2>
-
-{% include post-list.html category = "devlog" limit=2 %}
+{% include post-list.html %}
