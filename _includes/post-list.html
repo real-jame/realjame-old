@@ -29,8 +29,15 @@
         {% endfor %}
       </span>
       {% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
-      <span>
+      {% comment %} i love inline styles 🤤🤤🤤 {% endcomment %}
+      <span style="padding-left: 0.1em;">
+        {% if posts == site.posts %}
+          {{ post.category }}
+          ·
+        {% endif %}
         {{ post.date | date: date_format }}
+        ·
+        {{ post.content | number_of_words }} words
       </span>
     </div>
     {{ post.excerpt }}

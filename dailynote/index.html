@@ -3,25 +3,26 @@ layout: default
 title: "daily notes"
 ---
 <!--
-this daily notes idea was inspired by a website i discovered recently that has a "today i learned" section:
-https://til.simonwillison.net/
-and according to the github repo it was inspired by this other person's TIL collection: https://github.com/jbranchaud/til
+  this daily notes idea was inspired by a website i discovered recently that has a "today i learned" section:
+  https://til.simonwillison.net/
+  and according to the github repo it was inspired by this other person's TIL collection: https://github.com/jbranchaud/til
 
-i was inspired by someone who was inspired by someone else. honestly nothing better in the world to me when that kinda thing happens.
-to think that what you put out into the world has greater impact than what is immediately perceived, or even what you're aware of
-thats something to think about...
+  i was inspired by someone who was inspired by someone else. honestly nothing better in the world to me when that kinda thing happens.
+  to think that what you put out into the world has greater impact than what is immediately perceived, or even what you're aware of
+  thats something to think about...
 
-oh fun fact, simon willison is the guy who made the django framework
---><h1 class="post-title">daily notes</h1>
+  oh fun fact, simon willison is the guy who made the django framework
+-->
+<h1 class="post-title">daily notes</h1>
 
 <p>
-    Extremely frequent brief* writings. Primarily collecting things I've learned, but there may be thoughts and other random stuff too.
-    {% comment %}
+  Extremely frequent brief* writings. Primarily collecting things I've learned, but there may be thoughts and other random stuff too.
+  {% comment %}
     <a href="{ post_url /dailynote/why-dailynotes }">Why?</a>
     todo: write this post
     add the % when you do lol
-    {% endcomment %}
-    <small>*not actually daily</small>    
+  {% endcomment %}
+  <small>*not actually daily</small>
 </p>
 
 <i>Posts tagged with "Tech" are entirely nerd stuff, and posts tagged with "Thought" are not.</i>
@@ -33,4 +34,4 @@ oh fun fact, simon willison is the guy who made the django framework
 
 {% include rss.html %}
 
-{% include post-list-simple.html category = "dailynote" %}
+{% include post-list.html category = "dailynote" %}

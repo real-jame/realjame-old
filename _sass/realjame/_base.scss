@@ -70,8 +70,8 @@ h2,
 .header-band {
 	background: linear-gradient(to right, $accent-color 50%, #7ac2ffff 70%, #006ecb00 100%);
 	line-height: 1em;
-	margin-left: -1em;
-	padding-left: 1em;
+	margin-left: -15em; // really long so it always shows off-screen on longer screens no matter what
+	padding-left: 15em;
 	padding-top: 5px;
 	padding-bottom: 5px;
 

@@ -271,12 +271,19 @@ body .button-row {
 	}
 }
 
-.post-meta {
+.post-meta-simple,
+.post-meta,
+.post-meta-card {
 	font-size: $small-font-size;
 	color: $gray-color;
 	// text-align: center;
 	margin: 0;
 	margin-top: -0.75em;
+}
+
+.post-meta-simple,
+.post-meta-card {
+	margin-top: unset;
 }
 
 .post-description {
