@@ -78,10 +78,16 @@ h2,
 	color: #13222f;
 	text-shadow: 0 0 12px #2d93ec;
 
-	a {
+	a,
+	span {
 		display: block;
-		width: 80%;
+		width: 75%;
 		color: inherit;
+		text-align: left;
+
+		@include media-query($small-screen) {
+			width: unset;
+		}
 	}
 }
 
