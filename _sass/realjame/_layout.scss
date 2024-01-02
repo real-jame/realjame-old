@@ -16,6 +16,7 @@
 	}
 }
 
+// TODO: this is now only used for the "realjame" text in the top left, so please rename this class accordingly.
 .page-title {
 	border: solid $border-color $border-size;
 	background: none;
@@ -378,6 +379,10 @@ body .button-row {
 	}
 }
 
+.post-header {
+	margin-bottom: 20px;
+}
+
 .post-title {
 	font-size: 2.625em;
 	// letter-spacing: -1px;
@@ -386,6 +391,7 @@ body .button-row {
 	font-weight: bold;
 	margin-top: -20px;
 	margin-left: -50vw;
+	margin-bottom: 0.1em;
 	padding-left: 50vw;
 
 	background: linear-gradient(to right, #b3d4f0 50%, #7ac2ff 80%, rgba(0, 110, 203, 0) 100%);
@@ -574,17 +580,11 @@ body .button-row {
  * Tag filter page
  */
 .tag-description {
-	h1,
-	h2 {
-		margin-top: -20px;
-		margin-bottom: 0.1em;
-		font-size: 1.8em;
-
-		@include media-query($small-screen) {
-			margin-top: -10px;
-		}
+	h1 .icon {
+		width: unset;
+		height: 0.8em;
+		vertical-align: baseline;
 	}
-
 	p {
 		margin-top: 0;
 	}
@@ -606,7 +606,7 @@ body .button-row {
 
 .tag-filter-tagclouds {
 	p {
-		margin-bottom: 0;
+		margin-bottom: -0.3em;
 	}
 
 	ul {
