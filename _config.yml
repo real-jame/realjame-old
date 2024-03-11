@@ -83,6 +83,3 @@ kramdown:
   typographic_symbols: { hellip: ... }
 feed:
   posts_limit: 9999
-
-exclude:
-  - _original

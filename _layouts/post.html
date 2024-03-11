@@ -8,7 +8,7 @@ permalink: /blog/:title
   itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">
-      <span>{{ page.title }}</span>
+      <span>{{ page.title | emoji_to_png }}</span>
     </h1>
     <span class="post-meta">
       {% if page.description %}

@@ -3,14 +3,28 @@
 
 .sidebar {
     float: left;
-    width: 25%;
+    width: 200px;
+
+    ul {
+        margin: 0;
+    }
+
+    hr {
+        width: 85%;
+    }
 }
 
 .main {
-    float: right;
-    width: 75%;
+    overflow: hidden;
 }
 
 .footer {
     clear: both;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
 }
