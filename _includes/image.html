@@ -2,13 +2,7 @@
   {% if include.largeurl %}
     <a href="{{ include.largeurl }}">
   {% endif %}
-  <img
-    src="{{ include.url }}"
-    width="{{ include.x | default: 512 }}"
-    {% if include.y and include.y != "" %}
-    height="{{ include.y }}"
-    {% endif %}
-    alt="{{ include.alt | default: include.caption | default: "" }}">
+  <img src="{{ include.url }}" alt="{{ include.alt | default: include.caption | default: "" }}">
   {% if include.largeurl %}
     </a>
   {% endif %}
