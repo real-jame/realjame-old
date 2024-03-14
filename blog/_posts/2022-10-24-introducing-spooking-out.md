@@ -8,8 +8,10 @@ description: "I made a brand new game for old Roblox with the help of a friend!"
 date: 2022-10-24
 ---
 
-Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.fi.
 ![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game; a bay filled with ghosts.](/blog/media/SpookingOutThumbnail.png)
+
+Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.fi.
+
 Come play the game with us on a 24/7 server I'm hosting for the game, or [download a copy of the game for yourself](https://cdn.discordapp.com/attachments/1033943226727542887/1033943288463511692/Spooking_Out.rbxl).
 
 ```text
