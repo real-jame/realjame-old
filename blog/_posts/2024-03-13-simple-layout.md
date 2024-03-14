@@ -2,13 +2,17 @@
 layout: post
 category: blog
 title: "Simple layout, why not?"
-tags: [tech, web]
-date: 2024-03-11
+tags: [tech, web, news, retro]
+date: 2024-3-13
 published: true
 ---
 I made an alternate, minimal version of my website. You can find it on the sidebar, or head to [simple.realja.me](https://simple.realja.me).
 
+{% include image.html url="/blog/media/simple-home_small.png" alt="Screenshot of the simple layout" caption="Rendered in Opera 8, a browser from 2005" %}
+
 Now, you can read my website on practically any web browser and device ever made!
+
+{% include image.html url="/blog/media/simple-nav_small.jpg" alt="The navigation menu displayed on a red Nintendo DSi" caption="Running on a Nintendo DSi!" %}
 
 ## The ultimate barebones
 
@@ -32,7 +36,7 @@ I also thought it would just be neat to have my website be really accessible, be
 
 ## In the future
 
-I don't know how good I will be at keeping this layout in sync, it's not an automated thing at all. Any changes I make to one, including new posts, I have to do manually to the other. This is pretty simple to do, I just need to remember to do it. :^)
+I don't know how good I will be at keeping this layout in sync, it's not an automated thing at all. Any changes I make to one, including new posts, I have to do manually to the other. But this is pretty simple to do, I just need to remember to do it. :^)
 
 ## See also
 

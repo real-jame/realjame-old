@@ -22,7 +22,7 @@
     max-width: 650px;
     margin: 40px auto;
     line-height: 1.4;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footer {
@@ -38,4 +38,12 @@ table,
 th,
 td {
     border: 1px solid gray;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 1px solid black;
+    margin-left: 18px; // the font size, can't use em on old browsers
+
+    font-style: italic;
 }
