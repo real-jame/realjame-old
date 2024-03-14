@@ -2,7 +2,7 @@
 layout: post
 category: dailynote
 title: "2 Opera 8 quirks with the simple layout"
-tags: [tech, web]
+tags: [tech, web, retro]
 date: 2024-3-14
 published: true
 ---
@@ -11,8 +11,9 @@ I was testing this with Opera 8. I wasn't sure which version the DSi browser was
 
 So, here are 2 quick little quirks I noticed that occured in Opera 8, but not in my modern browser.
 
-for my footer, the a elements would only center if i wrapped it in a p element first.
-<!-- TODO: this post -->
+I could put clean this up but I'm lazy and I'll just share the quick notes I took.
 
-for the sidebar nav, putting margin: 0 on the list elements would have them clip into the box on an old browser.
+For my footer, the a elements would only center if I wrapped it in a p element first.
+
+For the sidebar nav, putting margin: 0 on the list elements would have them clip into the box on an old browser.
 modern browsers still keep a left margin for the bullet points if you set margin to 0, but opera 8 does not.
